@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cusl6-map/!svn/ver/36/trunk/includes/filetransfer
+END
+ftp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/36/trunk/includes/filetransfer/ftp.inc
+END
+local.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/36/trunk/includes/filetransfer/local.inc
+END
+ssh.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/36/trunk/includes/filetransfer/ssh.inc
+END
+filetransfer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/36/trunk/includes/filetransfer/filetransfer.inc
+END

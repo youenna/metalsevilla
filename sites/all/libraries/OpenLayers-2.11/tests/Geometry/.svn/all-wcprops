@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry
+END
+LineString.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/LineString.html
+END
+MultiPolygon.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/MultiPolygon.html
+END
+Curve.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Curve.html
+END
+MultiPoint.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/MultiPoint.html
+END
+Rectangle.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Rectangle.html
+END
+Polygon.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Polygon.html
+END
+Surface.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Surface.html
+END
+MultiLineString.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/MultiLineString.html
+END
+Point.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Point.html
+END
+LinearRing.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/LinearRing.html
+END
+Collection.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Geometry/Collection.html
+END
