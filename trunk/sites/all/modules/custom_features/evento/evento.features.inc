@@ -1,0 +1,37 @@
+<?php
+/**
+ * @file
+ * evento.features.inc
+ */
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function evento_ctools_plugin_api() {
+  return array("version" => "1");
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function evento_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function evento_node_info() {
+  $items = array(
+    'evento' => array(
+      'name' => t('Evento'),
+      'base' => 'node_content',
+      'description' => t('Eventos que se realizan dentro del marco musical, ya sean conciertos, festivales o fiestas.
+'),
+      'has_title' => '1',
+      'title_label' => t('Título'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}

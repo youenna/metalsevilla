@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Flujo de trabajo feature.
+ */
+
+include_once 'flujo_de_trabajo.features.inc';

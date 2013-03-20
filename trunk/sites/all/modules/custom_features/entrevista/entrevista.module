@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Entrevista feature.
+ */
+
+include_once 'entrevista.features.inc';
