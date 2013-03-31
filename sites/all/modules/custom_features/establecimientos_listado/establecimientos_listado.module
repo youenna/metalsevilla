@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the establecimientos_listado feature.
+ */
+
+include_once 'establecimientos_listado.features.inc';

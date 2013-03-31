@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Relaciones feature.
+ */
+
+include_once 'relaciones.features.inc';

@@ -1,0 +1,318 @@
+<?php
+/**
+ * @file
+ * menu_usuario.features.menu_links.inc
+ */
+
+/**
+ * Implements hook_menu_default_menu_links().
+ */
+function menu_usuario_menu_default_menu_links() {
+  $menu_links = array();
+
+  // Exported menu link: menu_usuario:node/add
+  $menu_links['menu_usuario:node/add'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add',
+    'router_path' => 'node/add',
+    'link_title' => 'Crear contenido',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '1',
+    'expanded' => '0',
+    'weight' => '-49',
+  );
+  // Exported menu link: menu_usuario:node/add/anuncio
+  $menu_links['menu_usuario:node/add/anuncio'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/anuncio',
+    'router_path' => 'node/add/anuncio',
+    'link_title' => 'Anuncio',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Si ofreces o buscas: instrumentos, grupo, salas,... ¡Publica aquí tu anuncio!
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/critica-disco
+  $menu_links['menu_usuario:node/add/critica-disco'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/critica-disco',
+    'router_path' => 'node/add/critica-disco',
+    'link_title' => 'Crítica de disco',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Críticas de discos, ya sean recientes o antiguos.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-48',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/cronica
+  $menu_links['menu_usuario:node/add/cronica'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/cronica',
+    'router_path' => 'node/add/cronica',
+    'link_title' => 'Crónica',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Crónica de conciertos y festivales.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-47',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/disco
+  $menu_links['menu_usuario:node/add/disco'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/disco',
+    'router_path' => 'node/add/disco',
+    'link_title' => 'Disco',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Disco de los grupos de música y artistas que forman MetalSevilla
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-46',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/entrevista
+  $menu_links['menu_usuario:node/add/entrevista'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/entrevista',
+    'router_path' => 'node/add/entrevista',
+    'link_title' => 'Entrevista',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Entrevistas a músicos y personas relacionadas con la música.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-45',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/establecimiento
+  $menu_links['menu_usuario:node/add/establecimiento'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/establecimiento',
+    'router_path' => 'node/add/establecimiento',
+    'link_title' => 'Establecimiento',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Tu establecimiento, también puede aparecer en nuestra página.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-44',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/evento
+  $menu_links['menu_usuario:node/add/evento'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/evento',
+    'router_path' => 'node/add/evento',
+    'link_title' => 'Evento',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Eventos que se realizan dentro del marco musical, ya sean conciertos, festivales o fiestas.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-43',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/foto
+  $menu_links['menu_usuario:node/add/foto'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/foto',
+    'router_path' => 'node/add/foto',
+    'link_title' => 'Foto',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Imagen que se puede vincular a los grupos, locales, eventos y noticias.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-42',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/grupo-artista
+  $menu_links['menu_usuario:node/add/grupo-artista'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/grupo-artista',
+    'router_path' => 'node/add/grupo-artista',
+    'link_title' => 'Grupo/Artista',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Artistas y grupos de música
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-41',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/lanzamiento-disco
+  $menu_links['menu_usuario:node/add/lanzamiento-disco'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/lanzamiento-disco',
+    'router_path' => 'node/add/lanzamiento-disco',
+    'link_title' => 'Lanzamiento de disco',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Publica la fecha de lanzamiento de un disco
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-40',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/noticia
+  $menu_links['menu_usuario:node/add/noticia'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/noticia',
+    'router_path' => 'node/add/noticia',
+    'link_title' => 'Noticia',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Noticias dentro del marco musical
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-39',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/page
+  $menu_links['menu_usuario:node/add/page'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/page',
+    'router_path' => 'node/add/page',
+    'link_title' => 'Página estática',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-38',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:node/add/video
+  $menu_links['menu_usuario:node/add/video'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'node/add/video',
+    'router_path' => 'node/add/video',
+    'link_title' => 'Vídeo',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Vídeo que se puede vincular a los grupos, locales, eventos y noticias.
+',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-37',
+    'parent_path' => 'node/add',
+  );
+  // Exported menu link: menu_usuario:user
+  $menu_links['menu_usuario:user'] = array(
+    'menu_name' => 'menu_usuario',
+    'link_path' => 'user',
+    'router_path' => 'user',
+    'link_title' => 'Mi cuenta',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+  );
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Add content');
+  t('Anuncio');
+  t('Crítica de disco');
+  t('Crónica');
+  t('Disco');
+  t('Entrevista');
+  t('Establecimiento');
+  t('Evento');
+  t('Foto');
+  t('Grupo/Artista');
+  t('Lanzamiento de disco');
+  t('Mi cuenta');
+  t('Noticia');
+  t('Página estática');
+  t('Vídeo');
+
+
+  return $menu_links;
+}

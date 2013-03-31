@@ -1,0 +1,155 @@
+<?php
+// $Id: metalsevilla_migrate.module,v 1  2012/04/1,  Marse Exp $  
+
+/**
+ * Implementation of hook_menu().
+ */
+function metalsevilla_migrate_menu() {
+  $items = array();
+  $items['admin/config/content/metalsevilla_migrate'] = array(
+    'title'             => 'MetalSevilla Migrate',
+    'description'       => 'Migrate old nodes from MetalSevilla',
+    'page callback'     => 'drupal_get_form',
+    'page arguments'    => array('metalsevilla_migrate_form'),
+    'access callback'   => 'user_access',
+    'access arguments'  => array('administer site configuration'),
+    'type'              => MENU_NORMAL_ITEM,
+  );
+  
+  return $items;
+}
+
+/**
+ * Implementation of hook_form().
+ */
+ 
+function metalsevilla_migrate_form($node, &$form_state) {
+  $form['metalsevilla_migrate_form'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Old Nodes'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  //Botón que activa la migración
+  $form['metalsevilla_migrate_form']['metalsevilla_migrate_get_nodes'] = array(
+    '#type' => 'submit',
+    '#value' => t('Get Old Nodes'),
+    '#submit' => array('metalsevilla_migrate_get_nodes'),
+  );
+  
+  return $form;
+}
+
+//Función que obtiene los nodos de las tablas antiguas de Drupal 6
+function metalsevilla_migrate_get_nodes(){
+	
+	$result = db_query("SELECT node.nid, node.type, node.title, node.created, node.changed, node_revision.body, term_node.tid FROM OLD_node node INNER JOIN OLD_node_revisions node_revision ON node.nid=node_revision.nid INNER JOIN OLD_term_node term_node ON node.nid=term_node.nid WHERE term_node.tid IN(1,3,5,6,7,12,13,33,36) OR node.type='event'");
+
+	foreach ($result as $row) {
+  		$nid=$row->nid;
+  		$type=$row->type;
+  		$title=$row->title;
+  		$created=$row->created;
+  		$changed =$row->changed;
+  		$body = $row->body;
+  		$tid = $row->tid;
+  		metalsevilla_migrate_create_node($nid,$type,$title,$created,$changed,$body,$tid);
+  	}
+}
+
+//Función que crea el nuevo nodo
+function metalsevilla_migrate_create_node($nid,$type,$title,$created,$changed,$body,$tid){
+
+	$newnode = new stdClass();
+	$newnode->title = $title;
+	$newnode->uid = 1;
+	$newnode->status = 1;
+	$newnode->language = 'es';
+	
+	//Nuevo campo description para el antiguo body
+	if($tid==1 || $tid==3 || $tid==5 || $tid==6 || $tid==7 || $tid==12 || $tid==33 || $type='event'){
+		$newnode->field_shared_description['und'][0] = array(
+      		'value' => $body,
+      		'format' => 'filtered_html'
+    	);
+	}
+	
+	//Crítica de disco
+	if($tid==1){
+		$newnode->type = 'critica_disco';
+	}
+	
+	//Noticia
+	else if($tid==3){
+		$newnode->type = 'noticia';
+	}
+	
+	//Crónica
+	else if($tid==5){
+		$newnode->type = 'cronica';
+	}
+	
+	//Entrevista
+	else if($tid==6){
+		$newnode->type = 'entrevista';
+	}
+	
+	//Anuncio
+	else if($tid==12){
+		$newnode->type = 'anuncio';
+	}
+	
+	//Grupo
+	else if($tid==13){
+		$newnode->type = 'grupo_artista';
+		$newnode->field_bio['und'][0] = array(
+      		'value' => $body,
+      		'format' => 'filtered_html'
+    	);
+	}
+	
+	//Establecimiento
+	else if($tid==33){
+		$newnode->type = 'establecimiento';
+	}
+	
+	//Disco
+	else if($tid==36){
+		$newnode->type = 'disco';
+		$newnode->field_songs['und'][0] = array(
+      		'value' => $body,
+      		'format' => 'filtered_html'
+    	);
+	}
+	
+	//Evento (noticias de directo)
+	else if($tid==7){
+		$newnode->type = 'evento';
+	}
+	//Evento (noticias con fechas)
+	else if($type='event'){
+		$newnode->type = 'evento';
+		//consulta para obtener las fechas de los eventos
+		$query = db_query("SELECT node.nid, node.type, node.title, event.event_start, event.event_end FROM OLD_node node INNER JOIN OLD_event event ON node.nid=event.nid");
+		
+		foreach ($query as $row) {
+			if($row->nid == $nid){
+				$inicio = ($row->event_start);
+				$fin = ($row->event_end);			
+			}
+		}
+		//guardamos en el nuevo campo de fecha
+		$newnode->field_shared_rep_date['und'][0]['value'] = $inicio;
+		$newnode->field_shared_rep_date['und'][0]['value2'] = $fin;
+			
+	}
+	
+	$newnode->created = $created;
+	$newnode->changed = $changed;
+
+	node_save($newnode);
+
+	
+}
+	
+  	  	
