@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/testing
+END
+testing.install
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/testing/testing.install
+END
+testing.info
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/testing/testing.info
+END
+testing.profile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/testing/testing.profile
+END

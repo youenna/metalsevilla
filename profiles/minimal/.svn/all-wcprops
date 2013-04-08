@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/minimal
+END
+minimal.info
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/minimal/minimal.info
+END
+minimal.profile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/minimal/minimal.profile
+END
+minimal.install
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/profiles/minimal/minimal.install
+END

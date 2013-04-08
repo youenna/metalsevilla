@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite
+END
+select.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite/select.inc
+END
+schema.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite/schema.inc
+END
+database.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite/database.inc
+END
+query.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite/query.inc
+END
+install.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/36/trunk/includes/database/sqlite/install.inc
+END

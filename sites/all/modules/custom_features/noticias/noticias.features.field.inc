@@ -61,7 +61,7 @@ function noticias_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
       'label' => 'Descripción',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,

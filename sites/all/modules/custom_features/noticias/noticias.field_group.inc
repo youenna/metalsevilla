@@ -53,6 +53,7 @@ function noticias_field_group_info() {
     'children' => array(
       0 => 'field_shared_rel_group',
       1 => 'field_shared_rel_event',
+      2 => 'field_shared_rel_local',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

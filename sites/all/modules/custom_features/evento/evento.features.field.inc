@@ -233,6 +233,7 @@ function evento_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -248,7 +249,7 @@ function evento_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'imagen_cabecera',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -574,6 +575,7 @@ function evento_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
+        'profile2_private' => FALSE,
         'timezone_db' => 'UTC',
         'todate' => 'optional',
         'tz_handling' => 'site',
@@ -609,7 +611,7 @@ function evento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_rep_date',
       'label' => 'Fechas',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
@@ -664,7 +666,7 @@ function evento_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'profile2_private' => 0,
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -692,7 +694,7 @@ function evento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_state',
       'label' => 'Provincia',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -764,7 +766,7 @@ function evento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
