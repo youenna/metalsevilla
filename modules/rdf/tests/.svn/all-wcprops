@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cusl6-map/!svn/ver/40/trunk/modules/rdf/tests
+END
+rdf_test.install
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/40/trunk/modules/rdf/tests/rdf_test.install
+END
+rdf_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/40/trunk/modules/rdf/tests/rdf_test.info
+END
+rdf_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/rdf/tests/rdf_test.module
+END

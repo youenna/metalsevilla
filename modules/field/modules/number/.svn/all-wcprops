@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/field/modules/number
+END
+number.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/40/trunk/modules/field/modules/number/number.info
+END
+number.test
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/40/trunk/modules/field/modules/number/number.test
+END
+number.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/40/trunk/modules/field/modules/number/number.module
+END
+number.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/40/trunk/modules/field/modules/number/number.install
+END

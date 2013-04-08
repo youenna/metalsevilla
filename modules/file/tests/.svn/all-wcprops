@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cusl6-map/!svn/ver/40/trunk/modules/file/tests
+END
+file_module_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/40/trunk/modules/file/tests/file_module_test.module
+END
+file.test
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/file/tests/file.test
+END
+file_module_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/40/trunk/modules/file/tests/file_module_test.info
+END

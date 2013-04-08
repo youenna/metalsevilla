@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger
+END
+trigger.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.api.php
+END
+trigger.test
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.test
+END
+trigger.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.admin.inc
+END
+trigger.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.module
+END
+trigger.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.install
+END
+trigger.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/trigger/trigger.info
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/40/trunk/modules/simpletest/tests/themes/test_theme
+END
+template.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/40/trunk/modules/simpletest/tests/themes/test_theme/template.php
+END
+test_theme.info
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/40/trunk/modules/simpletest/tests/themes/test_theme/test_theme.info
+END

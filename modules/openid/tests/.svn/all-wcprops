@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cusl6-map/!svn/ver/40/trunk/modules/openid/tests
+END
+openid_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/40/trunk/modules/openid/tests/openid_test.module
+END
+openid_test.install
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/40/trunk/modules/openid/tests/openid_test.install
+END
+openid_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/40/trunk/modules/openid/tests/openid_test.info
+END

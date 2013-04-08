@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests
+END
+bbb_update_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/bbb_update_test.info
+END
+ccc_update_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/ccc_update_test.info
+END
+drupal.0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/drupal.0.xml
+END
+update_test_basetheme.1_1-sec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/update_test_basetheme.1_1-sec.xml
+END
+drupal.1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/drupal.1.xml
+END
+aaa_update_test.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/aaa_update_test.tar.gz
+END
+update_test_subtheme.1_0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/update_test_subtheme.1_0.xml
+END
+drupal.2-sec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/drupal.2-sec.xml
+END
+aaa_update_test.no-releases.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/aaa_update_test.no-releases.xml
+END
+aaa_update_test.1_0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/aaa_update_test.1_0.xml
+END
+drupal.dev.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/drupal.dev.xml
+END
+bbb_update_test.1_0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/bbb_update_test.1_0.xml
+END
+update_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/update_test.module
+END
+ccc_update_test.1_0.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/ccc_update_test.1_0.xml
+END
+aaa_update_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/aaa_update_test.module
+END
+bbb_update_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/bbb_update_test.module
+END
+update_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/update_test.info
+END
+ccc_update_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/ccc_update_test.module
+END
+aaa_update_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/tests/aaa_update_test.info
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog
+END
+blog.test
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog/blog.test
+END
+blog.module
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog/blog.module
+END
+blog.install
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog/blog.install
+END
+blog.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog/blog.pages.inc
+END
+blog.info
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cusl6-map/!svn/ver/40/trunk/modules/blog/blog.info
+END

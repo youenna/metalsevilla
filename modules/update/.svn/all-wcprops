@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update
+END
+update.compare.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.compare.inc
+END
+update.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.api.php
+END
+update.test
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.test
+END
+update.fetch.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.fetch.inc
+END
+update.authorize.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.authorize.inc
+END
+update.manager.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.manager.inc
+END
+update.report.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.report.inc
+END
+update.module
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.module
+END
+update.install
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.install
+END
+update-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update-rtl.css
+END
+update.css
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.css
+END
+update.settings.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.settings.inc
+END
+update.info
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cusl6-map/!svn/ver/40/trunk/modules/update/update.info
+END

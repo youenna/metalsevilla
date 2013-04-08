@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile
+END
+profile.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.admin.inc
+END
+profile-wrapper.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile-wrapper.tpl.php
+END
+profile.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.module
+END
+profile.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.install
+END
+profile.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.pages.inc
+END
+profile.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.css
+END
+profile.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.info
+END
+profile-listing.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile-listing.tpl.php
+END
+profile.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.js
+END
+profile-block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile-block.tpl.php
+END
+profile.test
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/profile/profile.test
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy
+END
+taxonomy.module
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.module
+END
+taxonomy.install
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.install
+END
+taxonomy.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.pages.inc
+END
+taxonomy.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.css
+END
+taxonomy-term.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy-term.tpl.php
+END
+taxonomy.info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.info
+END
+taxonomy.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.tokens.inc
+END
+taxonomy.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.js
+END
+taxonomy.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.api.php
+END
+taxonomy.test
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.test
+END
+taxonomy.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/40/trunk/modules/taxonomy/taxonomy.admin.inc
+END

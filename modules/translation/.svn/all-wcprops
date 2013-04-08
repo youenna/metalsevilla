@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/cusl6-map/!svn/ver/40/trunk/modules/translation
+END
+translation.module
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/40/trunk/modules/translation/translation.module
+END
+translation.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/40/trunk/modules/translation/translation.pages.inc
+END
+translation.info
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/40/trunk/modules/translation/translation.info
+END
+translation.test
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/40/trunk/modules/translation/translation.test
+END
