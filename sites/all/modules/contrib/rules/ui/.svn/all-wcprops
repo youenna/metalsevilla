@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui
+END
+rules.autocomplete.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/rules.autocomplete.js
+END
+ui.plugins.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.plugins.inc
+END
+ui.theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.theme.inc
+END
+ui.controller.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.controller.inc
+END
+rules.debug.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/rules.debug.js
+END
+ui.forms.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.forms.inc
+END
+rules.ui.seven.css
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/rules.ui.seven.css
+END
+ui.core.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.core.inc
+END
+rules.ui.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/rules.ui.css
+END
+ui.data.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/ui/ui.data.inc
+END

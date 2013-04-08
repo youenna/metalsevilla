@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/LICENSE.txt
+END
+views_slideshow.module
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow.module
+END
+views_slideshow.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow.views.inc
+END
+views_slideshow.css
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow.css
+END
+views_slideshow_plugin_style_slideshow.inc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow_plugin_style_slideshow.inc
+END
+views_slideshow.info
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow.info
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/README.txt
+END
+views_slideshow.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow.api.php
+END
+views_slideshow_controls_text.css
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/contrib/views_slideshow/views_slideshow_controls_text.css
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes
+END
+ckeditor.drush.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.drush.inc
+END
+ckeditor.lib.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.lib.inc
+END
+ckeditor.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.admin.inc
+END
+filemanager.config.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/filemanager.config.php
+END
+ckeditor.admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.admin.js
+END
+ckeditor.page.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.page.inc
+END
+ckeditor.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.features.inc
+END
+ckeditor.user.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.user.inc
+END
+ckeditor.utils.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/128/trunk/sites/all/modules/contrib/ckeditor/includes/ckeditor.utils.js
+END

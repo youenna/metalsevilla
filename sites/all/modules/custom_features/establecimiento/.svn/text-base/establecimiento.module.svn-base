@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Establecimiento feature.
+ */
+
+include_once 'establecimiento.features.inc';

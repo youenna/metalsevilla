@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/lib
+END
+bencode.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/lib/bencode.php
+END
+mimeparse.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/lib/mimeparse.php
+END

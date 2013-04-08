@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_access
+END
+workflow_access.module
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_access/workflow_access.module
+END
+workflow_access.install
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_access/workflow_access.install
+END
+workflow_access.info
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_access/workflow_access.info
+END

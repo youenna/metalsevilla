@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/LICENSE.txt
+END
+profile2.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.api.php
+END
+profile2.test
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.test
+END
+profile2.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.admin.inc
+END
+profile2.info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.info.inc
+END
+profile2.module
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.module
+END
+profile2.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.tpl.php
+END
+profile2.install
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.install
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/README.txt
+END
+profile2.info
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/105/trunk/sites/all/modules/contrib/profile2/profile2.info
+END

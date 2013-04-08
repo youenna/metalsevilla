@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/LICENSE.txt
+END
+fivestar.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/fivestar.api.php
+END
+fivestar.module
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/fivestar.module
+END
+fivestar.install
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/fivestar.install
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/README.txt
+END
+fivestar.info
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/23/trunk/sites/all/modules/contrib/fivestar/fivestar.info
+END

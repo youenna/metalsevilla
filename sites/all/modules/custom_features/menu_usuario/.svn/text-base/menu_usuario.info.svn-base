@@ -1,0 +1,8 @@
+name = "menu_usuario"
+description = "Menu para la creación de contenido por los usuarios"
+core = "7.x"
+package = "Features"
+php = "5.2.4"
+dependencies[] = "features"
+dependencies[] = "menu"
+features[menu_custom][] = "menu_usuario"

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/formats
+END
+RssFormatView.inc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/formats/RssFormatView.inc
+END
+XCalFormatView.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/formats/XCalFormatView.inc
+END
+xcal_format.module
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/formats/xcal_format.module
+END
+xcal_format.info
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/formats/xcal_format.info
+END

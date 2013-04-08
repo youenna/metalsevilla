@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services
+END
+widget_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/widget_services.info
+END
+print_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/print_services.module
+END
+polish_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/polish_services.module
+END
+forward_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/forward_services.module
+END
+swedish_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/swedish_services.module
+END
+german_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/german_services.module
+END
+farsi_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/farsi_services.info
+END
+spanish_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/spanish_services.info
+END
+dutch_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/dutch_services.info
+END
+general_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/general_services.module
+END
+basque_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/basque_services.module
+END
+italian_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/italian_services.module
+END
+hungarian_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/hungarian_services.info
+END
+widget_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/widget_services.module
+END
+favorite_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/favorite_services.info
+END
+russian_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/russian_services.info
+END
+widget_services.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/widget_services.admin.inc
+END
+print_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/print_services.info
+END
+polish_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/polish_services.info
+END
+farsi_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/farsi_services.module
+END
+spanish_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/spanish_services.module
+END
+dutch_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/dutch_services.module
+END
+forward_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/forward_services.info
+END
+swedish_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/swedish_services.info
+END
+hungarian_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/hungarian_services.module
+END
+favorite_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/favorite_services.module
+END
+german_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/german_services.info
+END
+general_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/general_services.info
+END
+russian_services.module
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/russian_services.module
+END
+basque_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/basque_services.info
+END
+italian_services.info
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/service_links/services/italian_services.info
+END

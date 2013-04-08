@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format
+END
+WFSDescribeFeatureType.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WFSDescribeFeatureType.html
+END
+CSWGetRecords.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/CSWGetRecords.html
+END
+CQL.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/CQL.html
+END
+GML.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/GML.html
+END
+WMSCapabilities.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WMSCapabilities.html
+END
+SOSGetObservation.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/SOSGetObservation.html
+END
+SLD.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/SLD.html
+END
+WFST.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WFST.html
+END
+KML.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/KML.html
+END
+OGCExceptionReport.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/OGCExceptionReport.html
+END
+Text.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/Text.html
+END
+Filter.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/Filter.html
+END
+ArcXML.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/ArcXML.html
+END
+WPSExecute.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WPSExecute.html
+END
+WMSGetFeatureInfo.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WMSGetFeatureInfo.html
+END
+GPX.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/GPX.html
+END
+GeoRSS.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/GeoRSS.html
+END
+WMTSCapabilities.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WMTSCapabilities.html
+END
+WKT.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WKT.html
+END
+JSON.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/JSON.html
+END
+SOSGetFeatureOfInterest.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/SOSGetFeatureOfInterest.html
+END
+CSWGetDomain.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/CSWGetDomain.html
+END
+WMC.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WMC.html
+END
+OSM.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/OSM.html
+END
+WFS.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WFS.html
+END
+Atom.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/Atom.html
+END
+XML.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/XML.html
+END
+QueryStringFilter.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/QueryStringFilter.html
+END
+WMSDescribeLayer.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WMSDescribeLayer.html
+END
+GeoJSON.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/GeoJSON.html
+END
+WCSGetCoverage.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WCSGetCoverage.html
+END
+WPSDescribeProcess.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WPSDescribeProcess.html
+END
+WFSCapabilities.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/144/trunk/sites/all/libraries/OpenLayers-2.11/tests/Format/WFSCapabilities.html
+END

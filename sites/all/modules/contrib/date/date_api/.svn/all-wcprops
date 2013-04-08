@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api
+END
+date_api.info
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api.info
+END
+date-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date-rtl.css
+END
+date.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date.css
+END
+date_year_range.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_year_range.js
+END
+date_api.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api.admin.inc
+END
+date_api_ical.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api_ical.inc
+END
+date_api.module
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api.module
+END
+date_api_elements.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api_elements.inc
+END
+date_api.install
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api.install
+END
+date_api_sql.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_api/date_api_sql.inc
+END

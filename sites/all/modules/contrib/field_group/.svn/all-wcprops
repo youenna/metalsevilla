@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/LICENSE.txt
+END
+field_group.module
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.module
+END
+field_group.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.features.inc
+END
+field_group.install
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.install
+END
+field_group.field_ui.css
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.field_ui.css
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/CHANGELOG.txt
+END
+field_group.field_ui.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.field_ui.inc
+END
+field_group.css
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.css
+END
+field_group.info
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.info
+END
+field_group.field_ui.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.field_ui.js
+END
+field_group.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.js
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/README.txt
+END
+field_group.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.api.php
+END
+field_group.test
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/31/trunk/sites/all/modules/contrib/field_group/field_group.test
+END

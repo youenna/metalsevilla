@@ -1,0 +1,9 @@
+; $Id: metalsevilla_migrate.info,v 1 2012/04/1 Marse Exp $
+name = MetalSevilla Migrate
+description = MetalSevilla Migrate
+package = MetalSevilla custom 
+core = 7.x
+
+version = "7.x-1.0"
+core = "7.x"
+project = "MetalSevilla Migrate"

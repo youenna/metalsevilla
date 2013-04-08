@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/includes
+END
+office_hours.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/includes/office_hours.views.inc
+END
+office_hours_handler_filter_day.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/includes/office_hours_handler_filter_day.inc
+END
+office_hours_handler_filter_hours.inc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/includes/office_hours_handler_filter_hours.inc
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/172/trunk/sites/all/modules/custom_features/entrevista
+END
+entrevista.module
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/69/trunk/sites/all/modules/custom_features/entrevista/entrevista.module
+END
+entrevista.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/entrevista/entrevista.features.inc
+END
+entrevista.field_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/184/trunk/sites/all/modules/custom_features/entrevista/entrevista.field_group.inc
+END
+entrevista.features.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/184/trunk/sites/all/modules/custom_features/entrevista/entrevista.features.field.inc
+END
+entrevista.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/entrevista/entrevista.views_default.inc
+END
+entrevista.info
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/184/trunk/sites/all/modules/custom_features/entrevista/entrevista.info
+END

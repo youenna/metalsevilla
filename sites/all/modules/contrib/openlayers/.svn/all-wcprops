@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/LICENSE.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/CHANGELOG.txt
+END
+UPGRADE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/UPGRADE.txt
+END
+openlayers.module
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/openlayers.module
+END
+openlayers.install
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/openlayers.install
+END
+openlayers.css
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/openlayers.css
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/README.txt
+END
+openlayers.info
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/142/trunk/sites/all/modules/contrib/openlayers/openlayers.info
+END

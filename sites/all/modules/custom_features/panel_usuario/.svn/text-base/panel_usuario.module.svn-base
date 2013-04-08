@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the panel_usuario feature.
+ */
+
+include_once 'panel_usuario.features.inc';

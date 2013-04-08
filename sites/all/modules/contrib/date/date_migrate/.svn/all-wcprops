@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_migrate
+END
+date_migrate.info
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_migrate/date_migrate.info
+END
+date_migrate.test
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_migrate/date_migrate.test
+END
+date_migrate.module
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_migrate/date_migrate.module
+END
+date.migrate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_migrate/date.migrate.inc
+END

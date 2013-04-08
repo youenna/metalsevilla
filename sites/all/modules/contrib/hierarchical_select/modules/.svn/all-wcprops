@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules
+END
+hs_taxonomy_views.info
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy_views.info
+END
+hs_flatlist.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_flatlist.module
+END
+hs_menu.module
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_menu.module
+END
+hs_taxonomy.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy.info
+END
+hs_menu.install
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_menu.install
+END
+hs_smallhierarchy.module
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_smallhierarchy.module
+END
+hs_flatlist.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_flatlist.info
+END
+hs_menu.info
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_menu.info
+END
+hs_taxonomy_views.module
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy_views.module
+END
+hs_taxonomy_views.install
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy_views.install
+END
+hs_smallhierarchy.info
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_smallhierarchy.info
+END
+hs_taxonomy_views_handler_filter_term_node_tid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy_views_handler_filter_term_node_tid.inc
+END
+hs_taxonomy.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy.module
+END
+hs_taxonomy.install
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/78/trunk/sites/all/modules/contrib/hierarchical_select/modules/hs_taxonomy.install
+END

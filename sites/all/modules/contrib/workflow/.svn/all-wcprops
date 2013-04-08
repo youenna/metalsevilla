@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow
+END
+workflow.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow.features.inc
+END
+workflow.install
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow.install
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/LICENSE.txt
+END
+UPDATE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/UPDATE.txt
+END
+workflow.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow.pages.inc
+END
+workflow.info
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow.info
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/README.txt
+END
+workflow.module
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow.module
+END

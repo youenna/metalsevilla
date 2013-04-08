@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date
+END
+date_elements.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_elements.inc
+END
+date.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.install
+END
+INSTALL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/INSTALL.txt
+END
+date_repeat.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_repeat.inc
+END
+date.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.tokens.inc
+END
+date.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.js
+END
+date_admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_admin.inc
+END
+date.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.devel_generate.inc
+END
+date_admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date_admin.js
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/LICENSE.txt
+END
+date.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.module
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/CHANGELOG.txt
+END
+date.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.info
+END
+date.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.field.inc
+END
+date.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.api.php
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/README.txt
+END
+date.theme
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/date.theme
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/LICENSE.txt
+END
+add-tab.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/add-tab.gif
+END
+quicktabs.info
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.info
+END
+quicktabs.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.api.php
+END
+quicktabs.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.admin.inc
+END
+delete-tab.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/delete-tab.gif
+END
+quicktabs.classes.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.classes.inc
+END
+quicktabs.module
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.module
+END
+quicktabs.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.views.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/README.txt
+END
+quicktabs.install
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/159/trunk/sites/all/modules/contrib/quicktabs/quicktabs.install
+END

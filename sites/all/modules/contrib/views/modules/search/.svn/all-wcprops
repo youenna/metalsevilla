@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search
+END
+views_handler_field_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search/views_handler_field_search_score.inc
+END
+views_handler_argument_search.inc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search/views_handler_argument_search.inc
+END
+views_handler_sort_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search/views_handler_sort_search_score.inc
+END
+views_plugin_row_search_view.inc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search/views_plugin_row_search_view.inc
+END
+views_handler_filter_search.inc
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/modules/search/views_handler_filter_search.inc
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/LICENSE.txt
+END
+features.module
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.module
+END
+features.install
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.install
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/CHANGELOG.txt
+END
+features.css
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.css
+END
+features.export.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.export.inc
+END
+API.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/API.txt
+END
+features.info
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.info
+END
+features.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.js
+END
+features.drush.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.drush.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/README.txt
+END
+features.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.api.php
+END
+features.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/45/trunk/sites/all/modules/contrib/features/features.admin.inc
+END

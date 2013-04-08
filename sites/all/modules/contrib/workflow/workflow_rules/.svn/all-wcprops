@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_rules
+END
+workflow_rules.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_rules/workflow_rules.rules.inc
+END
+workflow_rules.module
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_rules/workflow_rules.module
+END
+workflow_rules.info
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/workflow/workflow_rules/workflow_rules.info
+END

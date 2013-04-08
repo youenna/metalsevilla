@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth
+END
+services_oauth.module
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth/services_oauth.module
+END
+services_oauth.install
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth/services_oauth.install
+END
+services_oauth.css
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth/services_oauth.css
+END
+services_oauth.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth/services_oauth.inc
+END
+services_oauth.info
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/auth/services_oauth/services_oauth.info
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/krumo
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/devel/krumo/LICENSE
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/devel/krumo/TODO
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/krumo/VERSION
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/devel/krumo/INSTALL
+END
+class.krumo.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/krumo/class.krumo.php
+END
+krumo.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/devel/krumo/krumo.js
+END
+krumo.ini
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/krumo/krumo.ini
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/devel/krumo/README
+END

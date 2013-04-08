@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/tests
+END
+votingapi.test.orig
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/tests/votingapi.test.orig
+END
+votingapi.test
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/tests/votingapi.test
+END

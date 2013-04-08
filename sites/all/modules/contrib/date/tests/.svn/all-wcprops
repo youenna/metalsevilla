@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests
+END
+USHolidays.ics
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/USHolidays.ics
+END
+date_api.test
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/date_api.test
+END
+date_timezone.test
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/date_timezone.test
+END
+date_validation.test
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/date_validation.test
+END
+rrule.ics
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/rrule.ics
+END
+Yahoo.csv
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/Yahoo.csv
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/README.txt
+END
+date.test
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/date.test
+END
+date_field.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/64/trunk/sites/all/modules/contrib/date/tests/date_field.test
+END

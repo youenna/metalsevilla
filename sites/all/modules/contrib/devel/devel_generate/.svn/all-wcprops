@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate
+END
+file.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/file.devel_generate.inc
+END
+devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate.inc
+END
+devel_generate_batch.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate_batch.inc
+END
+image.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/image.devel_generate.inc
+END
+devel_generate.info
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate.info
+END
+text.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/text.devel_generate.inc
+END
+devel_generate.drush.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate.drush.inc
+END
+devel_generate.fields.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate.fields.inc
+END
+number.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/number.devel_generate.inc
+END
+list.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/list.devel_generate.inc
+END
+devel_generate.module
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/devel_generate.module
+END
+taxonomy.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/75/trunk/sites/all/modules/contrib/devel/devel_generate/taxonomy.devel_generate.inc
+END

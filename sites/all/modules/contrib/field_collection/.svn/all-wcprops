@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/LICENSE.txt
+END
+field_collection.info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.info.inc
+END
+field_collection.module
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.module
+END
+field_collection.install
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.install
+END
+field_collection.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.pages.inc
+END
+field_collection.theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.theme.css
+END
+field_collection.info
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.info
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/README.txt
+END
+field-collection-item.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field-collection-item.tpl.php
+END
+field_collection.test
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.test
+END
+field_collection.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/122/trunk/sites/all/modules/contrib/field_collection/field_collection.admin.inc
+END

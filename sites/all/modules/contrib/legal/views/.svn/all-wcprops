@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/187/trunk/sites/all/modules/contrib/legal/views
+END
+legal_views_handler_field_unserialized_list.inc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cusl6-map/!svn/ver/187/trunk/sites/all/modules/contrib/legal/views/legal_views_handler_field_unserialized_list.inc
+END
+legal.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/187/trunk/sites/all/modules/contrib/legal/views/legal.views.inc
+END
+legal_views_handler_field_exploded_list.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cusl6-map/!svn/ver/187/trunk/sites/all/modules/contrib/legal/views/legal_views_handler_field_exploded_list.inc
+END
+legal.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/187/trunk/sites/all/modules/contrib/legal/views/legal.views_default.inc
+END

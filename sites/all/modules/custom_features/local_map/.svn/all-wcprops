@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/175/trunk/sites/all/modules/custom_features/local_map
+END
+local_map.openlayers_maps.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/local_map/local_map.openlayers_maps.inc
+END
+local_map.info
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/147/trunk/sites/all/modules/custom_features/local_map/local_map.info
+END
+local_map.module
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/143/trunk/sites/all/modules/custom_features/local_map/local_map.module
+END
+local_map.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/143/trunk/sites/all/modules/custom_features/local_map/local_map.features.inc
+END

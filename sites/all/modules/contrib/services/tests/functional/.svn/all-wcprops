@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional
+END
+ServicesResourceCommentTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceCommentTests.test
+END
+ServicesParserTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesParserTests.test
+END
+ServicesResourceSystemTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceSystemTests.test
+END
+ServicesResourceNodeTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceNodeTests.test
+END
+ServicesEndpointTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesEndpointTests.test
+END
+NoAuthEndpointTestRunner.test
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/NoAuthEndpointTestRunner.test
+END
+ServicesXMLRPCTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesXMLRPCTests.test
+END
+ServicesResourceTaxonomyTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceTaxonomyTests.test
+END
+ServicesResourceUserTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceUserTests.test
+END
+ServicesResourceFileTests.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/tests/functional/ServicesResourceFileTests.test
+END

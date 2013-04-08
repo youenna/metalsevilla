@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources
+END
+comment_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/comment_resource.inc
+END
+system_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/system_resource.inc
+END
+node_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/node_resource.inc
+END
+taxonomy_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/taxonomy_resource.inc
+END
+user_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/user_resource.inc
+END
+file_resource.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/resources/file_resource.inc
+END

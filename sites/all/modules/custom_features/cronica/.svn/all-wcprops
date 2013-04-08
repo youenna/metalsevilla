@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/175/trunk/sites/all/modules/custom_features/cronica
+END
+cronica.module
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/74/trunk/sites/all/modules/custom_features/cronica/cronica.module
+END
+cronica.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/cronica/cronica.features.inc
+END
+cronica.field_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/custom_features/cronica/cronica.field_group.inc
+END
+cronica.features.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/184/trunk/sites/all/modules/custom_features/cronica/cronica.features.field.inc
+END
+cronica.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/cronica/cronica.views_default.inc
+END
+cronica.info
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/custom_features/cronica/cronica.info
+END

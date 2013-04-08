@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules
+END
+taxonomy.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/taxonomy.rules.inc
+END
+user.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/user.rules.inc
+END
+system.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/system.eval.inc
+END
+node.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/node.eval.inc
+END
+php.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/php.eval.inc
+END
+system.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/system.rules.inc
+END
+node.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/node.rules.inc
+END
+php.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/php.rules.inc
+END
+path.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/path.eval.inc
+END
+path.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/path.rules.inc
+END
+rules_core.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/rules_core.eval.inc
+END
+rules_core.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/rules_core.rules.inc
+END
+comment.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/comment.rules.inc
+END
+data.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/data.eval.inc
+END
+entity.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/entity.eval.inc
+END
+data.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/data.rules.inc
+END
+events.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/events.inc
+END
+user.eval.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/user.eval.inc
+END
+entity.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/modules/entity.rules.inc
+END

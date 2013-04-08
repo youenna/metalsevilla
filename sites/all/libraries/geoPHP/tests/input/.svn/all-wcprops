@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input
+END
+linestring.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/linestring.wkt
+END
+multipolygon.wkb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/multipolygon.wkb
+END
+barret_spur.gpx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/barret_spur.gpx
+END
+multipolygon_big.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/multipolygon_big.wkt
+END
+multipolygon2.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/multipolygon2.wkt
+END
+line.georss
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/line.georss
+END
+polygon.georss
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/polygon.georss
+END
+box.georss
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/box.georss
+END
+point.georss
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/point.georss
+END
+fells_loop.gpx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/fells_loop.gpx
+END
+polygon.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/polygon.wkt
+END
+multilinestring.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/multilinestring.wkt
+END
+pentagon.kml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/pentagon.kml
+END
+point.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/point.wkt
+END
+cdata.kml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/cdata.kml
+END
+big_n_ugly.kml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/big_n_ugly.kml
+END
+track.gpx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/track.gpx
+END
+circle.georss
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/circle.georss
+END
+multipolygon.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/multipolygon.wkt
+END
+geometrycollection.georss
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/geometrycollection.georss
+END
+geometrycollection.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/geometrycollection.wkt
+END
+point.kml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/point.kml
+END
+polygon2.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/polygon2.wkt
+END
+path.kml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/path.kml
+END
+polygon3.wkt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/103/trunk/sites/all/libraries/geoPHP/tests/input/polygon3.wkt
+END

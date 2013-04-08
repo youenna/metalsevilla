@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours
+END
+office_hours.module
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.module
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/LICENSE.txt
+END
+office_hours.install
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.install
+END
+office_hours.css
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.css
+END
+office_hours.theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.theme.inc
+END
+office_hours.info
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.info
+END
+office_hours.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.js
+END
+office_hours.feeds.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.feeds.inc
+END
+office_hours.elements.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cusl6-map/!svn/ver/88/trunk/sites/all/modules/contrib/office_hours/office_hours.elements.inc
+END

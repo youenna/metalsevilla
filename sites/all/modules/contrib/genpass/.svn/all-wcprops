@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass/LICENSE.txt
+END
+genpass.module
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass/genpass.module
+END
+genpass.install
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass/genpass.install
+END
+genpass.css
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass/genpass.css
+END
+genpass.info
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/139/trunk/sites/all/modules/contrib/genpass/genpass.info
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/LICENSE.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/CHANGELOG.txt
+END
+references.module
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/references.module
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/README.txt
+END
+references.info
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/references.info
+END
+references.feeds.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/references.feeds.inc
+END

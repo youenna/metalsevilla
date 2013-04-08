@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server
+END
+rest_server.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/rest_server.api.php
+END
+rest_server.module
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/rest_server.module
+END
+rest_server.install
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/rest_server.install
+END
+rest_server.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/rest_server.inc
+END
+rest_server.info
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/rest_server.info
+END
+README.markdown
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/servers/rest_server/README.markdown
+END

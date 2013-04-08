@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views
+END
+references_plugin_row_fields.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views/references_plugin_row_fields.inc
+END
+references_handler_relationship.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views/references_handler_relationship.inc
+END
+references_plugin_style.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views/references_plugin_style.inc
+END
+references_handler_argument.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views/references_handler_argument.inc
+END
+references_plugin_display.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cusl6-map/!svn/ver/26/trunk/sites/all/modules/contrib/references/views/references_plugin_display.inc
+END

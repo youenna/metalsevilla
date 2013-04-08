@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/LICENSE.txt
+END
+geofield.module
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.module
+END
+geofield.install
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.install
+END
+geofield.openlayers.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/geofield/geofield.openlayers.inc
+END
+geofield.info
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.info
+END
+geofield.make
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.make
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/README.txt
+END
+geofield.feeds.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.feeds.inc
+END
+geofield.formatters.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/geofield/geofield.formatters.inc
+END
+geofield.widgets.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/193/trunk/sites/all/modules/contrib/geofield/geofield.widgets.inc
+END
+geofield.test
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.test
+END
+geofield.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cusl6-map/!svn/ver/97/trunk/sites/all/modules/contrib/geofield/geofield.devel_generate.inc
+END

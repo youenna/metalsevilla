@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests
+END
+rules_test.test.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules_test.test.inc
+END
+rules_test.rules_defaults.inc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules_test.rules_defaults.inc
+END
+rules_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules_test.info
+END
+rules.test
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules.test
+END
+rules_test.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules_test.rules.inc
+END
+rules_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/125/trunk/sites/all/modules/contrib/rules/tests/rules_test.module
+END

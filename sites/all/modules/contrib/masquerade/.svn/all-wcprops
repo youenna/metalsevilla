@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/LICENSE.txt
+END
+masquerade.info
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/masquerade.info
+END
+masquerade.test
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/masquerade.test
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/README.txt
+END
+masquerade.module
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/masquerade.module
+END
+masquerade.install
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/127/trunk/sites/all/modules/contrib/masquerade/masquerade.install
+END

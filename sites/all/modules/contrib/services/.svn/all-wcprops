@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services
+END
+services.authentication.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.authentication.api.php
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/LICENSE.txt
+END
+services.resource_build.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.resource_build.inc
+END
+services.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.admin.inc
+END
+services.services.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.services.api.php
+END
+services.module
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.module
+END
+services.install
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.install
+END
+services.servers.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.servers.api.php
+END
+services.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.css
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/README.txt
+END
+services.info
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.info
+END
+services.runtime.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cusl6-map/!svn/ver/183/trunk/sites/all/modules/contrib/services/services.runtime.inc
+END

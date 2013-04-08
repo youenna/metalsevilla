@@ -182,10 +182,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'metalsevilla_dev',
+      'database' => 'metalspain',
       'username' => 'marse',
-      'password' => 'proyecto2012',
-      'host' => '10.0.231.106',
+      'password' => 'concurso2012',
+      'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',

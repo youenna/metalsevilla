@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views
+END
+votingapi_views_handler_field_value.inc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views/votingapi_views_handler_field_value.inc
+END
+votingapi_views_handler_relationship.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views/votingapi_views_handler_relationship.inc
+END
+votingapi.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views/votingapi.views.inc
+END
+votingapi_views_handler_sort_nullable.inc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views/votingapi_views_handler_sort_nullable.inc
+END
+votingapi.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cusl6-map/!svn/ver/24/trunk/sites/all/modules/contrib/votingapi/views/votingapi.views_default.inc
+END

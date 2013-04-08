@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/172/trunk/sites/all/modules/custom_features/critica_disco
+END
+critica_disco.module
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cusl6-map/!svn/ver/65/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.module
+END
+critica_disco.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.features.inc
+END
+critica_disco.field_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.field_group.inc
+END
+critica_disco.features.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.features.field.inc
+END
+critica_disco.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cusl6-map/!svn/ver/204/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.views_default.inc
+END
+critica_disco.info
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cusl6-map/!svn/ver/136/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.info
+END
+critica_disco.context.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cusl6-map/!svn/ver/205/trunk/sites/all/modules/custom_features/critica_disco/critica_disco.context.inc
+END

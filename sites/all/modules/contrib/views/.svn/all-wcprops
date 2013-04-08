@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views
+END
+D7UPGRADE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/D7UPGRADE.txt
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/LICENSE.txt
+END
+views.module
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views.module
+END
+views.install
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views.install
+END
+views3.doxy
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views3.doxy
+END
+views_ui.info
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views_ui.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/CHANGELOG.txt
+END
+views.info
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views.info
+END
+views.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views.tokens.inc
+END
+documentation-standards.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/documentation-standards.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/README.txt
+END
+views_ui.module
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cusl6-map/!svn/ver/111/trunk/sites/all/modules/contrib/views/views_ui.module
+END
