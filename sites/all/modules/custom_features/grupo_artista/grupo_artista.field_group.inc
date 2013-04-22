@@ -21,7 +21,7 @@ function grupo_artista_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contacto',
-    'weight' => '5',
+    'weight' => '7',
     'children' => array(
       0 => 'field_shared_phone',
       1 => 'field_shared_web',
@@ -141,6 +141,34 @@ function grupo_artista_field_group_info() {
     ),
   );
   $export['group_shared_settings|node|grupo_artista|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_specifications|node|grupo_artista|default';
+  $field_group->group_name = 'group_specifications';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'grupo_artista';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Especificaciones del grupo',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_shared_style',
+      1 => 'field_shared_state',
+      2 => 'field_activity',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_specifications|node|grupo_artista|default'] = $field_group;
 
   return $export;
 }

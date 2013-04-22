@@ -459,7 +459,7 @@ function video_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'profile2_private' => 0,
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -512,7 +512,9 @@ function video_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(),
       'module' => 'video_embed_field',
-      'settings' => array(),
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'video_embed_field',
     ),
@@ -542,7 +544,7 @@ function video_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_video',
       'label' => 'Vídeo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'description_field' => 0,
         'user_register_form' => FALSE,

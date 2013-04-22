@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/cusl6-map/!svn/ver/40/trunk/scripts
+END
+drupal.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/drupal.sh
+END
+cron-lynx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/cron-lynx.sh
+END
+generate-d6-content.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/generate-d6-content.sh
+END
+test.script
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/test.script
+END
+code-clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/code-clean.sh
+END
+generate-d7-content.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/generate-d7-content.sh
+END
+dump-database-d6.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/dump-database-d6.sh
+END
+dump-database-d7.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/dump-database-d7.sh
+END
+password-hash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/password-hash.sh
+END
+cron-curl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/cron-curl.sh
+END
+run-tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cusl6-map/!svn/ver/40/trunk/scripts/run-tests.sh
+END

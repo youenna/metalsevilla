@@ -218,16 +218,6 @@ function critica_disco_views_default_views() {
   $handler->display->display_options['filters']['field_year_tid']['error_message'] = 1;
   $handler->display->display_options['path'] = 'actualidad/discos/criticas';
 
-  /* Display: Bloque */
-  $handler = $view->new_display('block', 'Bloque', 'block_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Crítica';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['block_description'] = 'Ultima crítica de disco';
-
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
   $handler->display->display_options['pager']['type'] = 'some';
@@ -253,9 +243,6 @@ function critica_disco_views_default_views() {
     t('Estilo'),
     t('Grupo relacionado'),
     t('Año '),
-    t('Bloque'),
-    t('Crítica'),
-    t('Ultima crítica de disco'),
     t('Feed'),
   );
   $export['criticas_de_discos'] = $view;

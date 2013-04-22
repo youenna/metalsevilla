@@ -32,6 +32,7 @@ function cronica_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
+        'profile2_private' => FALSE,
         'timezone_db' => 'UTC',
         'todate' => 'optional',
         'tz_handling' => 'site',
@@ -67,7 +68,7 @@ function cronica_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_date',
       'label' => 'Fecha',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
@@ -144,7 +145,7 @@ function cronica_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
       'label' => 'Descripción',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,
@@ -448,6 +449,7 @@ function cronica_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -479,7 +481,7 @@ function cronica_field_default_fields() {
         'alt_field' => 1,
         'file_directory' => 'fotos_cronica',
         'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '2MB',
+        'max_filesize' => '5MB',
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,

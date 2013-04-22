@@ -278,6 +278,7 @@ function panel_usuario_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['hide_empty'] = 0;
   $handler->display->display_options['fields']['edit_node']['empty_zero'] = 0;
   $handler->display->display_options['fields']['edit_node']['hide_alter_empty'] = 1;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
 
   /* Display: Contenido */
   $handler = $view->new_display('block', 'Contenido', 'block_1');

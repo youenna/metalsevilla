@@ -32,6 +32,7 @@ function lanzamiento_disco_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
+        'profile2_private' => FALSE,
         'timezone_db' => 'UTC',
         'todate' => 'optional',
         'tz_handling' => 'site',
@@ -144,9 +145,9 @@ function lanzamiento_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
       'label' => 'Descripción',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -185,6 +186,7 @@ function lanzamiento_disco_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -560,7 +562,7 @@ function lanzamiento_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),

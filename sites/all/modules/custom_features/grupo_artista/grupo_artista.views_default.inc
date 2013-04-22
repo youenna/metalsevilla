@@ -408,7 +408,7 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_logo']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_shared_logo']['settings'] = array(
-    'image_style' => 'logo_detalle',
+    'image_style' => 'img_logo_220',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_shared_logo']['field_api_classes'] = 0;
@@ -719,7 +719,7 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_logo']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_shared_logo']['settings'] = array(
-    'image_style' => 'logo_detalle',
+    'image_style' => 'img_logo_220',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_shared_logo']['field_api_classes'] = 0;
@@ -1223,6 +1223,22 @@ function grupo_artista_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Contenido: Logo */
   $handler->display->display_options['fields']['field_shared_logo']['id'] = 'field_shared_logo';
   $handler->display->display_options['fields']['field_shared_logo']['table'] = 'field_data_field_shared_logo';
@@ -1253,22 +1269,6 @@ function grupo_artista_views_default_views() {
   );
   $handler->display->display_options['fields']['field_shared_logo']['group_column'] = 'fid';
   $handler->display->display_options['fields']['field_shared_logo']['field_api_classes'] = 0;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Contenido: Biografía */
   $handler->display->display_options['fields']['field_bio']['id'] = 'field_bio';
   $handler->display->display_options['fields']['field_bio']['table'] = 'field_data_field_bio';

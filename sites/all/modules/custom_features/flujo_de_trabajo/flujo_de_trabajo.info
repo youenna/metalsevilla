@@ -1,6 +1,7 @@
 name = "Flujo de trabajo"
 core = "7.x"
 package = "Features"
+php = "5.2.4"
 dependencies[] = "features"
 dependencies[] = "workflow"
 features[workflow][] = "Publicación de contenido"

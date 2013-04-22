@@ -32,7 +32,9 @@ function establecimiento_field_default_fields() {
         ),
       ),
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -254,6 +256,7 @@ function establecimiento_field_default_fields() {
           1 => 'Activo',
         ),
         'allowed_values_function' => '',
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_boolean',
@@ -262,7 +265,7 @@ function establecimiento_field_default_fields() {
       'bundle' => 'establecimiento',
       'default_value' => array(
         0 => array(
-          'value' => 0,
+          'value' => '0',
         ),
       ),
       'deleted' => '0',
@@ -291,18 +294,16 @@ function establecimiento_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_open',
-      'label' => 'Activo',
-      'required' => 0,
+      'label' => 'Actividad',
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'display_label' => 0,
-        ),
-        'type' => 'options_onoff',
+        'settings' => array(),
+        'type' => 'options_buttons',
         'weight' => '11',
       ),
     ),
@@ -366,7 +367,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
       'label' => 'Descripción',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,
@@ -696,6 +697,7 @@ function establecimiento_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -736,7 +738,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_image',
       'label' => 'Foto',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'foto_establecimiento',
@@ -784,6 +786,7 @@ function establecimiento_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -821,7 +824,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_logo',
       'label' => 'Logo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'logo_establecimiento',
@@ -947,7 +950,7 @@ function establecimiento_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'profile2_private' => 0,
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -982,7 +985,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_state',
       'label' => 'Provincia',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1061,7 +1064,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1181,6 +1184,7 @@ function establecimiento_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -1215,7 +1219,7 @@ function establecimiento_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_type',
       'label' => 'Tipo de establecimiento',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1571,7 +1575,7 @@ function establecimiento_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Activo');
+  t('Actividad');
   t('Añade la imagen que aparecerá como logo del Establecimiento (Logotipo)
 ');
   t('Añade la imagen que aparecerá como portada del Establecimiento (Foto)');

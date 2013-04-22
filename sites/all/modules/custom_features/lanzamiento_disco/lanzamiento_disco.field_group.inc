@@ -54,6 +54,8 @@ function lanzamiento_disco_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_shared_rel_group',
+      1 => 'field_shared_rel_disc',
+      2 => 'field_shared_rel_local',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

@@ -117,6 +117,7 @@ function disco_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -132,8 +133,8 @@ function disco_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
+            'image_link' => 'file',
+            'image_style' => 'image_600width',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -148,7 +149,7 @@ function disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_image',
       'label' => 'Portada',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'portada',
@@ -288,7 +289,7 @@ function disco_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'profile2_private' => 0,
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -316,7 +317,7 @@ function disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -416,7 +417,9 @@ function disco_field_default_fields() {
         ),
       ),
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -443,7 +446,7 @@ function disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_songs',
       'label' => 'Canciones',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,
@@ -517,7 +520,7 @@ function disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_year',
       'label' => 'Año',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),

@@ -61,7 +61,7 @@ function critica_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
       'label' => 'Descripción',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,
@@ -102,6 +102,7 @@ function critica_disco_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -116,8 +117,8 @@ function critica_disco_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
+            'image_link' => 'file',
+            'image_style' => 'image_200x200',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -132,7 +133,7 @@ function critica_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_image',
       'label' => 'Portada',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'portada',
@@ -456,7 +457,7 @@ function critica_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -591,7 +592,7 @@ function critica_disco_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_year',
       'label' => 'Año',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),

@@ -29,7 +29,7 @@ function galerias_views_default_views() {
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
   $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_galleria';
@@ -312,7 +312,160 @@ function galerias_views_default_views() {
 
   /* Display: Galeria cronica/entrevista */
   $handler = $view->new_display('block', 'Galeria cronica/entrevista', 'block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['block_description'] = 'Galeria cronica/entrevista';
+  $handler->display->display_options['block_caching'] = '4';
+
+  /* Display: Galeria fotos */
+  $handler = $view->new_display('block', 'Galeria fotos', 'block_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '15';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_options']['fill_single_line'] = 1;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 1;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Fotos */
+  $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
+  $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
+  $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
+  $handler->display->display_options['fields']['field_shared_rep_image']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_rep_image']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_rep_image']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_rep_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightshow__img_logo_220__original';
+  $handler->display->display_options['fields']['field_shared_rep_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'file',
+  );
+  $handler->display->display_options['fields']['field_shared_rep_image']['group_rows'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_shared_rep_image']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['delta_first_last'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['multi_type'] = 'ul';
+  $handler->display->display_options['fields']['field_shared_rep_image']['field_api_classes'] = 0;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Contenido: Publicado */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Contenido: Fotos (field_shared_rep_image:fid) */
+  $handler->display->display_options['filters']['field_shared_rep_image_fid']['id'] = 'field_shared_rep_image_fid';
+  $handler->display->display_options['filters']['field_shared_rep_image_fid']['table'] = 'field_data_field_shared_rep_image';
+  $handler->display->display_options['filters']['field_shared_rep_image_fid']['field'] = 'field_shared_rep_image_fid';
+  $handler->display->display_options['filters']['field_shared_rep_image_fid']['operator'] = '!=';
+  $handler->display->display_options['filters']['field_shared_rep_image_fid']['group'] = 1;
+  /* Filter criterion: Contenido: Tipo */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cronica' => 'cronica',
+    'entrevista' => 'entrevista',
+    'foto' => 'foto',
+  );
+  $handler->display->display_options['block_description'] = 'Galeria fotos';
+  $handler->display->display_options['block_caching'] = '4';
+
+  /* Display: Galeria vídeos */
+  $handler = $view->new_display('block', 'Galeria vídeos', 'block_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '15';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_options']['fill_single_line'] = 1;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 1;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Vídeo */
+  $handler->display->display_options['fields']['field_shared_video']['id'] = 'field_shared_video';
+  $handler->display->display_options['fields']['field_shared_video']['table'] = 'field_data_field_shared_video';
+  $handler->display->display_options['fields']['field_shared_video']['field'] = 'field_shared_video';
+  $handler->display->display_options['fields']['field_shared_video']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_video']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_video']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_video']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_video']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_video']['click_sort_column'] = 'video_url';
+  $handler->display->display_options['fields']['field_shared_video']['type'] = 'video_embed_field_thumbnail';
+  $handler->display->display_options['fields']['field_shared_video']['settings'] = array(
+    'image_style' => 'img_logo_220',
+    'image_link' => 'node',
+  );
+  $handler->display->display_options['fields']['field_shared_video']['field_api_classes'] = 0;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Contenido: Publicado */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Contenido: Tipo */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'entrevista' => 'entrevista',
+    'video' => 'video',
+  );
+  $handler->display->display_options['block_description'] = 'Galeria vídeos';
   $handler->display->display_options['block_caching'] = '4';
   $translatables['galeria_cronica_entrevista'] = array(
     t('Master'),
@@ -322,8 +475,13 @@ function galerias_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
     t('Todo(s)'),
     t('Galeria cronica/entrevista'),
+    t('Galeria fotos'),
+    t('Galeria vídeos'),
   );
   $export['galeria_cronica_entrevista'] = $view;
 

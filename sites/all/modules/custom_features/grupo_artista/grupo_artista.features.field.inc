@@ -51,11 +51,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Selecciona el instrumento que utiliza el usuario seleccionado anteriormente.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -111,11 +111,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Nombre del componente del grupo o nombre del artista que no es usuario de MetalSevilla.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -179,11 +179,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Selecciona el instrumento que utiliza el usuario seleccionado anteriormente.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -256,11 +256,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Nombre del componente del grupo o nombre del artista que es usuario de MetalSevilla (se enlazará con su perfil de usuario). Hay que seleccionarlo cuando el portal lo autocomplete para que se relacione correctamente.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'user_reference',
           'settings' => array(),
           'type' => 'user_reference_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -305,6 +305,7 @@ function grupo_artista_field_default_fields() {
           1 => 'Activo',
         ),
         'allowed_values_function' => '',
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_boolean',
@@ -313,7 +314,7 @@ function grupo_artista_field_default_fields() {
       'bundle' => 'grupo_artista',
       'default_value' => array(
         0 => array(
-          'value' => 0,
+          'value' => '0',
         ),
       ),
       'deleted' => '0',
@@ -324,7 +325,7 @@ function grupo_artista_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -336,17 +337,15 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_activity',
       'label' => 'Actividad',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'display_label' => 0,
-        ),
-        'type' => 'options_onoff',
+        'settings' => array(),
+        'type' => 'options_buttons',
         'weight' => '2',
       ),
     ),
@@ -374,7 +373,9 @@ function grupo_artista_field_default_fields() {
         ),
       ),
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -401,7 +402,7 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_bio',
       'label' => 'Biografía',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '1',
         'user_register_form' => FALSE,
@@ -446,7 +447,7 @@ function grupo_artista_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -497,7 +498,7 @@ function grupo_artista_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '9',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -807,6 +808,7 @@ function grupo_artista_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -820,12 +822,9 @@ function grupo_artista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'imagen_cabecera',
-          ),
-          'type' => 'image',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__medium__original',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -838,7 +837,7 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_image',
       'label' => 'Imagen',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'imagen_grupo',
@@ -886,6 +885,7 @@ function grupo_artista_field_default_fields() {
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
+        'profile2_private' => FALSE,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -900,7 +900,7 @@ function grupo_artista_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -912,7 +912,7 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_logo',
       'label' => 'Logo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'file_directory' => 'logo_grupo',
@@ -1087,7 +1087,7 @@ function grupo_artista_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'profile2_private' => 0,
+        'profile2_private' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -1100,10 +1100,10 @@ function grupo_artista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
-          'module' => 'taxonomy',
+          'module' => 'hs_taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'type' => 'hs_taxonomy_term_reference_hierarchical_text',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1115,7 +1115,7 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_state',
       'label' => 'Provincia',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1170,11 +1170,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Inscribe el grupo/artista en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
+          'label' => 'inline',
+          'module' => 'hs_taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '3',
+          'type' => 'hs_taxonomy_term_reference_hierarchical_text',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1186,7 +1186,7 @@ function grupo_artista_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_shared_style',
       'label' => 'Estilo',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1292,7 +1292,7 @@ function grupo_artista_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'fivestar',
           'settings' => array(
             'expose' => TRUE,
@@ -1509,7 +1509,7 @@ function grupo_artista_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
