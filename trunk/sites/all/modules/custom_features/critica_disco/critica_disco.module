@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Crítica de disco feature.
- */
-
-include_once 'critica_disco.features.inc';

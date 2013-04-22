@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Foto feature.
- */
-
-include_once 'foto.features.inc';

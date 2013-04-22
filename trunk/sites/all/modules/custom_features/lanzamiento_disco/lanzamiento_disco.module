@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Lanzamiento de disco feature.
- */
-
-include_once 'lanzamiento_disco.features.inc';

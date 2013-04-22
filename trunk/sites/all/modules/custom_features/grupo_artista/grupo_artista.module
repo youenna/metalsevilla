@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the grupo_artista feature.
- */
-
-include_once 'grupo_artista.features.inc';
