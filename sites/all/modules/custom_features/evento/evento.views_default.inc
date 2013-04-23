@@ -239,16 +239,45 @@ function evento_views_default_views() {
   /* Display: Bloque */
   $handler = $view->new_display('block', 'Bloque', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Agenda';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Portada */
+  $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_image']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_image']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['hide_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightshow__image_250h__original';
+  $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_shared_image']['field_api_classes'] = 0;
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -300,32 +329,64 @@ function evento_views_default_views() {
   $handler->display->display_options['fields']['field_shared_rep_date']['delta_reversed'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_date']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_date']['field_api_classes'] = 0;
-  /* Campo: Contenido: Descripción */
-  $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
-  $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
-  $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
-  $handler->display->display_options['fields']['field_shared_description']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_description']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '160';
-  $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['trim'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['preserve_tags'] = '120';
-  $handler->display->display_options['fields']['field_shared_description']['alter']['html'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_description']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
+  /* Campo: Contenido: Precio anticipada */
+  $handler->display->display_options['fields']['field_price1']['id'] = 'field_price1';
+  $handler->display->display_options['fields']['field_price1']['table'] = 'field_data_field_price1';
+  $handler->display->display_options['fields']['field_price1']['field'] = 'field_price1';
+  $handler->display->display_options['fields']['field_price1']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_price1']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_price1']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_price1']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_price1']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_price1']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_price1']['hide_empty'] = 1;
+  $handler->display->display_options['fields']['field_price1']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_price1']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_price1']['settings'] = array(
+    'thousand_separator' => ' ',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['fields']['field_price1']['field_api_classes'] = 0;
+  /* Campo: Contenido: Precio en taquilla */
+  $handler->display->display_options['fields']['field_price2']['id'] = 'field_price2';
+  $handler->display->display_options['fields']['field_price2']['table'] = 'field_data_field_price2';
+  $handler->display->display_options['fields']['field_price2']['field'] = 'field_price2';
+  $handler->display->display_options['fields']['field_price2']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_price2']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_price2']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_price2']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_price2']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_price2']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_price2']['hide_empty'] = 1;
+  $handler->display->display_options['fields']['field_price2']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_price2']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_price2']['settings'] = array(
+    'thousand_separator' => ' ',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['fields']['field_price2']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Contenido: Fechas -  start date (field_shared_rep_date) */
   $handler->display->display_options['sorts']['field_shared_rep_date_value']['id'] = 'field_shared_rep_date_value';
@@ -389,7 +450,6 @@ function evento_views_default_views() {
     t('Eventos'),
     t('more'),
     t('Bloque'),
-    t('Agenda'),
     t('Agenda (home)'),
     t('Histórico de Eventos'),
   );
