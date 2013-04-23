@@ -29,6 +29,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['cache']['results_lifespan'] = '21600';
   $handler->display->display_options['cache']['output_lifespan'] = '21600';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
@@ -312,12 +313,65 @@ function actualidad_views_default_views() {
 
   /* Display: Bloque */
   $handler = $view->new_display('block', 'Bloque', 'block_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  /* Campo: Contenido: Descripción */
+  $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['trim_whitespace'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '170';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['strip_tags'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['trim'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['html'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_description']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
   $handler->display->display_options['block_description'] = 'Actualidad (home)';
   $handler->display->display_options['block_caching'] = '8';
 
