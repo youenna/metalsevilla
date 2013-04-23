@@ -124,22 +124,6 @@ function actualidad_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Contenido: Fotos */
   $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
@@ -160,12 +144,13 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_rep_image']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_shared_rep_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_image']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_rep_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_rep_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightbox__image_250h__original';
   $handler->display->display_options['fields']['field_shared_rep_image']['settings'] = array(
-    'image_style' => 'imagen_listado',
+    'image_style' => 'image_250h',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_shared_rep_image']['group_rows'] = 1;
@@ -199,11 +184,28 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightbox__thumbnail__image_250h';
   $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
     'image_style' => 'imagen_listado',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_shared_image']['field_api_classes'] = 0;
+  /* Campo: Contenido: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Contenido: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
@@ -216,7 +218,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '300';
   $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;
