@@ -618,7 +618,7 @@ div.views-slideshow-ddblock-cycle-vsd-default div.container-inner {
 
 #block-views-eventos-block_1 {
   float: right;
-  width: 255px;
+  width: 300px;
 }
 
 #block-views-eventos-block_1 .block-inner {
@@ -640,7 +640,7 @@ div.views-slideshow-ddblock-cycle-vsd-default div.container-inner {
 #block-views-actualidad-block_1 {
   clear: both;
   float: left;
-  width: 334px;
+  width: 400px;
 }
 
 #block-views-actualidad-block_1 .block-inner {
@@ -1004,7 +1004,7 @@ ul.pager {
 
 #block-views-eventos-block_1,
 #block-views-anuncios-block_1 {
-  margin-top: -20px;
+  #margin-top: -20px;
 }
 
 .two-sidebars .center, .sidebar-left .center {
