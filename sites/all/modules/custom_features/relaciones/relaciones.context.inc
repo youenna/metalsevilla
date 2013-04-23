@@ -13,47 +13,6 @@ function relaciones_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'anuncio_toc';
-  $context->description = '';
-  $context->tag = 'Detalle ToC';
-  $context->conditions = array(
-    'node' => array(
-      'values' => array(
-        'anuncio' => 'anuncio',
-      ),
-      'options' => array(
-        'node_form' => '1',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-3df97544bb32f4ca62f53a43577069bd' => array(
-          'module' => 'views',
-          'delta' => '3df97544bb32f4ca62f53a43577069bd',
-          'region' => 'left',
-          'weight' => '-10',
-        ),
-        'views--exp-anuncios-page' => array(
-          'module' => 'views',
-          'delta' => '-exp-anuncios-page',
-          'region' => 'right',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Detalle ToC');
-  $export['anuncio_toc'] = $context;
-
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
   $context->name = 'critica_disco_toc';
   $context->description = '';
   $context->tag = 'Detalle ToC';
@@ -183,7 +142,7 @@ function relaciones_context_default_contexts() {
         'views-bb33b54c359e2a78147fb12d55b012f1' => array(
           'module' => 'views',
           'delta' => 'bb33b54c359e2a78147fb12d55b012f1',
-          'region' => 'content',
+          'region' => 'content_bottom',
           'weight' => '-10',
         ),
       ),
