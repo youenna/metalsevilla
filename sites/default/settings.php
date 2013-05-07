@@ -183,8 +183,8 @@ $databases = array (
     'default' => 
     array (
       'database' => 'metalspain',
-      'username' => 'marse',
-      'password' => 'concurso2012',
+      'username' => 'ms_pro',
+      'password' => 'px6Z4Zw9FCMWaXLx',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
