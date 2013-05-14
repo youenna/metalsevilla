@@ -125,4 +125,3 @@
   </div> <!-- /node-inner -->
 </div> <!-- /node-->
 
-<?php print render($content['comments']); ?>

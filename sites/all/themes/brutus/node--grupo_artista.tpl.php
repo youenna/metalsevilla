@@ -94,14 +94,14 @@
         <?php print render($node_top); ?>
       </div>
     <?php endif; ?>
-
+ 
     <div class="content">
       <?php 
         // We hide the comments and links now so that we can render them later.
         hide($content['comments']);
         hide($content['links']);
-print($node->field_bio[0]['value']);
-//        print render($content);
+        //print render($node->field_bio);
+        print render($content);
        ?>
     </div>
     
@@ -118,4 +118,3 @@ print($node->field_bio[0]['value']);
   </div> <!-- /node-inner -->
 </div> <!-- /node-->
 
-<?php print render($content['comments']); ?>
