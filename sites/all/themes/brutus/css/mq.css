@@ -12,7 +12,9 @@ screen and (max-device-width: 480px) {
 
 @media screen and (max-width: 895px) {
 
-  #page { width: 100%; }
+  #page,
+  #header-top,
+  #footer-bottom-wrapper { width: 100%; }
 
     #page #main { margin: 0; }
 
@@ -28,6 +30,41 @@ screen and (max-device-width: 480px) {
     #sidebar-second .block .block-inner .content { margin-top: 10px; }
 
   #content #content-inner { margin: 0; }
+  
+  #block-search-form { width: 20%; }
+
+  #block-search-form .block-inner .content form div .container-inline .form-type-textfield { width: 70%; }
+
+  #block-search-form .block-inner .content form div .container-inline .form-type-textfield input { width: 100%; }
+
+  #block-search-form .block-inner .content form div .container-inline .form-actions { width: 30%; }
+
+  #block-search-form .block-inner .content form div .container-inline .form-actions #edit-submit--2,
+  #block-search-form .block-inner .content form div .container-inline .form-actions #edit-submit { width: 100%; }
+
+  #block-menu-menu-redes-sociales-footer .block-inner .content ul.menu { padding: 0; }
+
+  #footer-bottom #footer-bottom-wrapper #block-block-13 { right: 15px; }
+
+  #footer-bottom #footer-bottom-wrapper #block-menu-menu-enlaces-footer ul.menu {
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer-bottom #footer-bottom-wrapper #block-block-12 {
+    overflow: hidden;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    text-align: center;
+    margin-top: -70px;
+  }
+
+  #footer-bottom #footer-bottom-wrapper #block-block-12 h2 a { display: inline-block; }
+
 
 }
 
@@ -62,6 +99,3 @@ screen and (max-device-width: 480px) {
 @media screen and (max-width: 240px) {
 
 }
-
-
-

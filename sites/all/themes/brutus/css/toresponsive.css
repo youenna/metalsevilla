@@ -1,10 +1,15 @@
-#page {
-  width: 85%;
+#page,
+#header-top,
+#footer-bottom-wrapper {
+  width: 90%;
   max-width: 940px;
   margin: 0 auto;
 }
 
-#header, #footer, #main, #navigation, #header-top-inner, #footer-bottom-inner, .breadcrumb { width: 100%; }
+#header, #footer, #main, #navigation, #header-top-inner, #footer-bottom-inner, .breadcrumb, #header-top-wrapper {
+  width: 100%;
+  margin: 0;
+}
 
 #content #content-inner {
   background: red;
