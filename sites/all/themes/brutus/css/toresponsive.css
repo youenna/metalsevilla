@@ -1,0 +1,79 @@
+#page,
+#header-top,
+#footer-bottom-wrapper {
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+#header, #footer, #main, #navigation, #header-top-inner, #footer-bottom-inner, .breadcrumb, #header-top-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+#content #content-inner {
+  background: red;
+  overflow: hidden;
+  margin-right: 20%;
+}
+
+/* Slide */
+
+#block-views-actualidad_metalera-block_2, #block-views-actualidad-block_2 {
+  background: blue;
+  width: 100%;
+}
+
+.views-slideshow-ddblock-cycle-vsd-default .container .container-inner .slider .slider-inner .slide .slide-inner .slide-text,
+div.views-slideshow-ddblock-cycle-vsd-default div.slider,
+div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide,
+div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner,
+div.views-slideshow-ddblock-cycle-vsd-default div.container {
+  width: 100%;
+  background: green;
+}
+
+div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* End - Slide */
+
+#block-views-actualidad-block_1 {
+  width: 60%;
+  margin: 0;
+  background: orange;
+}
+
+#block-views-eventos-block_1 {
+  width: 38%;
+  margin: 0;
+  background: purple;
+}
+
+#block-views-actualidad-block_1 img,
+#block-views-eventos-block_1 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+#header-top {
+  position: relative;
+  height: 187px;
+  overflow: visible;
+}
+
+  #header-top img.img-ampli {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 46%;
+  }
+
+#header #logo-title a img {
+  display: block;
+  position: absolute;
+  top: -120px;
+}
+
