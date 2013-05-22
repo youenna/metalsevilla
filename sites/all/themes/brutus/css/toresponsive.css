@@ -57,3 +57,23 @@ div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner img
   width: 100% !important;
   height: auto !important;
 }
+
+#header-top {
+  position: relative;
+  height: 187px;
+  overflow: visible;
+}
+
+  #header-top img.img-ampli {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 46%;
+  }
+
+#header #logo-title a img {
+  display: block;
+  position: absolute;
+  top: -120px;
+}
+

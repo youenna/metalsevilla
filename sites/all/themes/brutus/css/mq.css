@@ -78,21 +78,108 @@ screen and (max-device-width: 480px) {
 
 @media screen and (max-width: 600px) {
 
+  #header-top #block-menu-menu-redes-sociales,
+  #header-top #block-search-form { display: none; }
+
+  #block-nice_menus-1 .block-inner .content ul#nice-menu-1 li a {
+    width: auto;
+    padding: 20px 10px 0 10px;
+  }
+
 }
 
 @media screen and (max-width: 568px) {
+
+  #footer-bottom #footer-bottom-wrapper #block-block-13 { display: none; }
+
+  #footer-bottom #footer-bottom-wrapper #block-block-12 {
+    text-align: right;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #footer-bottom #footer-bottom-wrapper #block-block-12 h2 a {
+    line-height: 200px;
+    padding-left: 10px;
+  }
+
+  #footer-bottom #footer-bottom-wrapper #block-menu-menu-enlaces-footer ul.menu { text-align: right; }
 
 }
 
 @media screen and (max-width: 480px) {
 
+  #header-top { height: 160px; }
+
+  #header #logo-title a img {
+    width: 30%;
+    top: -90px;
+  }
+
+  #block-nice_menus-1 .block-inner .content ul#nice-menu-1 li a { height: 93px; }
+
 }
 
 @media screen and (max-width: 380px) {
 
+  #block-nice_menus-1 .block-inner .content ul#nice-menu-1 li a {
+    height: auto;
+    padding: 5px 10px;
+    font-size: 1.15em;
+    text-transform: uppercase;
+  }
+
+  #block-views-eventos-block_1,
+  #block-views-actualidad-block_1 {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
 }
 
 @media screen and (max-width: 320px) {
+
+  #block-menu-menu-menu-cabecera {
+    float: none;
+    overflow: hidden;
+    padding: 5px 5px 0 0;
+  }
+
+  #block-menu-menu-menu-cabecera .block-inner .content ul.menu {
+    text-align: center;
+    font-size: .7em;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  #block-nice_menus-1 {
+    position: initial !important;
+    text-align: center;
+  }
+
+  #block-menu-menu-menu-cabecera .block-inner .content ul.menu li a {
+    margin: 0 5px !important;
+    font-size: 1.75em;
+  }
+
+  #block-nice_menus-1 .block-inner .content ul { width: 100%; }
+
+  #block-nice_menus-1 .block-inner .content ul#nice-menu-1 li { float: none; }
+
+  #block-nice_menus-1 .block-inner .content ul#nice-menu-1 li a {
+    background-image: none;
+    background-color: rgba(0,0,0,0.65);
+    display: inline;
+    line-height: 176px;
+  }
+
+  .views-slideshow-ddblock-cycle-vsd-default .container .container-inner .slider .slider-inner .slide .slide-inner .slide-text {
+  }
+
+  div.views-slideshow-ddblock-cycle-vsd-default div.slider-inner { height: 213px; }
+
+  #block-views-actualidad_metalera-block_2, #block-views-actualidad-block_2 { height: 173px; }
 
 }
 

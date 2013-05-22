@@ -35,6 +35,7 @@
 <?php print $doctype; ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php print $head_title; ?></title>
     <?php print $head; ?>
     <?php print $styles; ?>
@@ -43,11 +44,15 @@
     <!--[if IE 8]><style type="text/css" media="all">@import "<?php drupal_get_path('theme', 'brutus'); ?>/css/ie/ie8.css"</style><![endif]-->
     <!--[if IE 9]><style type="text/css" media="all">@import "<?php drupal_get_path('theme', 'brutus'); ?>/css/ie/ie9.css"</style><![endif]-->
     <?php print $scripts; ?>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="<?php print drupal_get_path('theme', 'brutus') ?>/js/custom.js"></script>
   </head>
   <body id="<?php print $body_id; ?>" class="<?php print $classes; ?>" <?php print $attributes;?>>
     <div id="skip">
       <a href="#main-content-area"><?php print t('Skip to main content area'); ?></a>
     </div>
+    <img src="<?php print drupal_get_path('theme', 'brutus') ?>/images/amplificador-cabecera.png" alt="MetalSpain amplificador" class="img-ampli" />
     <?php print $page_top; ?>
     <?php print $page; ?>
     <?php print $page_bottom; ?>
