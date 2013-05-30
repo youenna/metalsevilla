@@ -538,7 +538,7 @@ text-align: center;
 /* Menú principal */
 
 #page {
-background: transparent url(../images/amplificador-cabecera.png) 0 22px no-repeat;
+  /*background: transparent url(../images/amplificador-cabecera.png) 0 22px no-repeat;*/
 }
 
 #header {

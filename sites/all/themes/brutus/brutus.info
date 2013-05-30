@@ -27,6 +27,8 @@ features[] = secondary_menu
 
 stylesheets[all][] = css/brutus.css
 stylesheets[all][] = css/ervdesign.css
+stylesheets[all][] = css/toresponsive.css
+stylesheets[all][] = css/mq.css
 scripts[] = js/browser.js
 scripts[] = js/formalize.js
 //scripts[] = js/jquery.beforeafter.min.js
