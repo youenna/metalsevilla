@@ -1,8 +1,8 @@
 #page,
 #header-top,
 #footer-bottom-wrapper {
-  width: 90%;
-  max-width: 940px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -12,15 +12,15 @@
 }
 
 #content #content-inner {
-  background: red;
+  #background: red;
   overflow: hidden;
-  margin-right: 20%;
+  margin-right: 42%;
 }
 
 /* Slide */
 
 #block-views-actualidad_metalera-block_2, #block-views-actualidad-block_2 {
-  background: blue;
+  #background: blue;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@ div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide,
 div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner,
 div.views-slideshow-ddblock-cycle-vsd-default div.container {
   width: 100%;
-  background: green;
+  #background: green;
 }
 
 div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner img {
@@ -43,19 +43,21 @@ div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner img
 #block-views-actualidad-block_1 {
   width: 60%;
   margin: 0;
-  background: orange;
+  #background: orange;
 }
 
 #block-views-eventos-block_1 {
   width: 38%;
   margin: 0;
-  background: purple;
+  #background: purple;
 }
 
-#block-views-actualidad-block_1 img,
-#block-views-eventos-block_1 img {
+.front #block-views-actualidad-block_1 .views-field-field-shared-rep-image img,
+.front #block-views-eventos-block_1 img .views-field-field-shared-image img{
   width: 100% !important;
   height: auto !important;
+  margin: 0 auto;
+  display: table;
 }
 
 #header-top {
