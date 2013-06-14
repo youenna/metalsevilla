@@ -349,7 +349,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightshow__image_200x200__original';
+  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightbox__image_430width__original';
   $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
@@ -379,7 +379,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_rep_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_rep_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightshow__image_350x200__large';
+  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightbox__image_430width__original';
   $handler->display->display_options['fields']['field_shared_rep_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
@@ -441,6 +441,29 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['type'] = 'text_plain';
   $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
+  /* Campo: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span class="guionnoticias"></span>';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   $handler->display->display_options['block_description'] = 'Actualidad (home)';
   $handler->display->display_options['block_caching'] = '8';
 
@@ -928,6 +951,7 @@ function actualidad_views_default_views() {
     t('Estilo'),
     t('Provincia'),
     t('Bloque'),
+    t('<span class="guionnoticias"></span>'),
     t('Actualidad (home)'),
     t('Bloque Slide actualidad home'),
     t('Feed'),
