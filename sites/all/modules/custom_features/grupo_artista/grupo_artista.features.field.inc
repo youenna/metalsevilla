@@ -1268,70 +1268,6 @@ function grupo_artista_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-grupo_artista-field_shared_votes'
-  $fields['node-grupo_artista-field_shared_votes'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_shared_votes',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'fivestar',
-      'settings' => array(
-        'axis' => 'vote',
-      ),
-      'translatable' => '0',
-      'type' => 'fivestar',
-    ),
-    'field_instance' => array(
-      'bundle' => 'grupo_artista',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'fivestar',
-          'settings' => array(
-            'expose' => TRUE,
-            'style' => 'average',
-            'text' => 'average',
-            'widget' => array(
-              'fivestar_widget' => NULL,
-            ),
-          ),
-          'type' => 'fivestar_formatter_default',
-          'weight' => '6',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_shared_votes',
-      'label' => 'Votos',
-      'required' => 0,
-      'settings' => array(
-        'allow_clear' => 0,
-        'stars' => '5',
-        'target' => 'none',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'fivestar',
-        'settings' => array(),
-        'type' => 'exposed',
-        'weight' => '3',
-      ),
-    ),
-  );
-
   // Exported field: 'node-grupo_artista-field_shared_web'
   $fields['node-grupo_artista-field_shared_web'] = array(
     'field_config' => array(
@@ -1571,7 +1507,6 @@ function grupo_artista_field_default_fields() {
   t('Usuario/Canal de Youtube del grupo/artista');
   t('Usuario/Página de Google+ del grupo/artista');
   t('Usuario/Página de facebook del grupo/artista');
-  t('Votos');
   t('Web');
   t('Youtube');
 

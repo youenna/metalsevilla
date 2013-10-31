@@ -177,12 +177,6 @@ function relaciones_context_default_contexts() {
           'region' => 'header',
           'weight' => '-10',
         ),
-        'views-4ebaa1537cefd6165d706eff2e247278' => array(
-          'module' => 'views',
-          'delta' => '4ebaa1537cefd6165d706eff2e247278',
-          'region' => 'right',
-          'weight' => '-10',
-        ),
       ),
     ),
   );

@@ -17,9 +17,7 @@ function main_menu_menu_default_menu_links() {
     'router_path' => 'actualidad/cronicas',
     'link_title' => 'Crónicas',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
@@ -27,7 +25,7 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-48',
-    'parent_path' => 'actualidad/noticias',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:actualidad/entrevistas
   $menu_links['main-menu:actualidad/entrevistas'] = array(
@@ -36,17 +34,15 @@ function main_menu_menu_default_menu_links() {
     'router_path' => 'actualidad/entrevistas',
     'link_title' => 'Entrevistas',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
-    'parent_path' => 'actualidad/noticias',
+    'weight' => '-45',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:actualidad/eventos
   $menu_links['main-menu:actualidad/eventos'] = array(
@@ -55,9 +51,7 @@ function main_menu_menu_default_menu_links() {
     'router_path' => 'actualidad/eventos',
     'link_title' => 'Eventos',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
@@ -65,25 +59,24 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-49',
-    'parent_path' => 'actualidad/noticias',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:actualidad/noticias
   $menu_links['main-menu:actualidad/noticias'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'actualidad/noticias',
     'router_path' => 'actualidad/noticias',
-    'link_title' => 'Actualidad',
+    'link_title' => 'Noticias',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
+    'weight' => '-50',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:grupos-artistas
   $menu_links['main-menu:grupos-artistas'] = array(
@@ -92,44 +85,22 @@ function main_menu_menu_default_menu_links() {
     'router_path' => 'grupos-artistas',
     'link_title' => 'Grupos y Artistas',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '1',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: main-menu:node/8055
-  $menu_links['main-menu:node/8055'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/8055',
-    'router_path' => 'node/%',
-    'link_title' => 'Discos',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
-    'parent_path' => 'actualidad/noticias',
+    'weight' => '0',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Actualidad');
   t('Crónicas');
-  t('Discos');
   t('Entrevistas');
   t('Eventos');
   t('Grupos y Artistas');
+  t('Noticias');
 
 
   return $menu_links;
