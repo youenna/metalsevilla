@@ -10,6 +10,28 @@
 function image_styles_image_default_styles() {
   $styles = array();
 
+  // Exported image style: 779x519
+  $styles['779x519'] = array(
+    'name' => '779x519',
+    'effects' => array(
+      15 => array(
+        'label' => 'Escalar y recortar',
+        'help' => 'Escalar y recortar mantendrán la relación de proporciones de la imagen original y se desechará lo que sobre por el lado mayor. Esto es especialmente útil para crear miniaturas perfectamente cuadradas sin deformar la imagen.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '779',
+          'height' => '519',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: image_200x200
   $styles['image_200x200'] = array(
     'name' => 'image_200x200',

@@ -26,59 +26,47 @@ function front_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'header_top',
-          'weight' => '-14',
-        ),
-        'menu-menu-redes-sociales' => array(
-          'module' => 'menu',
-          'delta' => 'menu-redes-sociales',
-          'region' => 'header_top',
-          'weight' => '-13',
-        ),
-        'menu-menu-menu-cabecera' => array(
-          'module' => 'menu',
-          'delta' => 'menu-menu-cabecera',
-          'region' => 'header_top',
-          'weight' => '-12',
-        ),
-        'nice_menus-1' => array(
-          'module' => 'nice_menus',
-          'delta' => 1,
-          'region' => 'header_top',
+        'block-14' => array(
+          'module' => 'block',
+          'delta' => 14,
+          'region' => 'right',
           'weight' => '-10',
         ),
-        'views-actualidad-block_2' => array(
-          'module' => 'views',
-          'delta' => 'actualidad-block_2',
+        'block-10' => array(
+          'module' => 'block',
+          'delta' => 10,
+          'region' => 'right',
+          'weight' => '-9',
+        ),
+        'nivo_slider-nivo_slider' => array(
+          'module' => 'nivo_slider',
+          'delta' => 'nivo_slider',
           'region' => 'content',
-          'weight' => '-21',
+          'weight' => '-10',
         ),
         'views-actualidad-block_1' => array(
           'module' => 'views',
           'delta' => 'actualidad-block_1',
           'region' => 'content',
-          'weight' => '-20',
+          'weight' => '-9',
         ),
         'views-eventos-block_1' => array(
           'module' => 'views',
           'delta' => 'eventos-block_1',
           'region' => 'content',
-          'weight' => '-19',
+          'weight' => '-8',
         ),
-        'views-anuncios-block_1' => array(
-          'module' => 'views',
-          'delta' => 'anuncios-block_1',
-          'region' => 'content',
-          'weight' => '-18',
+        'menu-menu-redes-sociales-footer' => array(
+          'module' => 'menu',
+          'delta' => 'menu-redes-sociales-footer',
+          'region' => 'footer_bottom',
+          'weight' => '-41',
         ),
-        'views-mapa_home-block_1' => array(
-          'module' => 'views',
-          'delta' => 'mapa_home-block_1',
-          'region' => 'content',
-          'weight' => '-17',
+        'menu-menu-enlaces-footer' => array(
+          'module' => 'menu',
+          'delta' => 'menu-enlaces-footer',
+          'region' => 'footer_bottom',
+          'weight' => '-40',
         ),
       ),
     ),
