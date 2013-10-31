@@ -47,7 +47,6 @@ a {
 
 #page #main a:link,
 #page #main a:visited {
-	#color: #FEBD11;
   color: #515151;
 #text-shadow: 1px 1px 1px #333;
 }
@@ -80,7 +79,7 @@ font-family: 'LeagueGothicRegular';
 font-weight: normal !important;
 font-size: 2em;
 font-style: normal !important;
-margin-left: -20px;
+#margin-left: -20px;
 margin-top: 10px;
 padding-bottom: 10px;
 }
@@ -146,7 +145,7 @@ min-height: 42px;
 }
 
 #content-header h2 {
-margin: 0 0 0 -45px
+#margin: 0 0 0 -45px
 }
 
 #content-area .region .block .block-inner .content {
@@ -498,8 +497,8 @@ margin: 0 !important;
 
 #block-system-main-menu .block-inner .content ul.menu li ul {
     background: transparent url(../images/back-submenu.png) 0 0;
-    -webkit-box-shadow:  0px 0px 2px 1px #febd11;
-    box-shadow:  0px 0px 2px 1px #febd11;
+    -webkit-box-shadow:  0px 0px 2px 1px #EF6323;
+    box-shadow:  0px 0px 2px 1px #EF6323;
 }
 
 #block-system-main-menu .block-inner .content ul.menu li ul li {
@@ -510,7 +509,7 @@ margin: 0 !important;
 }
 
 #block-system-main-menu .block-inner .content ul.menu li ul li:hover {
-    background: repeat scroll 0 0 #febd11;
+    background: repeat scroll 0 0 #EF6323;
 
 }
 
@@ -757,7 +756,7 @@ ul.quicktabs-tabs li.active a {
   }
 
   #block-nice_menus-2 ul li a {
-    color: #FEBD11;
+    color: #EF6323;
     display: inline-block;
     font-family: 'LeagueGothicRegular';
     font-size: 1.3em;
@@ -1057,3 +1056,4 @@ ul.pager {
 #block-views-banners_right-block .field-content img {
     width: 100%;
 }
+
