@@ -13,6 +13,87 @@ function front_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'mostrado_siempre';
+  $context->description = 'Contexto para los menús';
+  $context->tag = 'portada';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'header_top',
+          'weight' => '-44',
+        ),
+        'menu-menu-redes-sociales' => array(
+          'module' => 'menu',
+          'delta' => 'menu-redes-sociales',
+          'region' => 'header_top',
+          'weight' => '-43',
+        ),
+        'menu-menu-menu-cabecera' => array(
+          'module' => 'menu',
+          'delta' => 'menu-menu-cabecera',
+          'region' => 'header_top',
+          'weight' => '-42',
+        ),
+        'system-main-menu' => array(
+          'module' => 'system',
+          'delta' => 'main-menu',
+          'region' => 'header_top',
+          'weight' => '-41',
+        ),
+        'views-banners_right-block' => array(
+          'module' => 'views',
+          'delta' => 'banners_right-block',
+          'region' => 'right',
+          'weight' => '-11',
+        ),
+        'menu-menu-redes-sociales-footer' => array(
+          'module' => 'menu',
+          'delta' => 'menu-redes-sociales-footer',
+          'region' => 'footer_bottom',
+          'weight' => '-42',
+        ),
+        'block-12' => array(
+          'module' => 'block',
+          'delta' => 12,
+          'region' => 'footer_bottom',
+          'weight' => '-41',
+        ),
+        'menu-menu-enlaces-footer' => array(
+          'module' => 'menu',
+          'delta' => 'menu-enlaces-footer',
+          'region' => 'footer_bottom',
+          'weight' => '-40',
+        ),
+        'block-13' => array(
+          'module' => 'block',
+          'delta' => 13,
+          'region' => 'footer_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Contexto para los menús');
+  t('portada');
+  $export['mostrado_siempre'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'portada';
   $context->description = 'Contexto para la portada';
   $context->tag = 'portada';
