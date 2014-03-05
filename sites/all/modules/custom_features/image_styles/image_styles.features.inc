@@ -14,7 +14,7 @@ function image_styles_image_default_styles() {
   $styles['779x519'] = array(
     'name' => '779x519',
     'effects' => array(
-      15 => array(
+      12 => array(
         'label' => 'Escalar y recortar',
         'help' => 'Escalar y recortar mantendrán la relación de proporciones de la imagen original y se desechará lo que sobre por el lado mayor. Esto es especialmente útil para crear miniaturas perfectamente cuadradas sin deformar la imagen.',
         'effect callback' => 'image_scale_and_crop_effect',

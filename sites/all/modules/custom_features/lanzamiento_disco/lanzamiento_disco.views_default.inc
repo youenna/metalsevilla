@@ -192,6 +192,16 @@ function lanzamiento_disco_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
   $handler->display->display_options['path'] = 'actualidad/discos/lanzamientos';
 
+  /* Display: Bloque */
+  $handler = $view->new_display('block', 'Bloque', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Lanzamiento';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['block_description'] = 'Ultimo lanzamiento de disco';
+
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
   $handler->display->display_options['pager']['type'] = 'some';
@@ -214,6 +224,9 @@ function lanzamiento_disco_views_default_views() {
     t('Título'),
     t('Estilo'),
     t('Grupo relacionado'),
+    t('Bloque'),
+    t('Lanzamiento'),
+    t('Ultimo lanzamiento de disco'),
     t('Feed'),
   );
   $export['fotos'] = $view;
