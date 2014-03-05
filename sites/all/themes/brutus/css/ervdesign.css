@@ -231,7 +231,8 @@ overflow: hidden;
 
 .front #sidebar-second {
   overflow: visible;
-  width: 520px;
+  width: 25%;
+  #width: 520px;
   margin: 15px auto;
   display: table;
   /*margin-right: 26%;*/
@@ -1035,10 +1036,10 @@ ul.pager {
                 }
                 
                 #block-views-banners_right-block{
-                    float: right;
+                    #float: right;
                 }
                 #block-block-14, #block-block-10{
-                    float: left;
+                    #float: left;
                     width: 230px;
                 }
                 

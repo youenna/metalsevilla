@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Front context feature.
- */
-
-include_once 'front_context.features.inc';

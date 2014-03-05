@@ -14,7 +14,7 @@
 #content #content-inner {
   #background: red;
   overflow: hidden;
-  margin-right: 42%;
+  margin-right: 30%;
 }
 
 /* Slide */
@@ -41,13 +41,13 @@ div.views-slideshow-ddblock-cycle-vsd-default div.slider .slide .slide-inner img
 /* End - Slide */
 
 #block-views-actualidad-block_1 {
-  width: 60%;
+  width: 70%;
   margin: 0;
   #background: orange;
 }
 
 #block-views-eventos-block_1 {
-  width: 38%;
+  width: 30%;
   margin: 0;
   #background: purple;
 }
