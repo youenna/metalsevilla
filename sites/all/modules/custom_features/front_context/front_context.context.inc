@@ -44,42 +44,6 @@ function front_context_context_default_contexts() {
           'region' => 'header_top',
           'weight' => '-42',
         ),
-        'system-main-menu' => array(
-          'module' => 'system',
-          'delta' => 'main-menu',
-          'region' => 'header_top',
-          'weight' => '-41',
-        ),
-        'views-banners_right-block' => array(
-          'module' => 'views',
-          'delta' => 'banners_right-block',
-          'region' => 'right',
-          'weight' => '-11',
-        ),
-        'menu-menu-redes-sociales-footer' => array(
-          'module' => 'menu',
-          'delta' => 'menu-redes-sociales-footer',
-          'region' => 'footer_bottom',
-          'weight' => '-42',
-        ),
-        'block-12' => array(
-          'module' => 'block',
-          'delta' => 12,
-          'region' => 'footer_bottom',
-          'weight' => '-41',
-        ),
-        'menu-menu-enlaces-footer' => array(
-          'module' => 'menu',
-          'delta' => 'menu-enlaces-footer',
-          'region' => 'footer_bottom',
-          'weight' => '-40',
-        ),
-        'block-13' => array(
-          'module' => 'block',
-          'delta' => 13,
-          'region' => 'footer_bottom',
-          'weight' => '-10',
-        ),
       ),
     ),
   );
