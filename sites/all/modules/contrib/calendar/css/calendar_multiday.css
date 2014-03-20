@@ -45,10 +45,10 @@
   font-weight: bold;
 }
 .calendar-calendar td {
-  width: 14%;
+  #width: 14%;
   border: 1px solid #ccc;
   color: #777;
-  text-align: right;
+  text-align: center;
   vertical-align: top;
   margin: 0;
   padding: 0;
@@ -96,7 +96,7 @@
   margin: 0;
 }
 .calendar-calendar td a {
-  font-weight: bold;
+ # font-weight: bold;
   text-decoration: none;
 }
 .calendar-calendar td a:hover {
@@ -559,7 +559,7 @@ table.calendar-legend tr.even .stripe {
 }
 
 .calendar-calendar .month-view .full tr td.single-day.today {
-  border-bottom: 2px solid #7C7F12;
+  border: 2px solid #7C7F12;
 }
 
 .calendar-calendar .month-view .full tr td.multi-day.starts-today {
@@ -777,11 +777,8 @@ table.calendar-legend tr.even .stripe {
   -moz-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   background: none repeat scroll 0 0 #dfdfdf;
-  float: none;
   padding: 5px 0;
   position: absolute;
-  right: 60px;
-  left: auto;
   text-align: right;
   top: 0px;
   width: auto;
@@ -809,7 +806,7 @@ table.calendar-legend tr.even .stripe {
 
 .view .date-nav-wrapper .date-heading h3 {
   line-height: 30px;
-  font-size: 1.7em;
+  font-size: 5.7em;
 }
 
 .view .date-nav-wrapper .date-next {

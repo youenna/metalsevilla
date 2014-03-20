@@ -21,14 +21,20 @@
 ?>
 <div class="calendar-calendar"><div class="month-view">
 <table class="full">
+  <thead>
+    <tr>
+	<th class="<?php print $cell['class']; ?>" id="<?php print $cell['header_id'] ?>">
+	<?php print t('Day'); ?></th>
+	<th class="<?php print $cell['class']; ?>" id="<?php print $cell['header_id'] ?>">
+	<?php print t('Events'); ?></th> 
+    </tr>
+  </thead>
   <tbody>
-<tr>
-    <?php 
+	<?php 
       foreach ((array) $rows as $row) {
-        print $row['data'];
+	print $row['data'];
       } ?>
-</tr>  
-</tbody>
+  </tbody>
 </table>
 </div></div>
 <script>
