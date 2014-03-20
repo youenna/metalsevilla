@@ -211,7 +211,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 #header-menu ul.menu li { display:inline-block; float:left; vertical-align: middle; padding:0; margin:0; }
 
-#header-menu ul.menu li a { outline:none; text-decoration: none; margin:0 25px 0 0; padding:10px 5px; font-size:30px; font-weight:normal; 
+#header-menu ul.menu li a { outline:none; text-decoration: none; margin:0 25px 0 0; padding:10px 5px; font-size:28px; font-weight:normal; 
                             text-align:center; text-transform:uppercase; font-family: "LeagueGothicRegular"; display:block; }
 
 #header-menu ul.menu li.first a { padding-left:0; }
@@ -658,9 +658,13 @@ li { display:list-item; }
 
 .links li { list-style-type:none; }
 
-.item-list ul { margin:0 0 0.25em 1em; padding:0; }
+.item-list ul { 
+    /*margin:0 0 0.25em 1em; */
+    padding:0;
+    list-style: none;
+}
 
-.item-list ul li { margin:0 0 0 5px; padding:0 0 5px 5px; }
+.item-list ul li { margin:0 0 0 0; padding:0 0 5px 5px; }
 
 ol.search-results { padding:0; }
 
@@ -756,33 +760,31 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 
 /* Bloque Agenda maincont */
 
-#block-views-eventos-block_1 {
+.region-content .view-eventos.view-display-id-block_1{
   float: right;
-  width: 30%;
-}
-
-#block-views-eventos-block_1 .block-inner {
+  width: 35%;
   margin: 0;
 }
 
-/* Fin - Bloque Agenda maincont */
-
-/* Bloque mapa front */
-
-#block-views-mapa_home-block_1 {
-  float: right;
-}
-
-/* Fin - Bloque mapa front */
-
 /* Bloque Actualidad */
 
-#block-views-actualidad-block_1 {
-  clear: both;
+.region-content .view-actualidad.view-display-id-block_1{
   float: left;
   width: 60%;
+  clear: both;
+  margin: 0;
 }
 
-#block-views-actualidad-block_1 .block-inner {
-  margin-right: 0 !important;
+.views-field-title{
+    font-family: 'LeagueGothicRegular';
+    font-size: 22px;
+    
+}
+
+.guionnoticias{
+    background-color: #EF6323;
+    display: block;
+    height: 4px;
+    margin-bottom: 10px;
+    width: 90%;
 }
