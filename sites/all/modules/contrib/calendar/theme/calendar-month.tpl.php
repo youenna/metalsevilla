@@ -22,11 +22,13 @@
 <div class="calendar-calendar"><div class="month-view">
 <table class="full">
   <tbody>
+<tr>
     <?php 
       foreach ((array) $rows as $row) {
         print $row['data'];
       } ?>
-  </tbody>
+</tr>  
+</tbody>
 </table>
 </div></div>
 <script>
