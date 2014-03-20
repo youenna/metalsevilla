@@ -536,7 +536,7 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; m
 #block-menu-menu-menu-cabecera {
     float: right;
     overflow: hidden;
-    padding: 14px 20px 0 0 !important;
+    padding: 14px 20px 0 0;
 }
 
 #block-menu-menu-menu-cabecera  ul.menu {
@@ -574,9 +574,9 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; m
     color: #f2f2f2;
 }
 
-#block-system-main-menu, #block-nice_menus-1, #block-search-form, #block-menu-menu-redes-sociales, #block-menu-menu-menu-cabecera {
+#block-system-main-menu, #block-nice_menus-1, #block-search-form, #block-menu-menu-redes-sociales {
     margin: 0 ;
-    padding: 0 ;
+    padding: 0;
 }
 
 /* 
