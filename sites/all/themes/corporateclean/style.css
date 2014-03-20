@@ -298,6 +298,12 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; m
 
 #footer-bottom ul.menu ul.menu { display:none; }
 
+#footer-bottom {
+  background: url("images/back-footer.jpg") repeat-x scroll center top rgba(0, 0, 0, 0);
+  min-height: 187px;
+  overflow: hidden;
+}
+
 /* 
  * Comments 
  */
@@ -775,9 +781,13 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
   margin: 0;
 }
 
+
+/* Comun de home */
+
 .views-field-title{
     font-family: 'LeagueGothicRegular';
     font-size: 22px;
+    margin: 10px 0;
     
 }
 
@@ -785,6 +795,6 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
     background-color: #EF6323;
     display: block;
     height: 4px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     width: 90%;
 }
