@@ -44,6 +44,24 @@ function front_context_context_default_contexts() {
           'region' => 'header_top',
           'weight' => '-42',
         ),
+        'views-banners_right-block' => array(
+          'module' => 'views',
+          'delta' => 'banners_right-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'block-10' => array(
+          'module' => 'block',
+          'delta' => 10,
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'block-14' => array(
+          'module' => 'block',
+          'delta' => 14,
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
@@ -71,18 +89,6 @@ function front_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-14' => array(
-          'module' => 'block',
-          'delta' => 14,
-          'region' => 'right',
-          'weight' => '-10',
-        ),
-        'block-10' => array(
-          'module' => 'block',
-          'delta' => 10,
-          'region' => 'right',
-          'weight' => '-9',
-        ),
         'nivo_slider-nivo_slider' => array(
           'module' => 'nivo_slider',
           'delta' => 'nivo_slider',
@@ -100,18 +106,6 @@ function front_context_context_default_contexts() {
           'delta' => 'eventos-block_1',
           'region' => 'content',
           'weight' => '-8',
-        ),
-        'menu-menu-redes-sociales-footer' => array(
-          'module' => 'menu',
-          'delta' => 'menu-redes-sociales-footer',
-          'region' => 'footer_bottom',
-          'weight' => '-41',
-        ),
-        'menu-menu-enlaces-footer' => array(
-          'module' => 'menu',
-          'delta' => 'menu-enlaces-footer',
-          'region' => 'footer_bottom',
-          'weight' => '-40',
         ),
       ),
     ),
