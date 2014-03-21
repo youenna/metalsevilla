@@ -17,7 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 { margin:25px 0 20px 0; line-height:120%; text-shadow: 1px 1px 1px #EAF1EA; font-family: "LeagueGothicRegular",Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; }
 
-h1 { font-size: 32px; margin:0 0 20px 0; }
+h1 { font-size: 3.7em; margin:0 0 20px 0; }
 
 h2 { font-size: 20px; color:#1487d4; font-weight:normal; }
 
@@ -44,9 +44,10 @@ a, li a.active { text-decoration:none; }
 
 a img { border:none; outline: none; display:block; overflow:hidden; }
 
-img.masked, .field-type-image img { background:transparent url('images/pattern.png'); border:1px solid #d8d8d8; padding:10px; margin:10px 0; }
+img.masked, .field-type-image img { background:transparent url('images/pattern.png'); border:1px solid #d8d8d8; padding:10px; margin:0 auto; margin-bottom:10px; }
 
-img { max-width: 100%; height: auto; 
+img { 
+	height: auto; 
       -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 code { font-family: "Courier New", Courier, monospace; }
@@ -781,8 +782,19 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
   margin: 0;
 }
 
+.region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-image, .region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-rep-image{
+margin: 0 auto;
+display: table;
+
+}
+.views-field-field-shared-description{
+	text-align: justify;
+}
 
 /* Comun de home */
+#block-nivo-slider-nivo-slider{
+        margin: 0 0 15px 0;
+}
 
 .views-field-title{
     font-family: 'LeagueGothicRegular';
@@ -797,9 +809,27 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
     height: 4px;
     margin: 10px 0;
     width: 90%;
+clear:both;
 }
 
 .service-links li {
 float: left;
 margin: 10px;
+}
+
+.view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-rep-image,
+.view-id-noticias.view-display-id-page .views-field-field-shared-image,
+.view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image { 
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.field-type-image{
+margin: 0 auto;
+display: table;
+}
+
+#block-views-actualidad-block-1 .views-field-field-shared-image img, 
+#block-views-eventos-block-1 .views-field-field-shared-image img,
+#block-views-actualidad-block-1 .views-field-field-shared-rep-image img{
+	width: 100%;
 }
