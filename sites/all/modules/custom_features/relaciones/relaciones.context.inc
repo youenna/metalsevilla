@@ -112,36 +112,7 @@ function relaciones_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-3df97544bb32f4ca62f53a43577069bd' => array(
-          'module' => 'views',
-          'delta' => '3df97544bb32f4ca62f53a43577069bd',
-          'region' => 'left',
-          'weight' => '-10',
-        ),
-        'views-8bd670d8c665375436c3fd0e6b8d41a2' => array(
-          'module' => 'views',
-          'delta' => '8bd670d8c665375436c3fd0e6b8d41a2',
-          'region' => 'left',
-          'weight' => '-9',
-        ),
-        'views-34b4d0b75416355a51dfb17350d5e33c' => array(
-          'module' => 'views',
-          'delta' => '34b4d0b75416355a51dfb17350d5e33c',
-          'region' => 'left',
-          'weight' => '-8',
-        ),
-        'views-bb33b54c359e2a78147fb12d55b012f1' => array(
-          'module' => 'views',
-          'delta' => 'bb33b54c359e2a78147fb12d55b012f1',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables

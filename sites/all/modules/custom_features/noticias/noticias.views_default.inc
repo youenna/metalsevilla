@@ -102,8 +102,36 @@ function noticias_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Portada */
+  $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
+  $handler->display->display_options['fields']['field_shared_image']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_image']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_image']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_image']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
+    'image_style' => 'img_logo_220',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_shared_image']['field_api_classes'] = 0;
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -134,6 +162,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['html'] = 0;
@@ -144,16 +173,39 @@ function noticias_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_shared_description']['settings'] = array(
-    'trim_length' => '300',
+    'trim_length' => '450',
   );
   $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
+  /* Campo: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span class="guionnoticias"></span>';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -162,36 +214,40 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'noticia' => 'noticia',
   );
-  $handler->display->display_options['filters']['type']['group'] = '0';
-  /* Filter criterion: Contenido: Título */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Título';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['required'] = 0;
-  $handler->display->display_options['filters']['title']['expose']['multiple'] = FALSE;
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Campo: Estilo (field_shared_style) */
   $handler->display->display_options['filters']['field_shared_style_tid']['id'] = 'field_shared_style_tid';
   $handler->display->display_options['filters']['field_shared_style_tid']['table'] = 'field_data_field_shared_style';
   $handler->display->display_options['filters']['field_shared_style_tid']['field'] = 'field_shared_style_tid';
+  $handler->display->display_options['filters']['field_shared_style_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_style_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator_id'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['label'] = 'Estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['identifier'] = 'field_shared_style_tid';
+  $handler->display->display_options['filters']['field_shared_style_tid']['expose']['multiple'] = 1;
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['reduce'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_style_tid']['vocabulary'] = 'estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['error_message'] = 0;
+  /* Filter criterion: Contenido: Grupos relacionados (field_shared_rel_group) */
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['field'] = 'field_shared_rel_group_nid';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['group'] = 1;
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator_id'] = 'field_shared_rel_group_nid_op';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['multiple'] = 1;
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
   /* Filter criterion: Campo: Provincia (field_shared_state) */
   $handler->display->display_options['filters']['field_shared_state_tid']['id'] = 'field_shared_state_tid';
   $handler->display->display_options['filters']['field_shared_state_tid']['table'] = 'field_data_field_shared_state';
   $handler->display->display_options['filters']['field_shared_state_tid']['field'] = 'field_shared_state_tid';
+  $handler->display->display_options['filters']['field_shared_state_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_state_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['operator_id'] = 'field_shared_state_tid_op';
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['label'] = 'Provincia';
@@ -202,27 +258,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
   $handler->display->display_options['filters']['field_shared_state_tid']['error_message'] = 1;
-  /* Filter criterion: Contenido: Grupos relacionados (field_shared_rel_group) */
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['field'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator_id'] = 'field_shared_rel_group_nid_op';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo relacionado';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
-  /* Filter criterion: Contenido: Establecimiento relacionado (field_shared_rel_local) */
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['id'] = 'field_shared_rel_local_nid';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['table'] = 'field_data_field_shared_rel_local';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['field'] = 'field_shared_rel_local_nid';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['expose']['operator_id'] = 'field_shared_rel_local_nid_op';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['expose']['label'] = 'Establecimiento relacionado';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['expose']['operator'] = 'field_shared_rel_local_nid_op';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['expose']['identifier'] = 'field_shared_rel_local_nid';
-  $handler->display->display_options['filters']['field_shared_rel_local_nid']['expose']['reduce'] = 0;
-  $handler->display->display_options['path'] = 'actualidad/noticias';
+  $handler->display->display_options['path'] = 'noticias';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
@@ -243,11 +279,10 @@ function noticias_views_default_views() {
     t('- All -'),
     t('Offset'),
     t('Page'),
-    t('Título'),
+    t('<span class="guionnoticias"></span>'),
     t('Estilo'),
+    t('Grupo'),
     t('Provincia'),
-    t('Grupo relacionado'),
-    t('Establecimiento relacionado'),
     t('Feed'),
   );
   $export['noticias'] = $view;

@@ -42,22 +42,6 @@ function main_menu_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-45',
   );
-  // Exported menu link: main-menu:actualidad/noticias
-  $menu_links['main-menu:actualidad/noticias'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'actualidad/noticias',
-    'router_path' => 'actualidad/noticias',
-    'link_title' => 'Noticias',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
-  );
   // Exported menu link: main-menu:grupos-artistas
   $menu_links['main-menu:grupos-artistas'] = array(
     'menu_name' => 'main-menu',
@@ -79,7 +63,6 @@ function main_menu_menu_default_menu_links() {
   t('Crónicas');
   t('Entrevistas');
   t('Grupos y Artistas');
-  t('Noticias');
 
 
   return $menu_links;

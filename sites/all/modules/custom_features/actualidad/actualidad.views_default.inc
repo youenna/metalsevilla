@@ -427,7 +427,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['trim_whitespace'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '170';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '350';
   $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;

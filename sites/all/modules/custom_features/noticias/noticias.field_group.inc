@@ -24,7 +24,9 @@ function noticias_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_shared_description',
-      1 => 'title',
+      1 => 'field_shared_image',
+      2 => 'title',
+      3 => 'field_shared_video',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
