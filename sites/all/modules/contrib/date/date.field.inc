@@ -129,6 +129,12 @@ function date_field_formatter_view($entity_type, $entity, $field, $instance, $la
     'add_microdata' => module_exists('microdata'),
   );
 
+  // If the microdata module is enabled, the microdata mapping will have been
+  // passed in via the entity.
+  if ($variables['add_microdata'] && isset($entity->microdata[$field['field_name']])) {
+    $variables['microdata'] = $entity->microdata[$field['field_name']];
+  }
+
   // If there is an RDf mapping for this date field, pass it down to the theme.
   $rdf_mapping = array();
   if (!empty($entity->rdf_mapping) && function_exists('rdf_rdfa_attributes')) {
@@ -136,11 +142,10 @@ function date_field_formatter_view($entity_type, $entity, $field, $instance, $la
       $variables['rdf_mapping'] = $rdf_mapping = $entity->rdf_mapping[$field['field_name']];
     }
   }
-  // If Microdata is enabled, pass the microdata attributes for this field down
-  // to the theme.
-  if ($variables['add_microdata'] && isset($entity->microdata[$field['field_name']])) {
-    $variables['microdata'] = $microdata = $entity->microdata[$field['field_name']];
-  }
+
+  // Give other modules a chance to prepare the entity before formatting it.
+  drupal_alter('date_formatter_pre_view', $entity, $variables);
+
   // See if we are only supposed to display a selected
   // item from multiple value date fields.
   $selected_deltas = array();
@@ -297,12 +302,17 @@ function date_field_widget_info() {
       'field types' => array('date', 'datestamp', 'datetime'),
      ) + $settings,
   );
+
   if (module_exists('date_popup')) {
     $info['date_popup'] = array(
       'label' =>  t('Pop-up calendar'),
       'field types' => array('date', 'datestamp', 'datetime'),
     ) + $settings;
   }
+
+  // The date text widget should use an increment of 1.
+  $info['date_text']['increment'] = 1;
+
   return $info;
 }
 

@@ -1,10 +1,8 @@
 <?php
-
 /**
  * @file
  * Defines date/time field types.
  */
-
 module_load_include('theme', 'date', 'date');
 module_load_include('inc', 'date', 'date.field');
 module_load_include('inc', 'date', 'date_elements');
@@ -78,6 +76,8 @@ function date_theme() {
         'attributes' => array(),
         'rdf_mapping' => NULL,
         'add_rdf' => NULL,
+        'microdata' => NULL,
+        'add_microdata' => NULL,
       ),
     ),
     'date_display_range' => $base + array(
@@ -95,6 +95,8 @@ function date_theme() {
         'attributes_end' => array(),
         'rdf_mapping' => NULL,
         'add_rdf' => NULL,
+        'microdata' => NULL,
+        'add_microdata' => NULL,
     )),
     'date_display_combination' => $base + array(
       'variables' => array(
@@ -110,6 +112,8 @@ function date_theme() {
         'attributes' => array(),
         'rdf_mapping' => NULL,
         'add_rdf' => NULL,
+        'microdata' => NULL,
+        'add_microdata' => NULL,
       ),
     ),
     'date_display_interval' => $base + array(
@@ -247,7 +251,7 @@ function date_formatter_process($formatter, $entity_type, $entity, $field, $inst
         elseif ($format == 'format_calendar_day') {
            $dates[$processed]['calendar_day'] = date_format_calendar_day($date);
         }
-        elseif ($format == 'U') {
+        elseif ($format == 'U' || $format == 'r' || $format == 'c') {
           $dates[$processed]['formatted'] = date_format_date($date, 'custom', $format);
           $dates[$processed]['formatted_date'] = date_format_date($date, 'custom', $format);
           $dates[$processed]['formatted_time'] = '';
@@ -529,48 +533,52 @@ function date_entity_metadata_property_info_alter(&$info, $entity_type, $field, 
     $property['setter callback'] = 'date_entity_metadata_field_setter';
     unset($property['query callback']);
   }
-
-  // Define a simple data structure containing the start date.
-  $property['type'] = ($field['cardinality'] != 1) ? 'list<struct>' : 'struct';
-  $property['getter callback'] = 'entity_metadata_field_verbatim_get';
-  $property['setter callback'] = 'entity_metadata_field_verbatim_set';
-  $property['property info'] = array(
-    'value' => array(
-      'type' => 'date',
-      'label' => t('Start date'),
-      'getter callback' => 'date_entity_metadata_struct_getter',
-      'setter callback' => 'date_entity_metadata_struct_setter',
-      // The getter and setter callbacks for 'value' and 'value2'
-      // will not provide the field name as $name, we'll add it to $info.
-      'field_name' => $field['field_name'],
-      // Alert Microdata module that this value can be exposed in microdata.
-      'microdata' => TRUE,
-    ),
-  );
-  // If this field has an end date, add info for end date and duration to the
-  // data structure.
   if (!empty($field['settings']['todate'])) {
-    $property['property info']['value2'] = array(
-      'type' => 'date',
-      'label' => t('End date'),
-      'getter callback' => 'date_entity_metadata_struct_getter',
-      'setter callback' => 'date_entity_metadata_struct_setter',
-      // The getter and setter callbacks for 'value' and 'value2'
-      // will not provide the field name as $name, we'll add it to $info.
-      'field_name' => $field['field_name'],
+    // Define a simple data structure containing both dates.
+    $property['type'] = ($field['cardinality'] != 1) ? 'list<struct>' : 'struct';
+    $property['getter callback'] = 'entity_metadata_field_verbatim_get';
+    $property['setter callback'] = 'entity_metadata_field_verbatim_set';
+    $property['property info'] = array(
+      'value' => array(
+        'type' => 'date',
+        'label' => t('Start date'),
+        'getter callback' => 'date_entity_metadata_struct_getter',
+        'setter callback' => 'date_entity_metadata_struct_setter',
+        // The getter and setter callbacks for 'value' and 'value2'
+        // will not provide the field name as $name, we'll add it to $info.
+        'field_name' => $field['field_name'],
+        // Alert Microdata module that this value can be exposed in microdata.
+        'microdata' => TRUE,
+      ),
+      'value2' => array(
+        'type' => 'date',
+        'label' => t('End date'),
+        'getter callback' => 'date_entity_metadata_struct_getter',
+        'setter callback' => 'date_entity_metadata_struct_setter',
+        // The getter and setter callbacks for 'value' and 'value2'
+        // will not provide the field name as $name, we'll add it to $info.
+        'field_name' => $field['field_name'],
+        // Alert Microdata module that this value can be exposed in microdata.
+        'microdata' => TRUE,
+      ),
+      'duration' => array(
+        'type' => 'duration',
+        'label' => t('Duration'),
+        'desription' => t('The duration of the time period given by the dates.'),
+        'getter callback' => 'date_entity_metadata_duration_getter',
+        // No setter callback for duration.
+        // The getter callback for duration will not provide the field name
+        // as $name, we'll add it to $info.
+        'field_name' => $field['field_name'],
+      ),
     );
-    $property['property info']['duration'] = array(
-      'type' => 'duration',
-      'label' => t('Duration'),
-      'desription' => t('The duration of the time period given by the dates.'),
-      'getter callback' => 'date_entity_metadata_duration_getter',
-      // No setter callback for duration.
-      // The getter callback for duration will not provide the field name
-      // as $name, we'll add it to $info.
-      'field_name' => $field['field_name'],
-    );
+    unset($property['query callback']);
   }
-  unset($property['query callback']);
+  else {
+    // If this doesn't have a todate, it is handled as a date rather than a
+    // struct. Enable microdata on the field itself rather than the properties.
+    $property['microdata'] = TRUE;
+  }
 }
 
 /**
