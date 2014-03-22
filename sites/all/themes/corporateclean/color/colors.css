@@ -39,7 +39,6 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f2f2f', end
 #header-menu ul.menu li.expanded ul.menu, #navigation .block-superfish ul.sf-menu li, #navigation .block-superfish ul.sf-menu li li a { background: #222222; }
 
 #header-menu ul.menu li.expanded ul.menu li a, #footer .block ul.menu li a, #navigation .block-superfish ul.sf-menu li li a { border-bottom:1px solid #353535; }
-#footer-bottom { border-top:1px solid #353535; }
 ul.secondary-menu li, #footer-bottom ul.menu li { border-right:1px solid #353535; }
 
 #header-menu ul.menu li ul.menu li a:hover,
@@ -86,23 +85,6 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', end
 
 #footer { background:#181818; }
 
-#footer-bottom { 
-#background: #1a1a1a;
-/* IE10 */ 
-#background-image: -ms-linear-gradient(top, #262626 0%, #1a1a1a 100%);
-/* Mozilla Firefox */ 
-#background-image: -moz-linear-gradient(top, #262626 0%, #1a1a1a 100%);
-/* Opera */ 
-#background-image: -o-linear-gradient(top, #262626 0%, #1a1a1a 100%);
-/* Webkit (Safari/Chrome 10) */ 
-#background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #262626), color-stop(1, #1a1a1a));
-/* Webkit (Chrome 11+) */ 
-#background-image: -webkit-linear-gradient(top, #262626 0%, #1a1a1a 100%);
-/* Proposed W3C Markup */ 
-#background-image: linear-gradient(top, #262626 0%, #1a1a1a 100%);
-/* IE6-9 */ 
-#filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#1a1a1a'); 
-}
 
 .links ul li a, a.more, #comments ul.links li a,
 input[type="submit"], input[type="reset"], input[type="button"] { color:#fefefe; text-shadow: 0 1px 1px #003547; 

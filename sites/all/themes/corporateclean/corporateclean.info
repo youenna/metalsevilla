@@ -9,10 +9,10 @@ stylesheets[all and (max-width: 760px)][] = css/mobile.css
 stylesheets[all][] = style.css
 stylesheets[all][] = color/colors.css
 
-regions[header_top] = 'Header top'
 regions[navigation] = Navigation
 regions[search_area] = Search area
 regions[highlighted] = Highlighted
+regions[content_top_below_title] = 'Content top below title'
 regions[content] = Content
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar

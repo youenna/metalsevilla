@@ -1,17 +1,6 @@
-<!-- HEADER TOP -->
-    <?php if ($page['header_top']): ?>
-      <div id="header-top">
-          <div id="header-top-wrapper">
-            <div id="header-top-inner">
-              <?php print render($page['header_top']); ?>
-            </div><!-- /header-inner -->
-          </div><!-- /header-top-wapper -->
-      </div><!-- /header-top (full screen) -->
-    <?php endif; ?>
-
-
 <!-- #header -->
 <div id="header">
+	<?php print render($page['search_area']); ?>
 	<!-- #header-inside -->
     <div id="header-inside" class="container_12 clearfix">
     	<!-- #header-inside-left -->
@@ -36,8 +25,7 @@
         
         <!-- #header-inside-right -->    
         <div id="header-inside-right" class="grid_4">
-
-			<?php print render($page['search_area']); ?>
+	<?php print render($page['banner']); ?>
 
         </div><!-- EOF: #header-inside-right -->
     
@@ -126,6 +114,7 @@
             <?php print render($title_suffix); ?>
             
             <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
+	<?php print render($page['content_top_below_title']); ?>
             <?php print render($page['content']); ?>
             <?php print $feed_icons; ?>
             
