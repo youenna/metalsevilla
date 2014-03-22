@@ -24,7 +24,8 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '-49',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:actualidad/entrevistas
   $menu_links['main-menu:actualidad/entrevistas'] = array(
@@ -40,7 +41,8 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-45',
+    'weight' => '-47',
+    'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:grupos-artistas
   $menu_links['main-menu:grupos-artistas'] = array(
@@ -56,7 +58,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-44',
+    'weight' => '-48',
   );
   // Translatables
   // Included for use with string extractors like potx.

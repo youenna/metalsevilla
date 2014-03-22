@@ -159,9 +159,9 @@ function grupo_artista_field_group_info() {
       1 => 'field_shared_state',
       2 => 'field_activity',
     ),
-    'format_type' => 'div',
+    'format_type' => 'hidden',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => '',
       'instance_settings' => array(
         'description' => '',
         'classes' => '',

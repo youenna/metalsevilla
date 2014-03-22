@@ -182,14 +182,14 @@ function critica_disco_field_default_fields() {
       'settings' => array(
         'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 'disco',
           'entrevista' => 0,
           'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 0,
           'lanzamiento_disco' => 0,
@@ -438,7 +438,7 @@ function critica_disco_field_default_fields() {
       'bundle' => 'critica_disco',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Inscribe el disco en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -551,7 +551,6 @@ function critica_disco_field_default_fields() {
   t('Escribe el nombre del grupo y selecciónalo cuando se autocomplete automáticamente, así estará relacionado con el grupo al que pertenece.');
   t('Estilo');
   t('Grupos relacionados');
-  t('Inscribe el disco en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.');
   t('Portada');
   t('Valoración');
 

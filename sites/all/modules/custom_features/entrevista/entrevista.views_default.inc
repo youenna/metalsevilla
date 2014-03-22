@@ -52,7 +52,7 @@ function entrevista_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Fotos */
+  /* Campo: Campo: Fotos */
   $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
@@ -88,7 +88,7 @@ function entrevista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_rep_image']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_image']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_shared_rep_image']['field_api_classes'] = 0;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';

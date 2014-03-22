@@ -68,7 +68,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -124,7 +124,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Fotos */
+  /* Campo: Campo: Fotos */
   $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
@@ -160,7 +160,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_rep_image']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_image']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_shared_rep_image']['field_api_classes'] = 0;
-  /* Campo: Contenido: Portada */
+  /* Campo: Campo: Imagen */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -206,7 +206,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -322,10 +322,10 @@ function actualidad_views_default_views() {
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Portada */
+  /* Campo: Campo: Imagen */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -355,7 +355,7 @@ function actualidad_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_shared_image']['field_api_classes'] = 0;
-  /* Campo: Contenido: Fotos */
+  /* Campo: Campo: Fotos */
   $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
   $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
@@ -415,7 +415,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -719,7 +719,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -744,7 +744,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
-  /* Campo: Contenido: Portada */
+  /* Campo: Campo: Imagen */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';

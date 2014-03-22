@@ -246,12 +246,9 @@ function evento_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'imagen_cabecera',
-          ),
-          'type' => 'image',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__large__original',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -313,14 +310,14 @@ function evento_field_default_fields() {
       'settings' => array(
         'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 'disco',
           'entrevista' => 0,
           'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 0,
           'lanzamiento_disco' => 0,
@@ -365,13 +362,13 @@ function evento_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'noderefcreate',
+        'module' => 'node_reference',
         'settings' => array(
           'autocomplete_match' => 'contains',
           'autocomplete_path' => 'node_reference/autocomplete',
           'size' => '60',
         ),
-        'type' => 'noderefcreate_autocomplete',
+        'type' => 'node_reference_autocomplete',
         'weight' => '4',
       ),
     ),
@@ -746,11 +743,11 @@ function evento_field_default_fields() {
       'bundle' => 'evento',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Inscribe el evento en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.
+      'description' => '
 ',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
@@ -782,6 +779,8 @@ function evento_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('
+');
   t('Cartel');
   t('Descripción');
   t('Disco relacionado');
@@ -792,8 +791,6 @@ function evento_field_default_fields() {
   t('Estilo');
   t('Fechas');
   t('Grupos relacionados');
-  t('Inscribe el evento en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.
-');
   t('Precio anticipada');
   t('Precio de la entrada al evento anticipada');
   t('Precio de la entrada al evento en taquilla

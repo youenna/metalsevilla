@@ -52,7 +52,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -103,7 +103,7 @@ function noticias_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Portada */
+  /* Campo: Campo: Imagen */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -148,7 +148,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Campo: Contenido: Descripción */
+  /* Campo: Campo: Descripción */
   $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
   $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
@@ -258,7 +258,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
   $handler->display->display_options['filters']['field_shared_state_tid']['error_message'] = 1;
-  $handler->display->display_options['path'] = 'noticias';
+  $handler->display->display_options['path'] = 'actualidad/noticias';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');

@@ -154,6 +154,96 @@ function noticias_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-noticia-field_shared_rel_disc'
+  $fields['node-noticia-field_shared_rel_disc'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_rel_disc',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'module' => 'node_reference',
+      'settings' => array(
+        'profile2_private' => FALSE,
+        'referenceable_types' => array(
+          'banner' => 0,
+          'critica_disco' => 0,
+          'cronica' => 0,
+          'disco' => 'disco',
+          'entrevista' => 0,
+          'establecimiento' => 0,
+          'evento' => 0,
+          'faq' => 0,
+          'foto' => 0,
+          'grupo_artista' => 0,
+          'lanzamiento_disco' => 0,
+          'noticia' => 0,
+          'page' => 0,
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'noticia',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_rel_disc',
+      'label' => 'Disco relacionado',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'node_reference',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'node_reference/autocomplete',
+          'size' => '60',
+        ),
+        'type' => 'node_reference_autocomplete',
+        'weight' => '3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-noticia-field_shared_rel_event'
   $fields['node-noticia-field_shared_rel_event'] = array(
     'field_config' => array(
@@ -236,7 +326,7 @@ function noticias_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -323,7 +413,7 @@ function noticias_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '2',
+        'weight' => '5',
       ),
     ),
   );
@@ -404,14 +494,14 @@ function noticias_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'noderefcreate',
+        'module' => 'node_reference',
         'settings' => array(
           'autocomplete_match' => 'contains',
           'autocomplete_path' => 'node_reference/autocomplete',
           'size' => '60',
         ),
-        'type' => 'noderefcreate_autocomplete',
-        'weight' => '4',
+        'type' => 'node_reference_autocomplete',
+        'weight' => '6',
       ),
     ),
   );
@@ -477,6 +567,7 @@ function noticias_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Descripción');
+  t('Disco relacionado');
   t('Establecimiento relacionado');
   t('Evento relacionado');
   t('Grupos relacionados');

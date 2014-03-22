@@ -131,12 +131,9 @@ function disco_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => 'file',
-            'image_style' => 'image_600width',
-          ),
-          'type' => 'image',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightshow__image_200x200__original',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -168,7 +165,7 @@ function disco_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '-4',
+        'weight' => '-3',
       ),
     ),
   );
@@ -298,7 +295,7 @@ function disco_field_default_fields() {
       'bundle' => 'disco',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Inscribe el disco en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -394,7 +391,7 @@ function disco_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '-3',
+        'weight' => '-2',
       ),
     ),
   );
@@ -465,7 +462,7 @@ function disco_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '-2',
+        'weight' => '-4',
       ),
     ),
   );
@@ -482,7 +479,6 @@ function disco_field_default_fields() {
   t('Escribe el nombre del grupo y selecciónalo cuando se autocomplete automáticamente, así estará relacionado con el grupo al que pertenece.');
   t('Estilo');
   t('Grupos relacionados');
-  t('Inscribe el disco en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.');
   t('Portada');
 
   return $fields;

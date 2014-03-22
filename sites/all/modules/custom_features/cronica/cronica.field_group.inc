@@ -27,7 +27,8 @@ function cronica_field_group_info() {
       1 => 'field_shared_description',
       2 => 'field_shared_rep_image',
       3 => 'field_shared_score2',
-      4 => 'title',
+      4 => 'field_paragraph',
+      5 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

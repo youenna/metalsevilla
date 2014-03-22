@@ -26,8 +26,8 @@ function disco_field_group_info() {
       0 => 'field_shared_image',
       1 => 'field_songs',
       2 => 'field_year',
-      3 => 'title',
-      4 => 'field_link_disc',
+      3 => 'field_link_disc',
+      4 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

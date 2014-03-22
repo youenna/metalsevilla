@@ -32,7 +32,7 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Campo: Contenido: Disco Reproductor */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_disc']['id'] = 'field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['table'] = 'field_data_field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['field'] = 'field_shared_disc';
@@ -56,11 +56,6 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_disc']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_shared_disc']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_disc']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_disc']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 0,
-  );
-  $handler->display->display_options['fields']['field_shared_disc']['field_api_classes'] = 0;
   /* Filter criterion: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -87,7 +82,7 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Disco Reproductor */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_disc']['id'] = 'field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['table'] = 'field_data_field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['field'] = 'field_shared_disc';
@@ -111,12 +106,6 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_disc']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_disc']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_disc']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_disc']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_shared_disc']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 0,
-  );
-  $handler->display->display_options['fields']['field_shared_disc']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Contenido: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
@@ -150,7 +139,7 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Disco Reproductor */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_disc']['id'] = 'field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['table'] = 'field_data_field_shared_disc';
   $handler->display->display_options['fields']['field_shared_disc']['field'] = 'field_shared_disc';
@@ -174,12 +163,6 @@ function grupo_artista_views_default_views() {
   $handler->display->display_options['fields']['field_shared_disc']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_disc']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_disc']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_disc']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_shared_disc']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 0,
-  );
-  $handler->display->display_options['fields']['field_shared_disc']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Contenido: Título */
   $handler->display->display_options['arguments']['title']['id'] = 'title';

@@ -51,11 +51,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Selecciona el instrumento que utiliza el usuario seleccionado anteriormente.',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -71,6 +71,76 @@ function grupo_artista_field_default_fields() {
         'settings' => array(),
         'type' => 'taxonomy_hs',
         'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_member-field_shared_image'
+  $fields['field_collection_item-field_member-field_shared_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'profile2_private' => FALSE,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_member',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__medium__original',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_shared_image',
+      'label' => 'Foto',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 1,
+        'file_directory' => 'miembro_grupo',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '2 MB',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '1',
       ),
     ),
   );
@@ -111,11 +181,11 @@ function grupo_artista_field_default_fields() {
       'description' => 'Nombre del componente del grupo o nombre del artista que no es usuario de MetalSevilla.',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -130,10 +200,10 @@ function grupo_artista_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => '60',
+          'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '1',
+        'weight' => '0',
       ),
     ),
   );
@@ -235,6 +305,7 @@ function grupo_artista_field_default_fields() {
           6 => 0,
           7 => 0,
           8 => 0,
+          9 => 0,
         ),
         'referenceable_status' => array(
           0 => 0,
@@ -276,7 +347,7 @@ function grupo_artista_field_default_fields() {
         'settings' => array(
           'autocomplete_match' => 'contains',
           'autocomplete_path' => 'user_reference/autocomplete',
-          'size' => '60',
+          'size' => '30',
         ),
         'type' => 'user_reference_autocomplete',
         'weight' => 0,
@@ -322,9 +393,8 @@ function grupo_artista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
-          'module' => 'list',
           'settings' => array(),
-          'type' => 'list_default',
+          'type' => 'hidden',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -469,61 +539,6 @@ function grupo_artista_field_default_fields() {
         'settings' => array(),
         'type' => 'field_collection_embed',
         'weight' => 0,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-grupo_artista-field_shared_disc'
-  $fields['node-grupo_artista-field_shared_disc'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_shared_disc',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'number',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'number_integer',
-    ),
-    'field_instance' => array(
-      'bundle' => 'grupo_artista',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Copia aquí el número que aparece al final de la URL del disco en Jamendo que generará el reproductor del grupo',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_shared_disc',
-      'label' => 'Disco Reproductor',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '1',
       ),
     ),
   );
@@ -824,7 +839,7 @@ function grupo_artista_field_default_fields() {
           'label' => 'hidden',
           'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'lightbox2__lightbox__medium__original',
+          'type' => 'lightbox2__lightbox__large__original',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -1100,9 +1115,8 @@ function grupo_artista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
-          'module' => 'hs_taxonomy',
           'settings' => array(),
-          'type' => 'hs_taxonomy_term_reference_hierarchical_text',
+          'type' => 'hidden',
           'weight' => '5',
         ),
         'teaser' => array(
@@ -1167,13 +1181,12 @@ function grupo_artista_field_default_fields() {
       'bundle' => 'grupo_artista',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Inscribe el grupo/artista en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'inline',
-          'module' => 'hs_taxonomy',
           'settings' => array(),
-          'type' => 'hs_taxonomy_term_reference_hierarchical_text',
+          'type' => 'hidden',
           'weight' => '4',
         ),
         'teaser' => array(
@@ -1481,16 +1494,14 @@ function grupo_artista_field_default_fields() {
   t('Componente');
   t('Componentes');
   t('Componentes que no son usuarios de MetalSevilla');
-  t('Copia aquí el número que aparece al final de la URL del disco en Jamendo que generará el reproductor del grupo');
-  t('Disco Reproductor');
   t('E-mail');
   t('Escribe una biografía que describa la trayectoria del grupo/artista');
   t('Estilo');
   t('Facebook');
   t('Flickr');
+  t('Foto');
   t('Google+');
   t('Imagen');
-  t('Inscribe el grupo/artista en uno o varios de los siguiente estilos. Si no aparece el estilo, ponte en contacto con nosotros a través del formulario de contacto.');
   t('Instrumento');
   t('Logo');
   t('Marcar si el grupo/artista se encuentra activo.');

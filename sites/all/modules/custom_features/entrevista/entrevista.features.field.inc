@@ -241,14 +241,14 @@ function entrevista_field_default_fields() {
       'settings' => array(
         'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 'disco',
           'entrevista' => 0,
           'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 0,
           'lanzamiento_disco' => 0,
@@ -293,13 +293,13 @@ function entrevista_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'noderefcreate',
+        'module' => 'node_reference',
         'settings' => array(
           'autocomplete_match' => 'contains',
           'autocomplete_path' => 'node_reference/autocomplete',
           'size' => '60',
         ),
-        'type' => 'noderefcreate_autocomplete',
+        'type' => 'node_reference_autocomplete',
         'weight' => '3',
       ),
     ),

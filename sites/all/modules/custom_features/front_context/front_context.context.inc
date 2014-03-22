@@ -17,9 +17,9 @@ function front_context_context_default_contexts() {
   $context->description = 'Contexto para los menús';
   $context->tag = 'portada';
   $context->conditions = array(
-    'sitewide' => array(
+    'user' => array(
       'values' => array(
-        1 => 1,
+        'anonymous user' => 'anonymous user',
       ),
     ),
   );
@@ -29,20 +29,26 @@ function front_context_context_default_contexts() {
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
-          'region' => 'header_top',
-          'weight' => '-44',
+          'region' => 'search_area',
+          'weight' => '-10',
         ),
         'menu-menu-redes-sociales' => array(
           'module' => 'menu',
           'delta' => 'menu-redes-sociales',
-          'region' => 'header_top',
-          'weight' => '-43',
+          'region' => 'search_area',
+          'weight' => '-9',
         ),
         'menu-menu-menu-cabecera' => array(
           'module' => 'menu',
           'delta' => 'menu-menu-cabecera',
-          'region' => 'header_top',
-          'weight' => '-42',
+          'region' => 'search_area',
+          'weight' => '-7',
+        ),
+        'node_subpages-menu_bar' => array(
+          'module' => 'node_subpages',
+          'delta' => 'menu_bar',
+          'region' => 'content_top_below_title',
+          'weight' => '-10',
         ),
         'views-banners_right-block' => array(
           'module' => 'views',
@@ -55,12 +61,6 @@ function front_context_context_default_contexts() {
           'delta' => 10,
           'region' => 'sidebar_second',
           'weight' => '-9',
-        ),
-        'block-14' => array(
-          'module' => 'block',
-          'delta' => 14,
-          'region' => 'sidebar_second',
-          'weight' => '-8',
         ),
       ),
     ),

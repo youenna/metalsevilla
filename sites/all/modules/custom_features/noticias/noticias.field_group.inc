@@ -25,8 +25,8 @@ function noticias_field_group_info() {
     'children' => array(
       0 => 'field_shared_description',
       1 => 'field_shared_image',
-      2 => 'title',
-      3 => 'field_shared_video',
+      2 => 'field_shared_video',
+      3 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -56,6 +56,7 @@ function noticias_field_group_info() {
       0 => 'field_shared_rel_group',
       1 => 'field_shared_rel_event',
       2 => 'field_shared_rel_local',
+      3 => 'field_shared_rel_disc',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
