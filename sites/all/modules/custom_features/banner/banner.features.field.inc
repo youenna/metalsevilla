@@ -10,6 +10,138 @@
 function banner_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-banner-field_banner_size'
+  $fields['node-banner-field_banner_size'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_banner_size',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          '0 ' => ' 300x250',
+          '1 ' => ' 300x125',
+          '2 ' => ' 720x90',
+          '3 ' => ' 620x80',
+        ),
+        'allowed_values_function' => '',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'banner',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'inline',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_banner_size',
+      'label' => 'Tamaño',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-banner-field_banner_weight'
+  $fields['node-banner-field_banner_weight'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_banner_weight',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          '0 ' => ' 0',
+          '1 ' => ' 1',
+          '2 ' => ' 2',
+          '3 ' => ' 3',
+          '4 ' => ' 4',
+          '5 ' => ' 5',
+        ),
+        'allowed_values_function' => '',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'banner',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'inline',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_banner_weight',
+      'label' => 'Peso',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-banner-field_public_dates'
   $fields['node-banner-field_public_dates'] = array(
     'field_config' => array(
@@ -45,7 +177,7 @@ function banner_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'date',
           'settings' => array(
             'format_type' => 'long',
@@ -55,7 +187,7 @@ function banner_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -87,7 +219,7 @@ function banner_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -127,11 +259,11 @@ function banner_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -155,7 +287,7 @@ function banner_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '1',
+        'weight' => '4',
       ),
     ),
   );
@@ -163,7 +295,9 @@ function banner_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Código');
+  t('Peso');
   t('Publicación');
+  t('Tamaño');
 
   return $fields;
 }
