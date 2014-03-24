@@ -60,7 +60,6 @@
 <!-- #banner -->
 <div id="banner">
 
-	<?php print render($page['banner']); ?>
 	
 </div><!-- EOF: #banner -->
 
