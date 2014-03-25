@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Grupos feature.
+ */
+
+include_once 'grupos.features.inc';
