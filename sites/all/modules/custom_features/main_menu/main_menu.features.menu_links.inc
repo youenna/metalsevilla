@@ -24,8 +24,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
-    'parent_path' => 'actualidad',
+    'weight' => '-47',
   );
   // Exported menu link: main-menu:actualidad/entrevistas
   $menu_links['main-menu:actualidad/entrevistas'] = array(
@@ -41,8 +40,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
-    'parent_path' => 'actualidad',
+    'weight' => '-45',
   );
   // Exported menu link: main-menu:grupos-artistas
   $menu_links['main-menu:grupos-artistas'] = array(
