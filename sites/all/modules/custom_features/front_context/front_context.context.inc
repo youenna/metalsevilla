@@ -17,9 +17,9 @@ function front_context_context_default_contexts() {
   $context->description = 'Contexto para los menús';
   $context->tag = 'portada';
   $context->conditions = array(
-    'user' => array(
+    'sitewide' => array(
       'values' => array(
-        'anonymous user' => 'anonymous user',
+        1 => 1,
       ),
     ),
   );
