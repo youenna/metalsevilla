@@ -62,6 +62,18 @@ function front_context_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-9',
         ),
+        'views-banners_right-block_2' => array(
+          'module' => 'views',
+          'delta' => 'banners_right-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-banners_right-block_1' => array(
+          'module' => 'views',
+          'delta' => 'banners_right-block_1',
+          'region' => 'banner',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
