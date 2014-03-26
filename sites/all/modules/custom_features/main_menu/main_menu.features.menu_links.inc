@@ -177,6 +177,22 @@ function main_menu_menu_default_menu_links() {
     'weight' => '-48',
     'parent_path' => 'guia',
   );
+  // Exported menu link: main-menu:node/8081
+  $menu_links['main-menu:node/8081'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/8081',
+    'router_path' => 'node/%',
+    'link_title' => 'Agenda',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-48',
+  );
   // Exported menu link: menu-enlaces-footer:contact
   $menu_links['menu-enlaces-footer:contact'] = array(
     'menu_name' => 'menu-enlaces-footer',
@@ -225,6 +241,22 @@ function main_menu_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
   );
+  // Exported menu link: menu-enlaces-footer:sitemap
+  $menu_links['menu-enlaces-footer:sitemap'] = array(
+    'menu_name' => 'menu-enlaces-footer',
+    'link_path' => 'sitemap',
+    'router_path' => 'sitemap',
+    'link_title' => 'Mapa web',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+  );
   // Exported menu link: menu-menu-cabecera:<front>
   $menu_links['menu-menu-cabecera:<front>'] = array(
     'menu_name' => 'menu-menu-cabecera',
@@ -232,7 +264,9 @@ function main_menu_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Inicio',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => '0',
@@ -288,6 +322,23 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-46',
+  );
+  // Exported menu link: menu-menu-cabecera:user
+  $menu_links['menu-menu-cabecera:user'] = array(
+    'menu_name' => 'menu-menu-cabecera',
+    'link_path' => 'user',
+    'router_path' => 'user',
+    'link_title' => 'User account',
+    'options' => array(
+      'attributes' => array(),
+      'alter' => TRUE,
+    ),
+    'module' => 'system',
+    'hidden' => '1',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-49',
   );
   // Exported menu link: menu-menu-cabecera:user/login
   $menu_links['menu-menu-cabecera:user/login'] = array(
@@ -481,6 +532,7 @@ function main_menu_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Acceso / Login');
   t('Actualidad');
+  t('Agenda');
   t('Aviso Legal');
   t('Bares');
   t('Cerrar Sesión');
@@ -496,11 +548,13 @@ function main_menu_menu_default_menu_links() {
   t('Grupos/Artistas');
   t('Guia Metalera');
   t('Inicio');
+  t('Mapa web');
   t('Noticias');
   t('RSS');
   t('Salas');
   t('Tiendas');
   t('Twitter');
+  t('User account');
 
 
   return $menu_links;
