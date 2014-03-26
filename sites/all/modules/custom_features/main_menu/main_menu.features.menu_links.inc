@@ -60,22 +60,6 @@ function main_menu_menu_default_menu_links() {
     'weight' => '-48',
     'parent_path' => 'actualidad',
   );
-  // Exported menu link: main-menu:actualidad/discos/lanzamientos
-  $menu_links['main-menu:actualidad/discos/lanzamientos'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'actualidad/discos/lanzamientos',
-    'router_path' => 'actualidad/discos/lanzamientos',
-    'link_title' => 'Lanzamientos',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '1',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-  );
   // Exported menu link: main-menu:actualidad/entrevistas
   $menu_links['main-menu:actualidad/entrevistas'] = array(
     'menu_name' => 'main-menu',
@@ -125,22 +109,6 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-46',
-  );
-  // Exported menu link: main-menu:grupos-artistas/anuncios
-  $menu_links['main-menu:grupos-artistas/anuncios'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'grupos-artistas/anuncios',
-    'router_path' => 'grupos-artistas/anuncios',
-    'link_title' => 'Anuncios',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '1',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
   );
   // Exported menu link: main-menu:guia
   $menu_links['main-menu:guia'] = array(
@@ -209,22 +177,6 @@ function main_menu_menu_default_menu_links() {
     'weight' => '-48',
     'parent_path' => 'guia',
   );
-  // Exported menu link: main-menu:node/8081
-  $menu_links['main-menu:node/8081'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/8081',
-    'router_path' => 'node/%',
-    'link_title' => 'Agenda',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
-  );
   // Exported menu link: menu-enlaces-footer:contact
   $menu_links['menu-enlaces-footer:contact'] = array(
     'menu_name' => 'menu-enlaces-footer',
@@ -239,7 +191,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-48',
+    'weight' => '-47',
   );
   // Exported menu link: menu-enlaces-footer:node/8109
   $menu_links['menu-enlaces-footer:node/8109'] = array(
@@ -255,7 +207,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-50',
+    'weight' => '-49',
   );
   // Exported menu link: menu-enlaces-footer:node/8110
   $menu_links['menu-enlaces-footer:node/8110'] = array(
@@ -271,7 +223,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
+    'weight' => '-48',
   );
   // Exported menu link: menu-menu-cabecera:<front>
   $menu_links['menu-menu-cabecera:<front>'] = array(
@@ -280,9 +232,7 @@ function main_menu_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Inicio',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
@@ -338,23 +288,6 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-46',
-  );
-  // Exported menu link: menu-menu-cabecera:user
-  $menu_links['menu-menu-cabecera:user'] = array(
-    'menu_name' => 'menu-menu-cabecera',
-    'link_path' => 'user',
-    'router_path' => 'user',
-    'link_title' => 'User account',
-    'options' => array(
-      'attributes' => array(),
-      'alter' => TRUE,
-    ),
-    'module' => 'system',
-    'hidden' => '1',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
   );
   // Exported menu link: menu-menu-cabecera:user/login
   $menu_links['menu-menu-cabecera:user/login'] = array(
@@ -548,8 +481,6 @@ function main_menu_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Acceso / Login');
   t('Actualidad');
-  t('Agenda');
-  t('Anuncios');
   t('Aviso Legal');
   t('Bares');
   t('Cerrar Sesión');
@@ -565,13 +496,11 @@ function main_menu_menu_default_menu_links() {
   t('Grupos/Artistas');
   t('Guia Metalera');
   t('Inicio');
-  t('Lanzamientos');
   t('Noticias');
   t('RSS');
   t('Salas');
   t('Tiendas');
   t('Twitter');
-  t('User account');
 
 
   return $menu_links;
