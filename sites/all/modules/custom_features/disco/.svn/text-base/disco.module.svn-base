@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Disco feature.
- */
-
-include_once 'disco.features.inc';
