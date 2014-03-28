@@ -23,7 +23,7 @@ body {
 .container_12 {
   margin-left: auto;
   margin-right: auto;
-  width: 960px;
+  width: 1200px;
 }
 
 /* `Grid >> Global
@@ -32,11 +32,11 @@ body {
 .grid_1,
 .grid_2,
 .grid_3,
-.grid_4,
+.grid_4,.grid_4_banner,
 .grid_5,
 .grid_6,
 .grid_7,
-.grid_8,
+.grid_8,.grid_8_logo,
 .grid_9,
 .grid_10,
 .grid_11,
@@ -91,6 +91,12 @@ body {
   width: 300px;
 }
 
+.container_12 .grid_4_banner {
+  width: 720px;
+  float: right;
+  margin-top: 15px;
+}
+
 .container_12 .grid_5 {
   width: 380px;
 }
@@ -104,7 +110,11 @@ body {
 }
 
 .container_12 .grid_8 {
-  width: 620px;
+  width: 820px;
+}
+
+.container_12 .grid_8_logo {
+  width: 200px;
 }
 
 .container_12 .grid_9 {
@@ -354,4 +364,90 @@ body {
 .clearfix,
 .container_12 {
   zoom: 1;
+}
+
+
+
+/* Bloque Agenda maincont */
+
+.region-content .view-eventos.view-display-id-block_1{
+  float: right;
+  width: 35%;
+  margin: 0;
+}
+
+/* Bloque Actualidad */
+
+.region-content .view-actualidad.view-display-id-block_1{
+  float: left;
+  width: 60%;
+  clear: both;
+  margin: 0;
+}
+
+.region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-image, .region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-rep-image{
+margin: 0 auto;
+display: table;
+
+}
+.views-field-field-shared-description{
+	text-align: justify;
+}
+
+/* Comun de home */
+#block-nivo-slider-nivo-slider{
+        margin: 0 0 15px 0;
+}
+
+.views-field-title{
+    font-family: 'LeagueGothicRegular';
+    font-size: 22px;
+    margin: 10px 0;
+    
+}
+
+.guionnoticias{
+    background-color: #EF6323;
+    display: block;
+    height: 4px;
+    margin: 10px 0;
+    width: 90%;
+clear:both;
+}
+
+.service-links li {
+float: left;
+margin: 10px;
+}
+
+.view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-rep-image,
+.view-id-noticias.view-display-id-page .views-field-field-shared-image,
+.view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image { 
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.field-type-image{
+margin: 0 auto;
+display: table;
+}
+
+#block-views-actualidad-block-1 .views-field-field-shared-image img, 
+#block-views-eventos-block-1 .views-field-field-shared-image img,
+#block-views-actualidad-block-1 .views-field-field-shared-rep-image img{
+	width: 100%;
+}
+
+.region.region-search-area {
+  position: relative;
+  top: 36px;
+}
+#edit-field-shared-style-und .form-type-checkbox {
+  float: left;
+}
+
+.fieldset-wrapper {
+}
+
+.view-banners-right img{
+width: 100%;
 }

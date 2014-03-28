@@ -547,7 +547,7 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; m
     padding: 14px 20px 0 0;
 }
 
-#block-menu-menu-menu-cabecera  ul.menu. #block-menu-menu-usuario  ul.menu {
+#block-menu-menu-menu-cabecera  ul.menu, #block-menu-menu-usuario  ul.menu {
     overflow: hidden;
 }
 
@@ -725,41 +725,6 @@ textarea { background:#e8e8e8; border:1px solid #f2f2f2;
 
 .filter-wrapper { border:1px solid #DDDDDD; border-top:none; }
 
-/*
- * Social
- */
-/*ul.social-bookmarks { margin:0; padding:0; }
-
-ul.social-bookmarks li {display:inline-block; float:left; list-style-type:none; margin:0; }
-
-ul.social-bookmarks li a { display:inline-block; width:25px; height:24px; padding:0 3px;  margin:0 auto; text-align:center; overflow:hidden; outline:none; }
-
-ul.social-bookmarks li.label { padding:0 15px 0 0; }
-
-ul.social-bookmarks li.facebook a { background:url('images/social-media-facebook.png') no-repeat center bottom; }
-
-ul.social-bookmarks li.twitter a { background:url('images/social-media-twitter.png') no-repeat center bottom; }
-
-ul.social-bookmarks li.rss a { background:url('images/social-media-rss.png') no-repeat center bottom; }
-
-ul.social-bookmarks li.linkedin a { background:url('images/social-media-linkedin.png') no-repeat center bottom; }
-
-ul.social-bookmarks li.delicious a { background:url('images/social-media-delicious.png') no-repeat center bottom; }*/
-
-/*
- * Forum
- */
-#forum { padding:20px 0; }
-
-/*
- * Twitter updates
- */
-.twtr-hd, .twtr-ft { display:none; }
-
-.twtr-bd { display:block; overflow:hidden; }
-
-.twtr-widget .twtr-tweet { border-bottom: 1px solid #353535 !important; padding: 0 0 5px 0; margin: 0 0 5px 0;  }
-
 /**
  * Local tasks
  */
@@ -772,86 +737,4 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 
 
 
-/* Bloque Agenda maincont */
 
-.region-content .view-eventos.view-display-id-block_1{
-  float: right;
-  width: 35%;
-  margin: 0;
-}
-
-/* Bloque Actualidad */
-
-.region-content .view-actualidad.view-display-id-block_1{
-  float: left;
-  width: 60%;
-  clear: both;
-  margin: 0;
-}
-
-.region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-image, .region-content .view-actualidad.view-display-id-block_1 .views-field-field-shared-rep-image{
-margin: 0 auto;
-display: table;
-
-}
-.views-field-field-shared-description{
-	text-align: justify;
-}
-
-/* Comun de home */
-#block-nivo-slider-nivo-slider{
-        margin: 0 0 15px 0;
-}
-
-.views-field-title{
-    font-family: 'LeagueGothicRegular';
-    font-size: 22px;
-    margin: 10px 0;
-    
-}
-
-.guionnoticias{
-    background-color: #EF6323;
-    display: block;
-    height: 4px;
-    margin: 10px 0;
-    width: 90%;
-clear:both;
-}
-
-.service-links li {
-float: left;
-margin: 10px;
-}
-
-.view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-rep-image,
-.view-id-noticias.view-display-id-page .views-field-field-shared-image,
-.view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image { 
-    float: left;
-    margin: 0 10px 10px 0;
-}
-.field-type-image{
-margin: 0 auto;
-display: table;
-}
-
-#block-views-actualidad-block-1 .views-field-field-shared-image img, 
-#block-views-eventos-block-1 .views-field-field-shared-image img,
-#block-views-actualidad-block-1 .views-field-field-shared-rep-image img{
-	width: 100%;
-}
-
-.region.region-search-area {
-  position: relative;
-  top: 36px;
-}
-#edit-field-shared-style-und .form-type-checkbox {
-  float: left;
-}
-
-.fieldset-wrapper {
-}
-
-.view-banners-right img{
-width: 100%;
-}
