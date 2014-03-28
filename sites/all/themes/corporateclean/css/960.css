@@ -415,7 +415,7 @@ display: table;
 clear:both;
 }
 
-.service-links li {
+.service-links li, .views-field-service-links li {
 float: left;
 margin: 10px;
 }
@@ -450,4 +450,4 @@ display: table;
 
 .view-banners-right img{
 width: 100%;
-}
+} 
