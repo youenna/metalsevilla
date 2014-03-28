@@ -94,6 +94,22 @@ function main_menu_menu_default_menu_links() {
     'weight' => '-50',
     'parent_path' => 'actualidad',
   );
+  // Exported menu link: main-menu:agenda
+  $menu_links['main-menu:agenda'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'agenda',
+    'router_path' => 'agenda',
+    'link_title' => 'Agenda',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-48',
+  );
   // Exported menu link: main-menu:grupos-artistas
   $menu_links['main-menu:grupos-artistas'] = array(
     'menu_name' => 'main-menu',
@@ -176,22 +192,6 @@ function main_menu_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
     'parent_path' => 'guia',
-  );
-  // Exported menu link: main-menu:node/8081
-  $menu_links['main-menu:node/8081'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/8081',
-    'router_path' => 'node/%',
-    'link_title' => 'Agenda',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
   );
   // Exported menu link: menu-enlaces-footer:contact
   $menu_links['menu-enlaces-footer:contact'] = array(
