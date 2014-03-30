@@ -9,7 +9,15 @@
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted"><?php print $submitted ?></div>
+    <div class="submitted"><?php print $submitted ?>
+    <?php $user = user_load($uid); 
+        foreach ($user->roles as $rid => $rol){
+            if($rid==7){ ?> 
+              <div class="official-content"><h2><?php print t('Contenido oficial de MetalSpain'); ?></h2></div> 
+            <?php }   
+        } 
+    ?>
+    </div>
   <?php endif; ?>
   <div class="content clearfix"<?php print $content_attributes; ?>>
     <?php

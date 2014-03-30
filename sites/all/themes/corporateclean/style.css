@@ -61,6 +61,8 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .submitted { margin:-15px 0 20px 0; font-size: 85%; text-transform: uppercase; }
 
+.official-content { float:right; }
+
 .region-sidebar-first .block h2, .region-sidebar-second .block h2 {  margin: 0 0 15px 0; padding:0 0 5px 0; }
 
 .region-content { line-height:155%; } 
@@ -294,7 +296,7 @@ ul.secondary-menu, #footer-bottom ul.menu { padding:0; margin:0 0 10px 0; displa
 
 ul.secondary-menu li, #footer-bottom ul.menu li { display:block; float:left; list-style-type:none; overflow:hidden; padding:0 10px; margin:0; }
 
-ul.secondary-menu li.first, #footer-bottom ul.menu li.first { padding:0 0 0 0; margin:0; }
+ul.secondary-menu li.first { padding:0 10px 0 0; margin:0; }
 
 ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; margin:0; }
 
