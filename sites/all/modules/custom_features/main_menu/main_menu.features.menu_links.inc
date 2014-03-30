@@ -380,6 +380,9 @@ function main_menu_menu_default_menu_links() {
     'link_title' => 'RSS',
     'options' => array(
       'attributes' => array(
+        'class' => array(
+          0 => 'menu-rss',
+        ),
         'target' => '_blank',
       ),
     ),
@@ -398,6 +401,9 @@ function main_menu_menu_default_menu_links() {
     'link_title' => 'Google+',
     'options' => array(
       'attributes' => array(
+        'class' => array(
+          0 => 'menu-gp',
+        ),
         'target' => '_blank',
       ),
     ),
@@ -416,6 +422,9 @@ function main_menu_menu_default_menu_links() {
     'link_title' => 'Twitter',
     'options' => array(
       'attributes' => array(
+        'class' => array(
+          0 => 'menu-tw',
+        ),
         'target' => '_blank',
       ),
     ),
@@ -434,6 +443,9 @@ function main_menu_menu_default_menu_links() {
     'link_title' => 'Facebook',
     'options' => array(
       'attributes' => array(
+        'class' => array(
+          0 => 'menu-fb',
+        ),
         'target' => '_blank',
       ),
     ),

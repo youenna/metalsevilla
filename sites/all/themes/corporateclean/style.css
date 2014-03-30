@@ -294,7 +294,7 @@ ul.secondary-menu, #footer-bottom ul.menu { padding:0; margin:0 0 10px 0; displa
 
 ul.secondary-menu li, #footer-bottom ul.menu li { display:block; float:left; list-style-type:none; overflow:hidden; padding:0 10px; margin:0; }
 
-ul.secondary-menu li.first, #footer-bottom ul.menu li.first { padding:0 10px 0 0; margin:0; }
+ul.secondary-menu li.first, #footer-bottom ul.menu li.first { padding:0 0 0 0; margin:0; }
 
 ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; margin:0; }
 
@@ -464,135 +464,6 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last { border-right:none; m
 #block-search-form input.form-text { background:none; border:none; outline:none; text-decoration: none; color:#9f9f9f; float:left; width:70%; padding:10px; margin:0;height:15px; line-height:15px; -webkit-box-shadow: none;  -moz-box-shadow:none;box-shadow:none; }
 
 
-/*
-* Social
-*/
-
-
-
-#block-menu-menu-redes-sociales {
-    overflow: hidden;
-    float: right;
-}
-
-#block-menu-menu-redes-sociales ul.menu,
-#block-menu-menu-redes-sociales-footer ul.menu {
-    overflow: hidden !important;
-}
-
-#block-menu-menu-redes-sociales ul.menu li,
-#block-menu-menu-redes-sociales-footer ul.menu li {
-    display: inline !important;
-}
-
-#block-menu-menu-redes-sociales ul.menu li a,
-#block-menu-menu-redes-sociales-footer ul.menu li a {
-    display: block ;
-    margin: 0 !important;
-    width: 47px;
-    height: 47px;
-    text-indent: -9999px;
-    float: left;
-    opacity: 0.5;
-    -webkit-transition: all 0.3s ease ;
-    -moz-transition: all 0.3s ease ;
-    -o-transition: all 0.3s ease ;
-    transition: all  0.3s ease ;
-}
-
-#block-menu-menu-redes-sociales ul.menu li a:hover,
-#block-menu-menu-redes-sociales-footer ul.menu li a:hover {
-    opacity: 1 ;
-}
-
-#block-menu-menu-redes-sociales .menu-fb,
-#block-menu-menu-redes-sociales-footer ul.menu li.facebook a {
-    background: transparent url(images/ico-fb.png) 0 0 no-repeat;
-}
-
-#block-menu-menu-redes-sociales .menu-tw,
-#block-menu-menu-redes-sociales-footer ul.menu li.twitter a {
-    background: transparent url(images/ico-tt.png) 0 0 no-repeat;                                                                                                                                
-}
-
-#block-menu-menu-redes-sociales .menu-gp,
-#block-menu-menu-redes-sociales-footer ul.menu li.google- a {
-    background: transparent url(images/ico-gp.png) 0 0 no-repeat;                                                                                                                                
-}
-
-#block-menu-menu-redes-sociales .menu-rss,
-#block-menu-menu-redes-sociales-footer ul.menu li.rss a {
-    background: transparent url(images/ico-rss.png) 0 0 no-repeat;
-}
-
-#block-menu-menu-redes-sociales  ul.menu,
-#block-menu-menu-redes-sociales  ul.menu li,
-#block-menu-menu-redes-sociales  ul.menu li a,
-#block-menu-menu-redes-sociales-footer ul.menu li a,
-#block-menu-menu-redes-sociales-footer ul.menu li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style-image: none;
-}
-
-
-/*
-* Cabecera
-*/
-
-#block-menu-menu-menu-cabecera,#block-menu-menu-usuario {
-    float: right;
-    overflow: hidden;
-    padding: 14px 20px 0 0;
-}
-
-#block-menu-menu-menu-cabecera  ul.menu, #block-menu-menu-usuario  ul.menu {
-    overflow: hidden;
-}
-
-#block-menu-menu-menu-cabecera  ul.menu li, #block-menu-menu-usuario  ul.menu li {
-    display: inline;
-}
-
-#block-menu-menu-menu-cabecera  ul.menu li a , #block-menu-menu-usuario  ul.menu li a{
-    display: inline-block;
-    margin: 0 15px !important;
-    font-size: 1.5em;
-    color: #9a9a9a;
-}
-
-#block-menu-menu-menu-cabecera  ul.menu li a.active,
-#block-menu-menu-menu-cabecera  ul.menu li a:hover,
-#block-menu-menu-menu-cabecera  ul.menu li a:focus,
-#block-menu-menu-usuario  ul.menu li a.active,
-#block-menu-menu-usuario  ul.menu li a:hover,
-#block-menu-menu-usuario  ul.menu li a:focus {
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0px 0px 3px #ffd500;
-    filter: dropshadow(color=#ffd500, offx=0, offy=0);
-}
-
-#block-menu-menu-menu-cabecera  ul.menu,
-#block-menu-menu-menu-cabecera  ul.menu li, 
-#block-menu-menu-menu-cabecera  ul.menu li a, 
-#block-menu-menu-usuario  ul.menu,
-#block-menu-menu-usuario  ul.menu li,
-#block-menu-menu-usuario  ul.menu li a {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style-image: none;
-    font-family: 'LeagueGothicRegular';
-    color: #f2f2f2;
-}
-
-#block-system-main-menu, #block-nice_menus-1, #block-search-form, #block-menu-menu-redes-sociales {
-    margin: 0 ;
-    padding: 0;
-}
-
 /* 
  * Messages
  */
@@ -733,6 +604,78 @@ ul.primary, ul.tabs { clear:both; margin:10px 0 35px 0; white-space: normal }
 ul.primary li, ul.tabs li { padding:10px 0; line-height:130%; }
 
 ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-block; }
+
+
+/*
+* Social
+*/
+
+#block-menu-menu-redes-sociales {
+    overflow: hidden;
+    float: right;
+}
+
+#block-menu-menu-redes-sociales ul.menu,
+#block-menu-menu-redes-sociales-footer ul.menu {
+    overflow: hidden !important;
+}
+
+#block-menu-menu-redes-sociales ul.menu li,
+#block-menu-menu-redes-sociales-footer ul.menu li {
+    display: inline !important;
+}
+
+#block-menu-menu-redes-sociales ul.menu li a,
+#block-menu-menu-redes-sociales-footer ul.menu li a {
+    display: block ;
+    margin: 0 !important;
+    width: 47px;
+    height: 47px;
+    text-indent: -9999px;
+    float: left;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease ;
+    -moz-transition: all 0.3s ease ;
+    -o-transition: all 0.3s ease ;
+    transition: all  0.3s ease ;
+}
+
+#block-menu-menu-redes-sociales ul.menu li a:hover,
+#block-menu-menu-redes-sociales-footer ul.menu li a:hover {
+    opacity: 1 ;
+}
+
+#block-menu-menu-redes-sociales .menu-fb ,
+#block-menu-menu-redes-sociales-footer .menu-fb  {
+    background: transparent url(images/ico-fb.png) 0 0 no-repeat;
+}
+
+#block-menu-menu-redes-sociales .menu-tw ,
+#block-menu-menu-redes-sociales-footer .menu-tw  {
+    background: transparent url(images/ico-tt.png) 0 0 no-repeat;                                                                                                                                
+}
+
+#block-menu-menu-redes-sociales .menu-gp ,
+#block-menu-menu-redes-sociales-footer .menu-gp  {
+    background: transparent url(images/ico-gp.png) 0 0 no-repeat;                                                                                                                                
+}
+
+#block-menu-menu-redes-sociales .menu-rss ,
+#block-menu-menu-redes-sociales-footer .menu-rss  {
+    background: transparent url(images/ico-rss.png) 0 0 no-repeat;
+}
+
+#block-menu-menu-redes-sociales  ul.menu,
+#block-menu-menu-redes-sociales  ul.menu li,
+#block-menu-menu-redes-sociales  ul.menu li a,
+#block-menu-menu-redes-sociales-footer ul.menu li a,
+#block-menu-menu-redes-sociales-footer ul.menu li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
 
 
 

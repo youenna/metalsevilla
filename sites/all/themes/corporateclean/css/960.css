@@ -368,6 +368,62 @@ body {
 
 
 
+/*
+* Cabecera
+*/
+
+#block-menu-menu-menu-cabecera,#block-menu-menu-usuario {
+    float: right;
+    overflow: hidden;
+    padding: 14px 20px 0 0;
+}
+
+#block-menu-menu-menu-cabecera  ul.menu, #block-menu-menu-usuario  ul.menu {
+    overflow: hidden;
+}
+
+#block-menu-menu-menu-cabecera  ul.menu li, #block-menu-menu-usuario  ul.menu li {
+    display: inline;
+}
+
+#block-menu-menu-menu-cabecera  ul.menu li a , #block-menu-menu-usuario  ul.menu li a{
+    display: inline-block;
+    margin: 0 15px !important;
+    font-size: 1.5em;
+    color: #9a9a9a;
+}
+
+#block-menu-menu-menu-cabecera  ul.menu li a.active,
+#block-menu-menu-menu-cabecera  ul.menu li a:hover,
+#block-menu-menu-menu-cabecera  ul.menu li a:focus,
+#block-menu-menu-usuario  ul.menu li a.active,
+#block-menu-menu-usuario  ul.menu li a:hover,
+#block-menu-menu-usuario  ul.menu li a:focus {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px #ffd500;
+    filter: dropshadow(color=#ffd500, offx=0, offy=0);
+}
+
+#block-menu-menu-menu-cabecera  ul.menu,
+#block-menu-menu-menu-cabecera  ul.menu li, 
+#block-menu-menu-menu-cabecera  ul.menu li a, 
+#block-menu-menu-usuario  ul.menu,
+#block-menu-menu-usuario  ul.menu li,
+#block-menu-menu-usuario  ul.menu li a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    font-family: 'LeagueGothicRegular';
+    color: #f2f2f2;
+}
+
+#block-system-main-menu, #block-nice_menus-1, #block-search-form, #block-menu-menu-redes-sociales {
+    margin: 0 ;
+    padding: 0;
+}
+
 /* Bloque Agenda maincont */
 
 .region-content .view-eventos.view-display-id-block_1{
