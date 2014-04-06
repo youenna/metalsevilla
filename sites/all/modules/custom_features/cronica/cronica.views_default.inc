@@ -203,7 +203,7 @@ function cronica_views_default_views() {
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['required'] = 0;
   $handler->display->display_options['filters']['title']['expose']['multiple'] = FALSE;
-  /* Filter criterion: Contenido: Grupos relacionados (field_shared_rel_group) */
+  /* Filter criterion: Campo: Grupos relacionados (field_shared_rel_group) */
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['field'] = 'field_shared_rel_group_nid';
@@ -240,7 +240,7 @@ function cronica_views_default_views() {
   $handler->display->display_options['filters']['field_shared_style_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_style_tid']['vocabulary'] = 'estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['error_message'] = 0;
-  /* Filter criterion: Contenido: Establecimiento relacionado (field_shared_rel_local) */
+  /* Filter criterion: Campo: Establecimiento relacionado (field_shared_rel_local) */
   $handler->display->display_options['filters']['field_shared_rel_local_nid']['id'] = 'field_shared_rel_local_nid';
   $handler->display->display_options['filters']['field_shared_rel_local_nid']['table'] = 'field_data_field_shared_rel_local';
   $handler->display->display_options['filters']['field_shared_rel_local_nid']['field'] = 'field_shared_rel_local_nid';
