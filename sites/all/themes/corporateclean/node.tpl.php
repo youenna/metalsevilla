@@ -13,7 +13,7 @@
     <?php $user = user_load($uid); 
         foreach ($user->roles as $rid => $rol){
             if($rid==7){ ?> 
-              <div class="official-content"><h2><?php print t('Contenido oficial de MetalSpain'); ?></h2></div> 
+              <div class="official-content"><h2><?php print t('MetalSpain Official Content'); ?></h2></div> 
             <?php }   
         } 
     ?>
