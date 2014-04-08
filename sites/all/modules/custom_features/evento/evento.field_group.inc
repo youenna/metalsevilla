@@ -58,6 +58,7 @@ function evento_field_group_info() {
       0 => 'field_shared_rel_group',
       1 => 'field_shared_rel_local',
       2 => 'field_shared_rel_disc',
+      3 => 'field_rep_rel_shop',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

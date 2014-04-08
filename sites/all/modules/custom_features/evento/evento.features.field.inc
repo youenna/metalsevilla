@@ -24,6 +24,7 @@ function evento_field_default_fields() {
       'settings' => array(
         'decimal_separator' => ',',
         'precision' => '10',
+        'profile2_private' => FALSE,
         'scale' => '2',
       ),
       'translatable' => '0',
@@ -45,7 +46,7 @@ function evento_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_decimal',
-          'weight' => '3',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -70,7 +71,7 @@ function evento_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '5',
+        'weight' => '38',
       ),
     ),
   );
@@ -89,6 +90,7 @@ function evento_field_default_fields() {
       'settings' => array(
         'decimal_separator' => '.',
         'precision' => '10',
+        'profile2_private' => FALSE,
         'scale' => '2',
       ),
       'translatable' => '0',
@@ -111,7 +113,7 @@ function evento_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_decimal',
-          'weight' => '4',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -136,6 +138,96 @@ function evento_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
+        'weight' => '39',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-evento-field_rep_rel_shop'
+  $fields['node-evento-field_rep_rel_shop'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_rep_rel_shop',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'module' => 'node_reference',
+      'settings' => array(
+        'profile2_private' => FALSE,
+        'referenceable_types' => array(
+          'banner' => 0,
+          'critica_disco' => 0,
+          'cronica' => 0,
+          'disco' => 0,
+          'entrevista' => 0,
+          'establecimiento' => 'establecimiento',
+          'evento' => 0,
+          'faq' => 0,
+          'foto' => 0,
+          'grupo_artista' => 0,
+          'lanzamiento_disco' => 0,
+          'noticia' => 0,
+          'page' => 0,
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'evento',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'inline',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => '8',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_rep_rel_shop',
+      'label' => 'Puntos de venta',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'node_reference',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'node_reference/autocomplete',
+          'size' => '30',
+        ),
+        'type' => 'node_reference_autocomplete',
         'weight' => '6',
       ),
     ),
@@ -204,7 +296,7 @@ function evento_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '34',
       ),
     ),
   );
@@ -280,7 +372,7 @@ function evento_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '33',
       ),
     ),
   );
@@ -341,10 +433,11 @@ function evento_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
+          'type' => 'node_reference_default',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -397,14 +490,16 @@ function evento_field_default_fields() {
       ),
       'module' => 'node_reference',
       'settings' => array(
+        'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 0,
           'entrevista' => 0,
+          'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 'grupo_artista',
           'lanzamiento_disco' => 0,
@@ -429,9 +524,10 @@ function evento_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '7',
+          'type' => 'node_reference_default',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -486,13 +582,14 @@ function evento_field_default_fields() {
       'settings' => array(
         'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 0,
           'entrevista' => 0,
           'establecimiento' => 'establecimiento',
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 0,
           'lanzamiento_disco' => 0,
@@ -518,9 +615,10 @@ function evento_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '8',
+          'type' => 'node_reference_default',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -586,7 +684,7 @@ function evento_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'date',
           'settings' => array(
             'format_type' => 'long',
@@ -596,7 +694,7 @@ function evento_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -629,7 +727,7 @@ function evento_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '4',
+        'weight' => '37',
       ),
     ),
   );
@@ -679,7 +777,7 @@ function evento_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '5',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -747,11 +845,11 @@ function evento_field_default_fields() {
 ',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '6',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -798,6 +896,7 @@ function evento_field_default_fields() {
   t('Precio en taquilla');
   t('Provincia');
   t('Provincia en la que se realizó el Evento.');
+  t('Puntos de venta');
 
   return $fields;
 }

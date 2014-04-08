@@ -331,6 +331,7 @@ function evento_views_default_views() {
   $handler->display->display_options['fields']['field_price1']['id'] = 'field_price1';
   $handler->display->display_options['fields']['field_price1']['table'] = 'field_data_field_price1';
   $handler->display->display_options['fields']['field_price1']['field'] = 'field_price1';
+  $handler->display->display_options['fields']['field_price1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_price1']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_price1']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_price1']['alter']['absolute'] = 0;
@@ -356,11 +357,38 @@ function evento_views_default_views() {
     'prefix_suffix' => 1,
   );
   $handler->display->display_options['fields']['field_price1']['field_api_classes'] = 0;
+  /* Campo: Campo: Provincia */
+  $handler->display->display_options['fields']['field_shared_state']['id'] = 'field_shared_state';
+  $handler->display->display_options['fields']['field_shared_state']['table'] = 'field_data_field_shared_state';
+  $handler->display->display_options['fields']['field_shared_state']['field'] = 'field_shared_state';
+  $handler->display->display_options['fields']['field_shared_state']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_state']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_state']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_shared_state']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_shared_state']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_shared_state']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_shared_state']['field_api_classes'] = 0;
   /* Campo: Contenido: Precio en taquilla */
   $handler->display->display_options['fields']['field_price2']['id'] = 'field_price2';
   $handler->display->display_options['fields']['field_price2']['table'] = 'field_data_field_price2';
   $handler->display->display_options['fields']['field_price2']['field'] = 'field_price2';
-  $handler->display->display_options['fields']['field_price2']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_price2']['label'] = '';
+  $handler->display->display_options['fields']['field_price2']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_price2']['alter']['text'] = '[field_price1] / [field_price2]';
   $handler->display->display_options['fields']['field_price2']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_price2']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_price2']['alter']['external'] = 0;
@@ -373,7 +401,7 @@ function evento_views_default_views() {
   $handler->display->display_options['fields']['field_price2']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_price2']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_price2']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_price2']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_price2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_price2']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_price2']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_price2']['empty_zero'] = 0;
@@ -471,6 +499,7 @@ function evento_views_default_views() {
     t('Eventos'),
     t('more'),
     t('Bloque'),
+    t('[field_price1] / [field_price2]'),
     t('<span class="guionnoticias"></span>'),
     t('Agenda (home)'),
     t('Histórico de Eventos'),

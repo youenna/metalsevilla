@@ -126,7 +126,6 @@ function agenda_views_default_views() {
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['label'] = 'Estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['identifier'] = 'field_shared_style_tid';
-  $handler->display->display_options['filters']['field_shared_style_tid']['expose']['multiple'] = 1;
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['reduce'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['type'] = 'select';
@@ -139,10 +138,9 @@ function agenda_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator_id'] = 'field_shared_rel_group_nid_op';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo relacionado';
+  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['multiple'] = 1;
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
   /* Filter criterion: Campo: Provincia (field_shared_state) */
   $handler->display->display_options['filters']['field_shared_state_tid']['id'] = 'field_shared_state_tid';
@@ -451,7 +449,7 @@ function agenda_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Estilo'),
-    t('Grupo relacionado'),
+    t('Grupo'),
     t('Provincia'),
     t('Month'),
     t('Todo(s)'),
