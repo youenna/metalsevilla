@@ -59,7 +59,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .breadcrumb-separator { padding:0 8px 0 4px; }
 
-.submitted { margin:-15px 0 20px 0; font-size: 85%; text-transform: uppercase; }
+.submitted { margin:-15px 0 50px 0; font-size: 85%; text-transform: uppercase; }
 
 .official-content { float:right; }
 
@@ -679,7 +679,11 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 }
 
 
+.field-type-image{
+        margin: 0 10px;
+        float: left;;
+}
 
-
-
-
+.field-name-field-shared-description{
+        text-align: justify;
+}

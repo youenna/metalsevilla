@@ -482,10 +482,6 @@ margin: 10px;
     float: left;
     margin: 0 10px 10px 0;
 }
-.field-type-image{
-margin: 0 auto;
-display: table;
-}
 
 #block-views-actualidad-block-1 .views-field-field-shared-image img, 
 #block-views-eventos-block-1 .views-field-field-shared-image img,
