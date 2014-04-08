@@ -502,4 +502,9 @@ margin: 10px;
 
 .view-banners-right img{
 width: 100%;
+}
+
+.field-type-image{
+        margin: 0 10px;
+        float: left;;
 } 

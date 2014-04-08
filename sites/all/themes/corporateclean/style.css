@@ -679,11 +679,6 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 }
 
 
-.field-type-image{
-        margin: 0 10px;
-        float: left;;
-}
-
 .field-name-field-shared-description{
         text-align: justify;
 }
