@@ -679,6 +679,24 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 }
 
 
-.field-name-field-shared-description{
+.field-name-field-shared-description, .views-field-field-bio, .views-field-field-shared-description {
         text-align: justify;
+}
+
+.social-group {
+  float: left;
+}
+
+option {font-family: DroidSerifRegular; font-size: 10px; } 
+
+select{
+	border:1px solid #777777;
+}
+
+.views-exposed-widget.views-widget-filter-field_shared_rel_event_nid {
+  	width: 40%;
+}
+
+.form-item-field-shared-rel-event-nid select{
+	width: 100%;
 }

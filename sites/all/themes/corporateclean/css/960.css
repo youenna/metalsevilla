@@ -465,15 +465,33 @@ display: table;
 .guionnoticias{
     background-color: #EF6323;
     display: block;
-    height: 4px;
+    height: 3px;
     margin: 10px 0;
-    width: 90%;
-clear:both;
+    width: 80%;
+    clear:both;
 }
 
-.service-links li, .views-field-service-links li {
-float: left;
-margin: 10px;
+.monthview .guionnoticias{
+    background-color: #EF6323;
+    display: block;
+    height: 2px;
+    width: 100%;
+    clear:both;
+}
+
+
+.service-links li {
+	float: left;
+	margin: 10px;
+}
+
+.views-field-service-links li {
+	padding: 4px;
+	float:left;
+}
+
+.views-field-service-links{
+	float: right;
 }
 
 .view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-rep-image,
@@ -504,7 +522,8 @@ margin: 10px;
 width: 100%;
 }
 
-.field-type-image{
-        margin: 0 10px;
-        float: left;;
-} 
+.field-type-image,.views-field-field-shared-image, .views-field-field-shared-logo{
+        float: left;
+	margin: 0 10px 30px 0;
+}
+
