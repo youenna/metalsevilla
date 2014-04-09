@@ -39,7 +39,7 @@ function evento_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -246,7 +246,7 @@ function evento_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';

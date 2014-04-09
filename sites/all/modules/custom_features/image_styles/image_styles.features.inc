@@ -182,7 +182,7 @@ function image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '115',
+          'width' => '220',
           'height' => '',
           'upscale' => 0,
         ),

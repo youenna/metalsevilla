@@ -67,9 +67,9 @@ function grupos_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'hs_taxonomy',
+        'module' => 'options',
         'settings' => array(),
-        'type' => 'taxonomy_hs',
+        'type' => 'options_select',
         'weight' => '2',
       ),
     ),
@@ -126,7 +126,7 @@ function grupos_field_default_fields() {
         'alt_field' => 1,
         'file_directory' => 'miembro_grupo',
         'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '2 MB',
+        'max_filesize' => '512 KB',
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,
@@ -178,7 +178,7 @@ function grupos_field_default_fields() {
       'bundle' => 'field_member',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Nombre del componente del grupo o nombre del artista que no es usuario de MetalSevilla.',
+      'description' => 'Nombre del componente del grupo o nombre del artista.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -249,11 +249,11 @@ function grupos_field_default_fields() {
       'description' => 'Selecciona el instrumento que utiliza el usuario seleccionado anteriormente.',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -268,7 +268,77 @@ function grupos_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_user_member-field_shared_image'
+  $fields['field_collection_item-field_user_member-field_shared_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'profile2_private' => FALSE,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_user_member',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__medium__original',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_shared_image',
+      'label' => 'Foto',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'file_directory' => 'miembro_grupo',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '512 KB',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '2',
       ),
     ),
   );
@@ -324,14 +394,14 @@ function grupos_field_default_fields() {
       'bundle' => 'field_user_member',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Nombre del componente del grupo o nombre del artista que es usuario de MetalSevilla (se enlazará con su perfil de usuario). Hay que seleccionarlo cuando el portal lo autocomplete para que se relacione correctamente.',
+      'description' => 'Nombre del componente del grupo o nombre del artista.',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'hidden',
           'module' => 'user_reference',
           'settings' => array(),
           'type' => 'user_reference_default',
-          'weight' => '0',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -350,6 +420,69 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'user_reference_autocomplete',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_user_member-field_user_text'
+  $fields['field_collection_item-field_user_member-field_user_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_user_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '128',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_user_member',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_user_text',
+      'label' => 'Nombre',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '30',
+        ),
+        'type' => 'text_textfield',
         'weight' => 0,
       ),
     ),
@@ -416,7 +549,7 @@ function grupos_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '3',
+        'weight' => '1',
       ),
     ),
   );
@@ -484,7 +617,7 @@ function grupos_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '-4',
       ),
     ),
   );
@@ -501,6 +634,7 @@ function grupos_field_default_fields() {
       'indexes' => array(),
       'module' => 'field_collection',
       'settings' => array(
+        'hide_blank_items' => TRUE,
         'path' => '',
         'profile2_private' => FALSE,
       ),
@@ -538,7 +672,7 @@ function grupos_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '7',
+        'weight' => '0',
       ),
     ),
   );
@@ -591,7 +725,7 @@ function grupos_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'email_textfield',
-        'weight' => '9',
+        'weight' => '4',
       ),
     ),
   );
@@ -659,74 +793,7 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '12',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-grupo_artista-field_shared_flickr'
-  $fields['node-grupo_artista-field_shared_flickr'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_shared_flickr',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'grupo_artista',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Usuario de Flickr del grupo/artista',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '12',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_shared_flickr',
-      'label' => 'Flickr',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '30',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '14',
+        'weight' => '5',
       ),
     ),
   );
@@ -794,7 +861,7 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '13',
+        'weight' => '7',
       ),
     ),
   );
@@ -857,7 +924,7 @@ function grupos_field_default_fields() {
         'alt_field' => 1,
         'file_directory' => 'imagen_grupo',
         'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '2MB',
+        'max_filesize' => '512 KB',
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,
@@ -871,7 +938,7 @@ function grupos_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '6',
+        'weight' => '-2',
       ),
     ),
   );
@@ -932,7 +999,7 @@ function grupos_field_default_fields() {
         'alt_field' => 1,
         'file_directory' => 'logo_grupo',
         'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '2MB',
+        'max_filesize' => '512 KB',
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,
@@ -946,7 +1013,7 @@ function grupos_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '5',
+        'weight' => '-3',
       ),
     ),
   );
@@ -1013,7 +1080,7 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '16',
+        'weight' => '10',
       ),
     ),
   );
@@ -1068,7 +1135,76 @@ function grupos_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '10',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-grupo_artista-field_shared_spotify'
+  $fields['node-grupo_artista-field_shared_spotify'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_spotify',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'grupo_artista',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 14,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_spotify',
+      'label' => 'Spotify',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '8',
       ),
     ),
   );
@@ -1276,7 +1412,7 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '11',
+        'weight' => '6',
       ),
     ),
   );
@@ -1357,7 +1493,7 @@ function grupos_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '8',
+        'weight' => '2',
       ),
     ),
   );
@@ -1425,7 +1561,7 @@ function grupos_field_default_fields() {
           'size' => '30',
         ),
         'type' => 'text_textfield',
-        'weight' => '15',
+        'weight' => '9',
       ),
     ),
   );
@@ -1442,6 +1578,7 @@ function grupos_field_default_fields() {
       'indexes' => array(),
       'module' => 'field_collection',
       'settings' => array(
+        'hide_blank_items' => TRUE,
         'path' => '',
         'profile2_private' => FALSE,
       ),
@@ -1479,7 +1616,7 @@ function grupos_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '3',
+        'weight' => '-1',
       ),
     ),
   );
@@ -1498,7 +1635,6 @@ function grupos_field_default_fields() {
   t('Escribe una biografía que describa la trayectoria del grupo/artista');
   t('Estilo');
   t('Facebook');
-  t('Flickr');
   t('Foto');
   t('Google+');
   t('Imagen');
@@ -1506,14 +1642,14 @@ function grupos_field_default_fields() {
   t('Logo');
   t('Marcar si el grupo/artista se encuentra activo.');
   t('MySpace');
-  t('Nombre del componente del grupo o nombre del artista que es usuario de MetalSevilla (se enlazará con su perfil de usuario). Hay que seleccionarlo cuando el portal lo autocomplete para que se relacione correctamente.');
-  t('Nombre del componente del grupo o nombre del artista que no es usuario de MetalSevilla.');
+  t('Nombre');
+  t('Nombre del componente del grupo o nombre del artista.');
   t('Provincia');
   t('Provincia de la que procede el grupo/artista');
   t('Selecciona el instrumento que utiliza el usuario seleccionado anteriormente.');
+  t('Spotify');
   t('Teléfono');
   t('Twitter');
-  t('Usuario de Flickr del grupo/artista');
   t('Usuario de MySpace del grupo/artista');
   t('Usuario/Canal de Youtube del grupo/artista');
   t('Usuario/Página de Google+ del grupo/artista');

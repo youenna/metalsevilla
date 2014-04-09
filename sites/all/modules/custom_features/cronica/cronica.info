@@ -20,6 +20,7 @@ features[field][] = "field_collection_item-field_paragraph-field_shared_rep_imag
 features[field][] = "node-cronica-field_paragraph"
 features[field][] = "node-cronica-field_shared_date"
 features[field][] = "node-cronica-field_shared_description"
+features[field][] = "node-cronica-field_shared_image"
 features[field][] = "node-cronica-field_shared_rel_event"
 features[field][] = "node-cronica-field_shared_rel_group"
 features[field][] = "node-cronica-field_shared_rel_local"

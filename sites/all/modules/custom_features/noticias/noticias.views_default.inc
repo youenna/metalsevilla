@@ -103,7 +103,7 @@ function noticias_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -225,7 +225,6 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['label'] = 'Estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['identifier'] = 'field_shared_style_tid';
-  $handler->display->display_options['filters']['field_shared_style_tid']['expose']['multiple'] = 1;
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['reduce'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['type'] = 'select';
@@ -241,7 +240,6 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['multiple'] = 1;
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
   /* Filter criterion: Campo: Provincia (field_shared_state) */
   $handler->display->display_options['filters']['field_shared_state_tid']['id'] = 'field_shared_state_tid';

@@ -178,7 +178,7 @@ function cronica_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => '2',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -199,7 +199,7 @@ function cronica_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '-1',
+        'weight' => '35',
       ),
     ),
   );
@@ -250,7 +250,7 @@ function cronica_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '0',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -283,7 +283,7 @@ function cronica_field_default_fields() {
           'year_range' => '-7:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '-3',
+        'weight' => '36',
       ),
     ),
   );
@@ -338,7 +338,7 @@ function cronica_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_shared_description',
-      'label' => 'Descripción',
+      'label' => 'Resumen',
       'required' => 1,
       'settings' => array(
         'text_processing' => '1',
@@ -348,10 +348,86 @@ function cronica_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'rows' => '2',
         ),
         'type' => 'text_textarea',
-        'weight' => '-2',
+        'weight' => '34',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-cronica-field_shared_image'
+  $fields['node-cronica-field_shared_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'profile2_private' => FALSE,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'cronica',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__medium__original',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_image',
+      'label' => 'Foto resumen',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 1,
+        'file_directory' => 'fotos_cronica',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '512 KB',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '33',
       ),
     ),
   );
@@ -413,7 +489,7 @@ function cronica_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -502,7 +578,7 @@ function cronica_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -592,7 +668,7 @@ function cronica_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -659,13 +735,9 @@ function cronica_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '3',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -696,7 +768,7 @@ function cronica_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_plupload',
-        'weight' => '0',
+        'weight' => '38',
       ),
     ),
   );
@@ -740,7 +812,7 @@ function cronica_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -761,7 +833,7 @@ function cronica_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '-4',
+        'weight' => '37',
       ),
     ),
   );
@@ -777,9 +849,11 @@ function cronica_field_default_fields() {
   t('Evento relacionado');
   t('Fecha');
   t('Foto');
+  t('Foto resumen');
   t('Fotos');
   t('Grupos relacionados');
   t('Párrafo');
+  t('Resumen');
   t('Valoración');
 
   return $fields;

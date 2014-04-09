@@ -358,7 +358,7 @@ function evento_field_default_fields() {
         'alt_field' => 1,
         'file_directory' => 'cartel',
         'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '2MB',
+        'max_filesize' => '512 KB',
         'max_resolution' => '',
         'min_resolution' => '',
         'title_field' => 1,

@@ -113,7 +113,6 @@ function actualidad_views_default_views() {
     'critica_disco' => 'critica_disco',
     'cronica' => 'cronica',
     'entrevista' => 'entrevista',
-    'lanzamiento_disco' => 'lanzamiento_disco',
     'noticia' => 'noticia',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
@@ -122,45 +121,8 @@ function actualidad_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
-  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Fotos */
-  $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_rep_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['hide_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightbox__image_250h__original';
-  $handler->display->display_options['fields']['field_shared_rep_image']['settings'] = array(
-    'image_style' => 'image_250h',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_rep_image']['group_rows'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_reversed'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_first_last'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['multi_type'] = 'ul';
-  $handler->display->display_options['fields']['field_shared_rep_image']['field_api_classes'] = 0;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -184,7 +146,6 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightbox__thumbnail__image_250h';
   $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
     'image_style' => 'imagen_listado',
     'image_link' => 'content',
@@ -218,7 +179,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '300';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '450';
   $handler->display->display_options['fields']['field_shared_description']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['alter']['more_link'] = 0;
@@ -231,6 +192,29 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
+  /* Campo: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span class="guionnoticias"></span>';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -247,23 +231,9 @@ function actualidad_views_default_views() {
     'critica_disco' => 'critica_disco',
     'cronica' => 'cronica',
     'entrevista' => 'entrevista',
-    'lanzamiento_disco' => 'lanzamiento_disco',
     'noticia' => 'noticia',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Contenido: Título */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['group'] = 1;
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Título';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['required'] = 0;
-  $handler->display->display_options['filters']['title']['expose']['multiple'] = FALSE;
   /* Filter criterion: Contenido: Tipo */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
   $handler->display->display_options['filters']['type_1']['table'] = 'node';
@@ -287,6 +257,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['filters']['field_shared_style_tid']['id'] = 'field_shared_style_tid';
   $handler->display->display_options['filters']['field_shared_style_tid']['table'] = 'field_data_field_shared_style';
   $handler->display->display_options['filters']['field_shared_style_tid']['field'] = 'field_shared_style_tid';
+  $handler->display->display_options['filters']['field_shared_style_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_style_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator_id'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['label'] = 'Estilo';
@@ -301,6 +272,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['id'] = 'field_shared_state_tid';
   $handler->display->display_options['filters']['field_shared_state_tid']['table'] = 'field_data_field_shared_state';
   $handler->display->display_options['filters']['field_shared_state_tid']['field'] = 'field_shared_state_tid';
+  $handler->display->display_options['filters']['field_shared_state_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_state_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['operator_id'] = 'field_shared_state_tid_op';
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['label'] = 'Provincia';
@@ -325,7 +297,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -355,42 +327,6 @@ function actualidad_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_shared_image']['field_api_classes'] = 0;
-  /* Campo: Campo: Fotos */
-  $handler->display->display_options['fields']['field_shared_rep_image']['id'] = 'field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['table'] = 'field_data_field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['field'] = 'field_shared_rep_image';
-  $handler->display->display_options['fields']['field_shared_rep_image']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_rep_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_rep_image']['type'] = 'lightbox2__lightbox__image_430width__original';
-  $handler->display->display_options['fields']['field_shared_rep_image']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
-  );
-  $handler->display->display_options['fields']['field_shared_rep_image']['group_rows'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_reversed'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['delta_first_last'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_image']['multi_type'] = 'ul';
-  $handler->display->display_options['fields']['field_shared_rep_image']['field_api_classes'] = 0;
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -744,7 +680,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['fields']['field_shared_description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_shared_description']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_shared_description']['field_api_classes'] = 0;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -946,12 +882,11 @@ function actualidad_views_default_views() {
     t('field_shared_rel_group'),
     t('Page'),
     t('more'),
-    t('Título'),
+    t('<span class="guionnoticias"></span>'),
     t('Tipo'),
     t('Estilo'),
     t('Provincia'),
     t('Bloque'),
-    t('<span class="guionnoticias"></span>'),
     t('Actualidad (home)'),
     t('Bloque Slide actualidad home'),
     t('Feed'),
