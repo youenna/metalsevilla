@@ -32,11 +32,11 @@ function categorizacion_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'provincia' => array(
-      'name' => 'Provincia',
-      'machine_name' => 'provincia',
-      'description' => 'Provincias de España',
-      'hierarchy' => '0',
+    'location' => array(
+      'name' => 'Ubicación',
+      'machine_name' => 'location',
+      'description' => '',
+      'hierarchy' => '1',
       'module' => 'taxonomy',
       'weight' => '0',
       'rdf_mapping' => array(
