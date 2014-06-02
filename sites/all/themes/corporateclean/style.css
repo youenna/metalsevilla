@@ -235,7 +235,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 #header-menu ul.menu li.expanded:hover, #header-menu ul.menu li.expanded:hover > ul.menu { display:block; }
 
-#header-menu ul.menu li.expanded ul.menu li a { padding:10px; margin:0; display:block; width:210px; text-align:left; line-height:130%; background:none; font-size:12px; }
+#header-menu ul.menu li.expanded ul.menu li a { padding:10px; margin:0; display:block; width:210px; text-align:left; line-height:130%; background:none; font-size:18px; }
 
 #header-menu ul.menu li.expanded ul.menu li.expanded { background:transparent url('images/menu-collapsed.png') no-repeat center right; }
 
@@ -676,11 +676,6 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
     padding: 0;
     list-style-type: none;
     list-style-image: none;
-}
-
-
-.field-name-field-shared-description, .views-field-field-bio, .views-field-field-shared-description {
-        text-align: justify;
 }
 
 .social-group {
