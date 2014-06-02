@@ -53,7 +53,7 @@ function main_menu_menu_default_menu_links() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -264,9 +264,7 @@ function main_menu_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Inicio',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => '0',
@@ -289,7 +287,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-44',
+    'weight' => '-43',
   );
   // Exported menu link: menu-menu-cabecera:node/8189
   $menu_links['menu-menu-cabecera:node/8189'] = array(
@@ -305,7 +303,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-45',
+    'weight' => '-44',
   );
   // Exported menu link: menu-menu-cabecera:node/add
   $menu_links['menu-menu-cabecera:node/add'] = array(
@@ -321,7 +319,7 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
+    'weight' => '-45',
   );
   // Exported menu link: menu-menu-cabecera:user
   $menu_links['menu-menu-cabecera:user'] = array(
@@ -334,18 +332,18 @@ function main_menu_menu_default_menu_links() {
       'alter' => TRUE,
     ),
     'module' => 'system',
-    'hidden' => '1',
+    'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
+    'weight' => '-48',
   );
   // Exported menu link: menu-menu-cabecera:user/login
   $menu_links['menu-menu-cabecera:user/login'] = array(
     'menu_name' => 'menu-menu-cabecera',
     'link_path' => 'user/login',
     'router_path' => 'user/login',
-    'link_title' => 'Acceso / Login',
+    'link_title' => 'Acceso / Registro',
     'options' => array(
       'attributes' => array(),
     ),
@@ -354,23 +352,21 @@ function main_menu_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '-49',
   );
   // Exported menu link: menu-menu-cabecera:user/logout
   $menu_links['menu-menu-cabecera:user/logout'] = array(
     'menu_name' => 'menu-menu-cabecera',
     'link_path' => 'user/logout',
     'router_path' => 'user/logout',
-    'link_title' => 'Cerrar Sesión',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
+    'link_title' => 'Log out',
+    'options' => array(),
+    'module' => 'system',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-48',
+    'weight' => '-47',
   );
   // Exported menu link: menu-redes-sociales-footer:actualidad/feed
   $menu_links['menu-redes-sociales-footer:actualidad/feed'] = array(
@@ -542,12 +538,11 @@ function main_menu_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Acceso / Login');
+  t('Acceso / Registro');
   t('Actualidad');
   t('Agenda');
   t('Aviso Legal');
   t('Bares');
-  t('Cerrar Sesión');
   t('Contacto');
   t('Crear contenido');
   t('Críticas');
@@ -560,6 +555,7 @@ function main_menu_menu_default_menu_links() {
   t('Grupos/Artistas');
   t('Guia Metalera');
   t('Inicio');
+  t('Log out');
   t('Mapa web');
   t('Noticias');
   t('RSS');

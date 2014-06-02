@@ -19,13 +19,13 @@ function main_menu_menu_default_menu_custom() {
   // Exported menu: menu-enlaces-footer
   $menus['menu-enlaces-footer'] = array(
     'menu_name' => 'menu-enlaces-footer',
-    'title' => 'enlaces_footer',
+    'title' => 'Menú inferior',
     'description' => '',
   );
   // Exported menu: menu-menu-cabecera
   $menus['menu-menu-cabecera'] = array(
     'menu_name' => 'menu-menu-cabecera',
-    'title' => 'menu_cabecera',
+    'title' => 'Menú superior',
     'description' => 'Menú de navegación de la cabecera.',
   );
   // Exported menu: menu-redes-sociales
@@ -45,9 +45,9 @@ function main_menu_menu_default_menu_custom() {
   t('Main menu');
   t('Menú de navegación de la cabecera.');
   t('Menú de redes sociales de Metal Sevilla.');
+  t('Menú inferior');
+  t('Menú superior');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
-  t('enlaces_footer');
-  t('menu_cabecera');
   t('redes_sociales');
   t('redes_sociales_footer');
 
