@@ -514,8 +514,8 @@ display: table;
 }
 
 .region.region-search-area {
-  position: relative;
-  top: 36px;
+/*position: relative;
+top: 36px;*/
 }
 #edit-field-shared-style-und .form-type-checkbox {
   float: left;
@@ -525,10 +525,15 @@ display: table;
 }
 
 .view-banners-right img{
-width: 100%;
+	width: 100%;
 }
 
 .field-name-field-shared-description, .views-field-field-bio, .views-field-field-shared-description {
         text-align: justify;
         font-size: 16px;
+}
+
+#header-inside-left, #header-inside-right {
+	position: relative;
+	top: -35px;
 }
