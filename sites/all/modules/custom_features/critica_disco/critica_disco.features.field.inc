@@ -73,7 +73,7 @@ function critica_disco_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '-3',
       ),
     ),
   );
@@ -115,12 +115,9 @@ function critica_disco_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => 'file',
-            'image_style' => 'image_200x200',
-          ),
-          'type' => 'image',
+          'module' => 'lightbox2',
+          'settings' => array(),
+          'type' => 'lightbox2__lightbox__medium__original',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -136,6 +133,7 @@ function critica_disco_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'portada',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '2MB',
@@ -152,7 +150,7 @@ function critica_disco_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '-4',
       ),
     ),
   );
@@ -217,7 +215,7 @@ function critica_disco_field_default_fields() {
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => '6',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -270,14 +268,16 @@ function critica_disco_field_default_fields() {
       ),
       'module' => 'node_reference',
       'settings' => array(
+        'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 0,
           'entrevista' => 0,
+          'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 'grupo_artista',
           'lanzamiento_disco' => 0,
@@ -305,7 +305,7 @@ function critica_disco_field_default_fields() {
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => '5',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -395,7 +395,78 @@ function critica_disco_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '-2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-critica_disco-field_shared_state'
+  $fields['node-critica_disco-field_shared_state'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_state',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'provincia',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'critica_disco',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '7',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_state',
+      'label' => 'Provincia',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '3',
       ),
     ),
   );
@@ -441,11 +512,11 @@ function critica_disco_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -537,7 +608,7 @@ function critica_disco_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '6',
+        'weight' => '4',
       ),
     ),
   );
@@ -552,6 +623,7 @@ function critica_disco_field_default_fields() {
   t('Estilo');
   t('Grupos relacionados');
   t('Portada');
+  t('Provincia');
   t('Valoración');
 
   return $fields;

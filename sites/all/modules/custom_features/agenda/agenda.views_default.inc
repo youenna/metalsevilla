@@ -10,7 +10,7 @@
 function agenda_views_default_views() {
   $export = array();
 
-  $view = new view;
+  $view = new view();
   $view->name = 'agenda';
   $view->description = '';
   $view->tag = 'Calendar';
@@ -23,12 +23,15 @@ function agenda_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Agenda';
+  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['link_display'] = 'page_1';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Filtrar';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'date_views_pager';
   $handler->display->display_options['pager']['options']['date_id'] = 'month';
@@ -39,55 +42,45 @@ function agenda_views_default_views() {
   $handler->display->display_options['style_options']['theme_style'] = '1';
   $handler->display->display_options['style_options']['max_items'] = '0';
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
+  /* Relationship: Contenido: Autor */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['text'] = '[title] [service_links] ';
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  /* Campo: Usuario: Nombre */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  /* Campo: Contenido: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['text'] = '<div class="list-submitted">ENVIADO POR [name] EL [created]</div>';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
   /* Campo: Contenido: Fechas */
   $handler->display->display_options['fields']['field_shared_rep_date']['id'] = 'field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['table'] = 'field_data_field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['field'] = 'field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['label'] = '';
   $handler->display->display_options['fields']['field_shared_rep_date']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_rep_date']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_shared_rep_date']['settings'] = array(
     'format_type' => '24horas',
     'fromto' => 'both',
@@ -95,131 +88,56 @@ function agenda_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  $handler->display->display_options['fields']['field_shared_rep_date']['group_rows'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_shared_rep_date']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_rep_date']['delta_reversed'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['delta_first_last'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['field_api_classes'] = 0;
   /* Campo: Contenido: Precio anticipada */
   $handler->display->display_options['fields']['field_price1']['id'] = 'field_price1';
   $handler->display->display_options['fields']['field_price1']['table'] = 'field_data_field_price1';
   $handler->display->display_options['fields']['field_price1']['field'] = 'field_price1';
   $handler->display->display_options['fields']['field_price1']['label'] = '';
   $handler->display->display_options['fields']['field_price1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_price1']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_price1']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_price1']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_price1']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_price1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_price1']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_price1']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_price1']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_price1']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_price1']['settings'] = array(
     'thousand_separator' => ' ',
     'decimal_separator' => '.',
     'scale' => '2',
     'prefix_suffix' => 1,
   );
-  $handler->display->display_options['fields']['field_price1']['field_api_classes'] = 0;
   /* Campo: Contenido: Precio en taquilla */
   $handler->display->display_options['fields']['field_price2']['id'] = 'field_price2';
   $handler->display->display_options['fields']['field_price2']['table'] = 'field_data_field_price2';
   $handler->display->display_options['fields']['field_price2']['field'] = 'field_price2';
   $handler->display->display_options['fields']['field_price2']['label'] = '';
-  $handler->display->display_options['fields']['field_price2']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_price2']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_price2']['alter']['text'] = 'Hora: [field_shared_rep_date], Precio: [field_price1] / [field_price2] ';
-  $handler->display->display_options['fields']['field_price2']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_price2']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_price2']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_price2']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_price2']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_price2']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_price2']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_price2']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_price2']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_price2']['settings'] = array(
     'thousand_separator' => ' ',
     'decimal_separator' => '.',
     'scale' => '2',
     'prefix_suffix' => 1,
   );
-  $handler->display->display_options['fields']['field_price2']['field_api_classes'] = 0;
   /* Campo: Campo: Provincia */
   $handler->display->display_options['fields']['field_shared_state']['id'] = 'field_shared_state';
   $handler->display->display_options['fields']['field_shared_state']['table'] = 'field_data_field_shared_state';
   $handler->display->display_options['fields']['field_shared_state']['field'] = 'field_shared_state';
   $handler->display->display_options['fields']['field_shared_state']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_state']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_shared_state']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_shared_state']['alter']['text'] = 'Provincia: [field_shared_state] ';
-  $handler->display->display_options['fields']['field_shared_state']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_shared_state']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_state']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_state']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_state']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_shared_state']['field_api_classes'] = 0;
   /* Campo: Contenido: Service links */
   $handler->display->display_options['fields']['service_links']['id'] = 'service_links';
   $handler->display->display_options['fields']['service_links']['table'] = 'node';
   $handler->display->display_options['fields']['service_links']['field'] = 'service_links';
   $handler->display->display_options['fields']['service_links']['label'] = '';
   $handler->display->display_options['fields']['service_links']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['service_links']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['service_links']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['service_links']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['service_links']['hide_alter_empty'] = 1;
   /* Campo: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span class="guionnoticias"></span>';
-  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   /* Sort criterion: Contenido: Fechas -  start date (field_shared_rep_date) */
   $handler->display->display_options['sorts']['field_shared_rep_date_value']['id'] = 'field_shared_rep_date_value';
   $handler->display->display_options['sorts']['field_shared_rep_date_value']['table'] = 'field_data_field_shared_rep_date';
@@ -249,11 +167,9 @@ function agenda_views_default_views() {
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['label'] = 'Estilo';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['operator'] = 'field_shared_style_tid_op';
   $handler->display->display_options['filters']['field_shared_style_tid']['expose']['identifier'] = 'field_shared_style_tid';
-  $handler->display->display_options['filters']['field_shared_style_tid']['expose']['reduce'] = 0;
-  $handler->display->display_options['filters']['field_shared_style_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_shared_style_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_style_tid']['vocabulary'] = 'estilo';
-  $handler->display->display_options['filters']['field_shared_style_tid']['error_message'] = 0;
+  $handler->display->display_options['filters']['field_shared_style_tid']['error_message'] = FALSE;
   /* Filter criterion: Contenido: Grupos relacionados (field_shared_rel_group) */
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
@@ -264,7 +180,6 @@ function agenda_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
-  $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['reduce'] = 0;
   /* Filter criterion: Campo: Provincia (field_shared_state) */
   $handler->display->display_options['filters']['field_shared_state_tid']['id'] = 'field_shared_state_tid';
   $handler->display->display_options['filters']['field_shared_state_tid']['table'] = 'field_data_field_shared_state';
@@ -275,11 +190,9 @@ function agenda_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['label'] = 'Provincia';
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['operator'] = 'field_shared_state_tid_op';
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['identifier'] = 'field_shared_state_tid';
-  $handler->display->display_options['filters']['field_shared_state_tid']['expose']['reduce'] = 0;
-  $handler->display->display_options['filters']['field_shared_state_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
-  $handler->display->display_options['filters']['field_shared_state_tid']['error_message'] = 0;
+  $handler->display->display_options['filters']['field_shared_state_tid']['error_message'] = FALSE;
 
   /* Display: Month */
   $handler = $view->new_display('page', 'Month', 'page_1');
@@ -300,14 +213,19 @@ function agenda_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['row_options']['colors']['legend'] = 'type';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Contenido: Autor */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Fecha: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['date_argument']['exception']['title'] = 'Todo(s)';
   $handler->display->display_options['arguments']['date_argument']['default_argument_type'] = 'date';
-  $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['add_delta'] = 'yes';
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
@@ -347,8 +265,8 @@ function agenda_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['date_argument']['exception']['title'] = 'Todo(s)';
   $handler->display->display_options['arguments']['date_argument']['default_argument_type'] = 'date';
-  $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['granularity'] = 'week';
   $handler->display->display_options['arguments']['date_argument']['add_delta'] = 'yes';
@@ -386,8 +304,8 @@ function agenda_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['date_argument']['exception']['title'] = 'Todo(s)';
   $handler->display->display_options['arguments']['date_argument']['default_argument_type'] = 'date';
-  $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['granularity'] = 'day';
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
@@ -424,46 +342,17 @@ function agenda_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
   /* Campo: Contenido: Fechas */
   $handler->display->display_options['fields']['field_shared_rep_date']['id'] = 'field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['table'] = 'field_data_field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['field'] = 'field_shared_rep_date';
   $handler->display->display_options['fields']['field_shared_rep_date']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_shared_rep_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_rep_date']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_shared_rep_date']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_shared_rep_date']['settings'] = array(
     'format_type' => 'short',
     'fromto' => 'both',
@@ -472,18 +361,16 @@ function agenda_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => '',
   );
-  $handler->display->display_options['fields']['field_shared_rep_date']['group_rows'] = 0;
+  $handler->display->display_options['fields']['field_shared_rep_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_shared_rep_date']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_rep_date']['delta_reversed'] = 0;
-  $handler->display->display_options['fields']['field_shared_rep_date']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Fecha: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['date_argument']['exception']['title'] = 'Todo(s)';
   $handler->display->display_options['arguments']['date_argument']['default_argument_type'] = 'date';
-  $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['granularity'] = 'year';
   $handler->display->display_options['arguments']['date_argument']['add_delta'] = 'yes';
@@ -521,8 +408,8 @@ function agenda_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['date_argument']['exception']['title'] = 'Todo(s)';
   $handler->display->display_options['arguments']['date_argument']['default_argument_type'] = 'date';
-  $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['add_delta'] = 'yes';
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
@@ -544,6 +431,7 @@ function agenda_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -566,12 +454,14 @@ function agenda_views_default_views() {
     t('Master'),
     t('Agenda'),
     t('more'),
-    t('Apply'),
+    t('Filtrar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('author'),
     t('[title] [service_links] '),
+    t('<div class="list-submitted">ENVIADO POR [name] EL [created]</div>'),
     t('Hora: [field_shared_rep_date], Precio: [field_price1] / [field_price2] '),
     t('Provincia: [field_shared_state] '),
     t('<span class="guionnoticias"></span>'),

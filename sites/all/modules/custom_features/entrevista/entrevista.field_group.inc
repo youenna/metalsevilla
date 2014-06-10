@@ -21,7 +21,7 @@ function entrevista_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Datos Principales',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_link_audio',
       1 => 'field_shared_description',
@@ -52,7 +52,7 @@ function entrevista_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Relaciones',
-    'weight' => '1',
+    'weight' => '3',
     'children' => array(
       0 => 'field_shared_rel_group',
       1 => 'field_shared_rel_disc',
@@ -68,6 +68,34 @@ function entrevista_field_group_info() {
     ),
   );
   $export['group_shared_relationships|node|entrevista|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_shared_settings|node|entrevista|form';
+  $field_group->group_name = 'group_shared_settings';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'entrevista';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Categorización',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_shared_style',
+      1 => 'field_shared_state',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_shared_settings|node|entrevista|form'] = $field_group;
 
   return $export;
 }

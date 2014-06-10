@@ -26,8 +26,7 @@ function critica_disco_field_group_info() {
       0 => 'field_shared_image',
       1 => 'field_shared_description',
       2 => 'field_shared_score2',
-      3 => 'field_year',
-      4 => 'title',
+      3 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -83,6 +82,8 @@ function critica_disco_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_shared_style',
+      1 => 'field_year',
+      2 => 'field_shared_state',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

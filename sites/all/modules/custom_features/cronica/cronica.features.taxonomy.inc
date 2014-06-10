@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * categorizacion.features.taxonomy.inc
+ * cronica.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function categorizacion_taxonomy_default_vocabularies() {
+function cronica_taxonomy_default_vocabularies() {
   return array(
-    'estilo' => array(
-      'name' => 'Estilo',
-      'machine_name' => 'estilo',
-      'description' => 'Estilo',
+    'provincia' => array(
+      'name' => 'Provincia',
+      'machine_name' => 'provincia',
+      'description' => 'Provincias de España',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',

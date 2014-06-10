@@ -73,7 +73,7 @@ function noticias_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '-3',
+        'weight' => '-2',
       ),
     ),
   );
@@ -132,13 +132,14 @@ function noticias_field_default_fields() {
       'label' => 'Imagen',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'noticia',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '2 MB',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -210,11 +211,11 @@ function noticias_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => 6,
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -298,10 +299,11 @@ function noticias_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '4',
+          'type' => 'node_reference_default',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -387,9 +389,10 @@ function noticias_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'node_reference_default',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -476,10 +479,11 @@ function noticias_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
+          'type' => 'node_reference_default',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -505,6 +509,147 @@ function noticias_field_default_fields() {
         ),
         'type' => 'node_reference_autocomplete',
         'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-noticia-field_shared_state'
+  $fields['node-noticia-field_shared_state'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_state',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'provincia',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'noticia',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'inline',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '8',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_state',
+      'label' => 'Provincia',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '8',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-noticia-field_shared_style'
+  $fields['node-noticia-field_shared_style'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_shared_style',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'estilo',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'noticia',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'inline',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '7',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_shared_style',
+      'label' => 'Estilo',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '7',
       ),
     ),
   );
@@ -562,7 +707,7 @@ function noticias_field_default_fields() {
         'module' => 'video_embed_field',
         'settings' => array(),
         'type' => 'video_embed_field_video',
-        'weight' => '-2',
+        'weight' => '-1',
       ),
     ),
   );
@@ -572,9 +717,11 @@ function noticias_field_default_fields() {
   t('Descripción');
   t('Disco relacionado');
   t('Establecimiento relacionado');
+  t('Estilo');
   t('Evento relacionado');
   t('Grupos relacionados');
   t('Imagen');
+  t('Provincia');
   t('Vídeo');
 
   return $fields;

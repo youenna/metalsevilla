@@ -136,10 +136,10 @@ function relaciones_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-6' => array(
-          'module' => 'block',
-          'delta' => 6,
-          'region' => 'header',
+        'facebook_comments_box-facebook_comments_box' => array(
+          'module' => 'facebook_comments_box',
+          'delta' => 'facebook_comments_box',
+          'region' => 'content',
           'weight' => '-10',
         ),
       ),
@@ -204,36 +204,7 @@ function relaciones_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-610c147fb4faf7d9ba9d99eb6c6ec355' => array(
-          'module' => 'views',
-          'delta' => '610c147fb4faf7d9ba9d99eb6c6ec355',
-          'region' => 'left',
-          'weight' => '-10',
-        ),
-        'views-3df97544bb32f4ca62f53a43577069bd' => array(
-          'module' => 'views',
-          'delta' => '3df97544bb32f4ca62f53a43577069bd',
-          'region' => 'left',
-          'weight' => '-10',
-        ),
-        'views--exp-entrevistas-page' => array(
-          'module' => 'views',
-          'delta' => '-exp-entrevistas-page',
-          'region' => 'right',
-          'weight' => '-10',
-        ),
-        'views-bb33b54c359e2a78147fb12d55b012f1' => array(
-          'module' => 'views',
-          'delta' => 'bb33b54c359e2a78147fb12d55b012f1',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
@@ -399,10 +370,15 @@ function relaciones_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'noticias_toc';
   $context->description = '';
-  $context->tag = 'Detalle ToC';
+  $context->tag = 'Detalle Noticia, Cronica, Critica, Entrevista, Disco y Evento';
   $context->conditions = array(
     'node' => array(
       'values' => array(
+        'critica_disco' => 'critica_disco',
+        'cronica' => 'cronica',
+        'disco' => 'disco',
+        'entrevista' => 'entrevista',
+        'evento' => 'evento',
         'noticia' => 'noticia',
       ),
       'options' => array(
@@ -410,35 +386,12 @@ function relaciones_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-3df97544bb32f4ca62f53a43577069bd' => array(
-          'module' => 'views',
-          'delta' => '3df97544bb32f4ca62f53a43577069bd',
-          'region' => 'left',
-          'weight' => '-10',
-        ),
-        'views-8bd670d8c665375436c3fd0e6b8d41a2' => array(
-          'module' => 'views',
-          'delta' => '8bd670d8c665375436c3fd0e6b8d41a2',
-          'region' => 'left',
-          'weight' => '-9',
-        ),
-        'views-34b4d0b75416355a51dfb17350d5e33c' => array(
-          'module' => 'views',
-          'delta' => '34b4d0b75416355a51dfb17350d5e33c',
-          'region' => 'left',
-          'weight' => '-8',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Detalle ToC');
+  t('Detalle Noticia, Cronica, Critica, Entrevista, Disco y Evento');
   $export['noticias_toc'] = $context;
 
   $context = new stdClass();
