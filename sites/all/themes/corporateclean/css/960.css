@@ -498,14 +498,10 @@ display: table;
 .view-id-noticias.view-display-id-page .views-field-field-shared-image,
 .view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image,
 .view-id-entrevistas.view-display-id-page .views-field-field-shared-rep-image,
-.view-id-actualidad.view-display-id-page .views-field-field-shared-image { 
+.view-id-actualidad.view-display-id-page .views-field-field-shared-image,
+.node .field-name-field-shared-image.field-type-image,.views-field-field-shared-logo { 
     float: left;
     margin: 0 10px 10px 0;
-}
-
-.field-type-image,.views-field-field-shared-logo{
-        float: left;
-        margin: 0 10px 30px 0;
 }
 
 .node-entrevista .field-item {
