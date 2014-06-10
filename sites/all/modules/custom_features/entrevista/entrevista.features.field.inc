@@ -121,7 +121,7 @@ function entrevista_field_default_fields() {
             'video_style' => 'normal',
           ),
           'type' => 'video_embed_field',
-          'weight' => '1',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -187,7 +187,7 @@ function entrevista_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -272,10 +272,11 @@ function entrevista_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
+          'type' => 'node_reference_default',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -328,14 +329,16 @@ function entrevista_field_default_fields() {
       ),
       'module' => 'node_reference',
       'settings' => array(
+        'profile2_private' => FALSE,
         'referenceable_types' => array(
-          'anuncio' => 0,
-          'blog' => 0,
+          'banner' => 0,
           'critica_disco' => 0,
           'cronica' => 0,
           'disco' => 0,
           'entrevista' => 0,
+          'establecimiento' => 0,
           'evento' => 0,
+          'faq' => 0,
           'foto' => 0,
           'grupo_artista' => 'grupo_artista',
           'lanzamiento_disco' => 0,
@@ -360,8 +363,9 @@ function entrevista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'node_reference_default',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -429,9 +433,10 @@ function entrevista_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
+          'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '4',
+          'type' => 'lightbox2__lightshow__medium__original',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -446,6 +451,7 @@ function entrevista_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'fotos_entrevista',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '2MB',
@@ -456,12 +462,12 @@ function entrevista_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'plup',
         'settings' => array(
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'image_plupload',
         'weight' => '5',
       ),
     ),

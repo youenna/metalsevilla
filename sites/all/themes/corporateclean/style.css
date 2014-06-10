@@ -56,6 +56,8 @@ height: auto;
 	.breadcrumb-separator { padding:0 8px 0 4px; }
 
 	.submitted { margin:-15px 0 50px 0; font-size: 85%; text-transform: uppercase; }
+	
+	.list-submitted { font-size: 85%; text-transform: uppercase; }
 
 	.official-content { float:right; }
 

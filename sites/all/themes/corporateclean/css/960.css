@@ -494,9 +494,10 @@ display: table;
 	float: right;
 }
 
-.view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-rep-image,
+.view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-image,
 .view-id-noticias.view-display-id-page .views-field-field-shared-image,
 .view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image,
+.view-id-entrevistas.view-display-id-page .views-field-field-shared-rep-image,
 .view-id-actualidad.view-display-id-page .views-field-field-shared-image { 
     float: left;
     margin: 0 10px 10px 0;
@@ -505,6 +506,11 @@ display: table;
 .field-type-image,.views-field-field-shared-logo{
         float: left;
         margin: 0 10px 30px 0;
+}
+
+.node-entrevista .field-item {
+  	float: left;
+	margin: 10px;
 }
 
 #block-views-actualidad-block-1 .views-field-field-shared-image img, 

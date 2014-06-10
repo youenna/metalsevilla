@@ -19,3 +19,31 @@ function custom_configurations_views_pre_build(&$view) {
     		}
   	}
  }
+
+
+/**
+* Implements hook_page_alter().
+*/
+function custom_configurations_page_alter(&$data) {
+  if (isset($data['content']['system_main']['nodes'])) {
+    $nids = element_children($data['content']['system_main']['nodes']);
+    $nid = $nids[0];
+    // We'll place the node comments inside a quicktabs block.
+    $comments = $data['content']['system_main']['nodes'][$nid]['comments'];
+    unset($data['content']['system_main']['nodes'][$nid]['comments']);
+    $overrides = array('ajax' => 0, 'style' => 'Phylactere'); // Override some of the settings for the QT instance.
+    $custom_tabs = array(
+      array(
+        'title' => 'MetalSpain',
+        'contents' => $comments, // Custom tabs must have a contents property.
+        'weight' => 0
+      )
+    );
+    // Our 'node_activities' Quicktabs instance has just one tab, we're going to
+    // add a second tab to it, containing the node comments.
+    $data['content']['tabcomentarios'] = array(
+      'content' => quicktabs_build_quicktabs('tabcomentarios', $overrides, $custom_tabs),
+      '#weight' => 99,
+    );
+  }
+}
