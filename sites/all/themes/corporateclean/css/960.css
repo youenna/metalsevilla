@@ -447,51 +447,51 @@ display: table;
 
 }
 .views-field-field-shared-description{
-	text-align: justify;
+text-align: justify;
 }
 
 /* Comun de home */
 #block-nivo-slider-nivo-slider{
-        margin: 0 0 15px 0;
+margin: 0 0 15px 0;
 }
 
 .views-field-title{
-    font-family: 'LeagueGothicRegular';
-    font-size: 22px;
-    margin: 10px 0;
-    
+font-family: 'LeagueGothicRegular';
+font-size: 22px;
+margin: 10px 0;
+
 }
 
 .guionnoticias{
-    background-color: #EF6323;
-    display: block;
-    height: 3px;
-    margin: 10px 0;
-    width: 80%;
-    clear:both;
+background-color: #EF6323;
+display: block;
+height: 3px;
+margin: 10px 0;
+width: 80%;
+clear:both;
 }
 
 .monthview .guionnoticias{
-    background-color: #EF6323;
-    display: block;
-    height: 2px;
-    width: 100%;
-    clear:both;
+background-color: #EF6323;
+display: block;
+height: 2px;
+width: 100%;
+clear:both;
 }
 
 
 .service-links li {
-	float: left;
-	margin: 10px;
+float: left;
+margin: 10px;
 }
 
 .views-field-service-links li {
-	padding: 4px;
-	float:left;
+padding: 4px;
+float:left;
 }
 
 .views-field-service-links{
-	float: right;
+float: right;
 }
 
 .view-id-cronicas_de_conciertos.view-display-id-page .views-field-field-shared-image,
@@ -500,19 +500,19 @@ display: table;
 .view-id-entrevistas.view-display-id-page .views-field-field-shared-rep-image,
 .view-id-actualidad.view-display-id-page .views-field-field-shared-image,
 .node .field-name-field-shared-image.field-type-image,.views-field-field-shared-logo { 
-    float: left;
-    margin: 0 10px 10px 0;
+float: left;
+margin: 0 10px 10px 0;
 }
 
 .node-entrevista .field-item {
-  	float: left;
-	margin: 10px;
+float: left;
+margin: 10px;
 }
 
 #block-views-actualidad-block-1 .views-field-field-shared-image img, 
 #block-views-eventos-block-1 .views-field-field-shared-image img,
 #block-views-actualidad-block-1 .views-field-field-shared-rep-image img{
-	width: 100%;
+width: 100%;
 }
 
 .region.region-search-area {
@@ -520,20 +520,24 @@ display: table;
 top: 36px;*/
 }
 #edit-field-shared-style-und .form-type-checkbox {
-  float: left;
+float: left;
 }
 
 .fieldset-wrapper {
 }
 
 .view-banners-right img{
-	width: 100%;
+width: 100%;
 }
 
 .field-name-field-shared-description, .views-field-field-bio, .views-field-field-shared-description {
-        text-align: justify;
-        font-size: 16px;
+text-align: justify;
+font-size: 16px;
 }
+
+.field-name-field-shared-description ol, .views-field-field-bio ol, .views-field-field-shared-description ol{ margin-left: 25%;}
+
+.field-name-field-shared-description ul, .views-field-field-bio ul, .views-field-field-shared-description ul{ margin-left: 25%;}
 
 #header-inside-left, #header-inside-right {
 	position: relative;

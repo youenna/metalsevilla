@@ -693,3 +693,7 @@ width: 40%;
 .form-item-field-shared-rel-event-nid select{
 width: 100%;
 }
+
+.form-item-field-shared-state-und{
+	margin-top: 25%;
+}
