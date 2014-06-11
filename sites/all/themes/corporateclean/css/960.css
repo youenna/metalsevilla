@@ -499,14 +499,20 @@ float: right;
 .view-id-criticas_de_discos.view-display-id-page .views-field-field-shared-image,
 .view-id-entrevistas.view-display-id-page .views-field-field-shared-rep-image,
 .view-id-actualidad.view-display-id-page .views-field-field-shared-image,
-.node .field-name-field-shared-image.field-type-image,.views-field-field-shared-logo { 
+.node .field-name-field-shared-image.field-type-image,.views-field-field-shared-logo{ 
 float: left;
 margin: 0 10px 10px 0;
 }
 
-.node-entrevista .field-item {
-float: left;
-margin: 10px;
+.node-entrevista .field-item,.node-cronica .field-item a{
+	float: left;
+	margin: 10px;
+}
+
+.field.field-name-field-shared-rep-image.field-type-image.field-label-hidden .field-items {
+  display: table;
+  margin: 0 auto;
+  width: 740px;
 }
 
 #block-views-actualidad-block-1 .views-field-field-shared-image img, 
