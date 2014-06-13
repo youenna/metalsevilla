@@ -32,8 +32,8 @@
     <?php if (!empty($content['links'])): ?>
       <div class="links"><?php print render($content['links']); ?></div>
     <?php endif; ?>
-
     <?php print render($content['comments']); ?>
+
   </div>
 
 </div>

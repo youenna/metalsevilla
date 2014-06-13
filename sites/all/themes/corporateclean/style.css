@@ -697,3 +697,21 @@ width: 100%;
 .form-item-field-shared-state-und{
 	margin-top: 25%;
 }
+
+.clear { clear: both; margin-top: 5px;}
+
+.view-bloques-de-perfil-de-usuario.view-id-bloques_de_perfil_de_usuario.view-display-id-block_1,
+.view-bloques-de-perfil-de-usuario.view-id-bloques_de_perfil_de_usuario.view-display-id-block_7 {
+  float: left;
+  margin: 10px;
+  width: 65%;
+}
+
+.view-signup-user-list, .form-item.form-type-textfield.form-item-signup-form-data-Phone {
+  display: none;
+}
+
+.item-list li {
+  font-weight: normal;
+	font-style:normal;
+}
