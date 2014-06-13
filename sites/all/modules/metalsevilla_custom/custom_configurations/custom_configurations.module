@@ -39,11 +39,14 @@ function custom_configurations_page_alter(&$data) {
         'weight' => 0
       )
     );
-    // Our 'node_activities' Quicktabs instance has just one tab, we're going to
+
+    if(($data['content']['system_main']['nodes'][$nid]['body']['#bundle']!='page') && ($data['content']['system_main']['nodes'][$nid]['#bundle']!='page')){
+     // Our 'node_activities' Quicktabs instance has just one tab, we're going to
     // add a second tab to it, containing the node comments.
     $data['content']['tabcomentarios'] = array(
       'content' => quicktabs_build_quicktabs('tabcomentarios', $overrides, $custom_tabs),
       '#weight' => 99,
-    );
+    );}
   }
+
 }
