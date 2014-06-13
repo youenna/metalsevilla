@@ -111,7 +111,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'lightbox2__lightbox__large__original',
+          'type' => 'lightbox2__lightbox__image_430width__original',
           'weight' => '1',
         ),
       ),
@@ -175,7 +175,7 @@ function cronica_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_fields',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -247,7 +247,7 @@ function cronica_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -324,7 +324,7 @@ function cronica_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -392,7 +392,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'lightbox2__lightbox__medium__original',
+          'type' => 'lightbox2__lightbox__image_430width__original',
           'weight' => '1',
         ),
         'teaser' => array(
@@ -738,7 +738,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '10',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -814,7 +814,7 @@ function cronica_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',

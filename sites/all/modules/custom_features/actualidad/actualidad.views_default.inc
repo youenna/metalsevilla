@@ -46,7 +46,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Contenido: Grupos relacionados (field_shared_rel_group) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['field'] = 'field_shared_rel_group_nid';
@@ -103,18 +103,23 @@ function actualidad_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« primera';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ anterior';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'siguiente ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Foto */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['label'] = '';
   $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
-    'image_style' => 'imagen_listado',
-    'image_link' => 'content',
-  );
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -216,6 +221,14 @@ function actualidad_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
   $handler->display->display_options['filters']['field_shared_state_tid']['error_message'] = FALSE;
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Toda la actualidad de la música heavy metal y rock en español: conciertos, festivales, crónicas | www.metalsevilla.es',
+    ),
+    'description' => array(
+      'value' => 'Conciertos, festivales, crónicas, críticas y mucho más en la sección de actualidad. Toda la información del heavy metal y el rock en español está en www.metalspain.es',
+    ),
+  );
   $handler->display->display_options['path'] = 'actualidad';
 
   /* Display: Bloque */
@@ -230,18 +243,12 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Foto */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['label'] = '';
   $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_image']['type'] = 'lightbox2__lightbox__image_430width__original';
-  $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
-  );
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
