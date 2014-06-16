@@ -46,7 +46,7 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Contenido: Grupos relacionados (field_shared_rel_group) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['id'] = 'field_shared_rel_group_nid';
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['table'] = 'field_data_field_shared_rel_group';
   $handler->display->display_options['relationships']['field_shared_rel_group_nid']['field'] = 'field_shared_rel_group_nid';
@@ -114,17 +114,12 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['next'] = 'siguiente ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Foto */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['label'] = '';
   $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
-    'image_style' => 'imagen_listado',
-    'image_link' => 'content',
-  );
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -248,17 +243,20 @@ function actualidad_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Foto */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['label'] = '';
   $handler->display->display_options['fields']['field_shared_image']['element_label_colon'] = FALSE;
+<<<<<<< HEAD
   $handler->display->display_options['fields']['field_shared_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_shared_image']['settings'] = array(
     'image_style' => 'imagen_slide_home',
     'image_link' => 'content',
   );
+=======
+>>>>>>> 0b2500ef01a52f3f24fa18e624383153bf36c7c3
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';

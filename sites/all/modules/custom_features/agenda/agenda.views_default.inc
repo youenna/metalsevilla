@@ -231,6 +231,14 @@ function agenda_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
     'field_data_field_shared_rep_date.field_shared_rep_date_value' => 'field_data_field_shared_rep_date.field_shared_rep_date_value',
   );
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Agenda con todos los conciertos y festivales de heavy metal y rock | www.metalsevilla.com',
+    ),
+    'description' => array(
+      'value' => '¿Buscas un concierto? En nuestra agenda los encontrarás todos. ¿Falta tu grupo? ¡Regístrate en un minuto como usuario y publica todos los conciertos que des!',
+    ),
+  );
   $handler->display->display_options['path'] = 'agenda';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Month';
