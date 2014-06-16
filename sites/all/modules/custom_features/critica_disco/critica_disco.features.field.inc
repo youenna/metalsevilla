@@ -598,7 +598,7 @@ function critica_disco_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_year',
-      'label' => 'Año',
+      'label' => 'Año de publicación',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -616,7 +616,7 @@ function critica_disco_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Añade la imagen portada del disco');
-  t('Año');
+  t('Año de publicación');
   t('Descripción');
   t('Disco relacionado');
   t('Escribe el nombre del grupo y selecciónalo cuando se autocomplete automáticamente, así estará relacionado con el grupo al que pertenece.');

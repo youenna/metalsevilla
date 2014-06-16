@@ -13,6 +13,7 @@ function image_styles_image_default_styles() {
   // Exported image style: 779x519
   $styles['779x519'] = array(
     'name' => '779x519',
+    'label' => '779x519',
     'effects' => array(
       12 => array(
         'label' => 'Escalar y recortar',
@@ -25,7 +26,7 @@ function image_styles_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => '779',
-          'height' => '519',
+          'height' => '438',
         ),
         'weight' => '1',
       ),
@@ -35,6 +36,7 @@ function image_styles_image_default_styles() {
   // Exported image style: image_200x200
   $styles['image_200x200'] = array(
     'name' => 'image_200x200',
+    'label' => 'image_200x200',
     'effects' => array(
       10 => array(
         'label' => 'Escalar y recortar',
@@ -75,6 +77,7 @@ function image_styles_image_default_styles() {
         'weight' => '1',
       ),
     ),
+    'label' => 'image_250h',
   );
 
   // Exported image style: image_350x200
@@ -97,13 +100,15 @@ function image_styles_image_default_styles() {
         'weight' => '1',
       ),
     ),
+    'label' => 'image_350x200',
   );
 
   // Exported image style: image_430width
   $styles['image_430width'] = array(
     'name' => 'image_430width',
+    'label' => 'image_350width',
     'effects' => array(
-      14 => array(
+      13 => array(
         'label' => 'Escala',
         'help' => 'El escalado mantiene la relación de proporciones de la imagen original. Si sólo se especifica una dimensión, la otra se calculará.',
         'effect callback' => 'image_scale_effect',
@@ -113,7 +118,7 @@ function image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '430',
+          'width' => '350',
           'height' => '',
           'upscale' => 0,
         ),
@@ -125,6 +130,7 @@ function image_styles_image_default_styles() {
   // Exported image style: image_600width
   $styles['image_600width'] = array(
     'name' => 'image_600width',
+    'label' => 'image_600width',
     'effects' => array(
       11 => array(
         'label' => 'Escala',
@@ -148,6 +154,7 @@ function image_styles_image_default_styles() {
   // Exported image style: imagen_cabecera
   $styles['imagen_cabecera'] = array(
     'name' => 'imagen_cabecera',
+    'label' => 'imagen_cabecera',
     'effects' => array(
       2 => array(
         'label' => 'Escala',
@@ -171,6 +178,7 @@ function image_styles_image_default_styles() {
   // Exported image style: imagen_listado
   $styles['imagen_listado'] = array(
     'name' => 'imagen_listado',
+    'label' => 'imagen_listado',
     'effects' => array(
       3 => array(
         'label' => 'Escala',
@@ -194,6 +202,7 @@ function image_styles_image_default_styles() {
   // Exported image style: imagen_slide_home
   $styles['imagen_slide_home'] = array(
     'name' => 'imagen_slide_home',
+    'label' => 'imagen_430width',
     'effects' => array(
       7 => array(
         'label' => 'Escala',
@@ -205,9 +214,9 @@ function image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '460',
+          'width' => '430',
           'height' => '',
-          'upscale' => 1,
+          'upscale' => 0,
         ),
         'weight' => '2',
       ),
@@ -217,6 +226,7 @@ function image_styles_image_default_styles() {
   // Exported image style: img_articulo_280
   $styles['img_articulo_280'] = array(
     'name' => 'img_articulo_280',
+    'label' => 'img_articulo_280',
     'effects' => array(
       9 => array(
         'label' => 'Escala',
@@ -240,6 +250,7 @@ function image_styles_image_default_styles() {
   // Exported image style: img_logo_220
   $styles['img_logo_220'] = array(
     'name' => 'img_logo_220',
+    'label' => 'img_logo_220',
     'effects' => array(
       8 => array(
         'label' => 'Escala',
@@ -263,6 +274,7 @@ function image_styles_image_default_styles() {
   // Exported image style: logo_detalle
   $styles['logo_detalle'] = array(
     'name' => 'logo_detalle',
+    'label' => 'logo_detalle',
     'effects' => array(
       4 => array(
         'label' => 'Escala',
@@ -286,6 +298,7 @@ function image_styles_image_default_styles() {
   // Exported image style: logo_grid_9
   $styles['logo_grid_9'] = array(
     'name' => 'logo_grid_9',
+    'label' => 'logo_grid_9',
     'effects' => array(
       5 => array(
         'label' => 'Escala',
@@ -326,6 +339,7 @@ function image_styles_image_default_styles() {
         'weight' => '1',
       ),
     ),
+    'label' => 'nivo600x403',
   );
 
   return $styles;

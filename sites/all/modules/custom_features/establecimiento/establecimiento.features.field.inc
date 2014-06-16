@@ -741,6 +741,7 @@ function establecimiento_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'foto_establecimiento',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '2MB',
@@ -827,6 +828,7 @@ function establecimiento_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'logo_establecimiento',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '2MB',
@@ -1412,6 +1414,7 @@ function establecimiento_field_default_fields() {
       'module' => 'office_hours',
       'settings' => array(
         'addhrs' => 0,
+        'cardinality' => 2,
         'granularity' => '60',
         'hoursformat' => '0',
         'limitend' => '',
@@ -1433,6 +1436,12 @@ function establecimiento_field_default_fields() {
           'settings' => array(
             'closedformat' => 'Closed',
             'compress' => FALSE,
+            'current_status' => array(
+              'closed_text' => 'Currently closed',
+              'open_text' => 'Currently open!',
+              'position' => 'hide',
+            ),
+            'date_first_day' => '1',
             'daysformat' => 'long',
             'grouped' => FALSE,
             'hoursformat' => 0,
@@ -1442,6 +1451,7 @@ function establecimiento_field_default_fields() {
             'separator_hours_hours' => '-',
             'separator_more_hours' => ', ',
             'showclosed' => FALSE,
+            'timezone_field' => '',
           ),
           'type' => 'office_hours',
           'weight' => '8',
@@ -1452,6 +1462,12 @@ function establecimiento_field_default_fields() {
           'settings' => array(
             'closedformat' => 'Closed',
             'compress' => FALSE,
+            'current_status' => array(
+              'closed_text' => 'Currently closed',
+              'open_text' => 'Currently open!',
+              'position' => 'hide',
+            ),
+            'date_first_day' => '1',
             'daysformat' => 'long',
             'grouped' => FALSE,
             'hoursformat' => 0,
@@ -1461,6 +1477,7 @@ function establecimiento_field_default_fields() {
             'separator_hours_hours' => '-',
             'separator_more_hours' => ', ',
             'showclosed' => FALSE,
+            'timezone_field' => '',
           ),
           'type' => 'office_hours',
           'weight' => '16',

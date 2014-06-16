@@ -33,6 +33,8 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Filtrar';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -142,13 +144,25 @@ function establecimientos_listado_views_default_views() {
   $handler = $view->new_display('page', 'Listado establecimientos', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Guia Metalera';
-  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Contenido: Autor */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: Logo */
+  $handler->display->display_options['fields']['field_shared_logo']['id'] = 'field_shared_logo';
+  $handler->display->display_options['fields']['field_shared_logo']['table'] = 'field_data_field_shared_logo';
+  $handler->display->display_options['fields']['field_shared_logo']['field'] = 'field_shared_logo';
+  $handler->display->display_options['fields']['field_shared_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_logo']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_shared_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_shared_logo']['settings'] = array(
+    'image_style' => 'imagen_listado',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_shared_logo']['group_column'] = 'fid';
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -171,28 +185,21 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Campo: Contenido: Logo */
-  $handler->display->display_options['fields']['field_shared_logo']['id'] = 'field_shared_logo';
-  $handler->display->display_options['fields']['field_shared_logo']['table'] = 'field_data_field_shared_logo';
-  $handler->display->display_options['fields']['field_shared_logo']['field'] = 'field_shared_logo';
-  $handler->display->display_options['fields']['field_shared_logo']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_logo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_logo']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_logo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_logo']['settings'] = array(
-    'image_style' => 'imagen_listado',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_logo']['group_column'] = 'fid';
-  /* Campo: Contenido: Biografía */
-  $handler->display->display_options['fields']['field_bio']['id'] = 'field_bio';
-  $handler->display->display_options['fields']['field_bio']['table'] = 'field_data_field_bio';
-  $handler->display->display_options['fields']['field_bio']['field'] = 'field_bio';
-  $handler->display->display_options['fields']['field_bio']['label'] = '';
-  $handler->display->display_options['fields']['field_bio']['alter']['max_length'] = '150';
-  $handler->display->display_options['fields']['field_bio']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_bio']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_bio']['hide_alter_empty'] = FALSE;
+  /* Campo: Campo: Descripción */
+  $handler->display->display_options['fields']['field_shared_description']['id'] = 'field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['table'] = 'field_data_field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['field'] = 'field_shared_description';
+  $handler->display->display_options['fields']['field_shared_description']['label'] = '';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['max_length'] = '450';
+  $handler->display->display_options['fields']['field_shared_description']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_shared_description']['element_label_colon'] = FALSE;
+  /* Campo: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span class="guionnoticias"></span>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Contenido: Publicado */
@@ -210,17 +217,6 @@ function establecimientos_listado_views_default_views() {
     'establecimiento' => 'establecimiento',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Contenido: Título */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['group'] = 1;
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Título';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   /* Filter criterion: Campo: Estilo (field_shared_style) */
   $handler->display->display_options['filters']['field_shared_style_tid']['id'] = 'field_shared_style_tid';
   $handler->display->display_options['filters']['field_shared_style_tid']['table'] = 'field_data_field_shared_style';
@@ -245,19 +241,11 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['identifier'] = 'field_shared_state_tid';
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
-  /* Filter criterion: Contenido: Actividad (field_open) */
-  $handler->display->display_options['filters']['field_open_value']['id'] = 'field_open_value';
-  $handler->display->display_options['filters']['field_open_value']['table'] = 'field_data_field_open';
-  $handler->display->display_options['filters']['field_open_value']['field'] = 'field_open_value';
-  $handler->display->display_options['filters']['field_open_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_open_value']['expose']['operator_id'] = 'field_open_value_op';
-  $handler->display->display_options['filters']['field_open_value']['expose']['label'] = 'Activo';
-  $handler->display->display_options['filters']['field_open_value']['expose']['operator'] = 'field_open_value_op';
-  $handler->display->display_options['filters']['field_open_value']['expose']['identifier'] = 'field_open_value';
   /* Filter criterion: Contenido: Tipo de establecimiento (field_shared_type) */
   $handler->display->display_options['filters']['field_shared_type_tid']['id'] = 'field_shared_type_tid';
   $handler->display->display_options['filters']['field_shared_type_tid']['table'] = 'field_data_field_shared_type';
   $handler->display->display_options['filters']['field_shared_type_tid']['field'] = 'field_shared_type_tid';
+  $handler->display->display_options['filters']['field_shared_type_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_shared_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_shared_type_tid']['expose']['operator_id'] = 'field_shared_type_tid_op';
   $handler->display->display_options['filters']['field_shared_type_tid']['expose']['label'] = 'Tipo';
@@ -267,6 +255,14 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['filters']['field_shared_type_tid']['vocabulary'] = 'tipo_establecimiento';
   $handler->display->display_options['filters']['field_shared_type_tid']['hierarchy'] = 1;
   $handler->display->display_options['filters']['field_shared_type_tid']['error_message'] = FALSE;
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Bares, salas de conciertos y tiendas relacionadas con el heavy metal y el rock | www.metalspain.es',
+    ),
+    'description' => array(
+      'value' => 'Encuentra tu bar, tienda, o sala de concierto heavy-rock más cercana. ¿Quieres registrar tu establecimiento? Regístrate en un minuto como usuario, y publica contenido de tu negocio',
+    ),
+  );
   $handler->display->display_options['path'] = 'guia';
 
   /* Display: Feed */
@@ -427,6 +423,14 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['filters']['field_shared_type_tid']['vocabulary'] = 'tipo_establecimiento';
   $handler->display->display_options['filters']['field_shared_type_tid']['hierarchy'] = 1;
   $handler->display->display_options['filters']['field_shared_type_tid']['error_message'] = FALSE;
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Tiendas relacionadas con el heavy metal y el rock | www.metalspain.es',
+    ),
+    'description' => array(
+      'value' => 'Encuentra tu tienda heavy y rockera más cercana. ¿Quieres registrar tu establecimiento? Regístrate en un minuto como usuario, y publica contenido de tu tienda.',
+    ),
+  );
   $handler->display->display_options['path'] = 'guia/tiendas';
 
   /* Display: Listado bares */
@@ -537,6 +541,14 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['filters']['field_open_value']['expose']['label'] = 'Activo';
   $handler->display->display_options['filters']['field_open_value']['expose']['operator'] = 'field_open_value_op';
   $handler->display->display_options['filters']['field_open_value']['expose']['identifier'] = 'field_open_value';
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Bares relacionadas con el heavy metal y el rock | www.metalspain.es',
+    ),
+    'description' => array(
+      'value' => 'Encuentra tu bar heavy más cercano. ¿Quieres registrar tu establecimiento? Regístrate en un minuto como usuario, y publica contenido de tu bar',
+    ),
+  );
   $handler->display->display_options['path'] = 'guia/bares';
 
   /* Display: Listado salas */
@@ -647,12 +659,20 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['filters']['field_open_value']['expose']['label'] = 'Activo';
   $handler->display->display_options['filters']['field_open_value']['expose']['operator'] = 'field_open_value_op';
   $handler->display->display_options['filters']['field_open_value']['expose']['identifier'] = 'field_open_value';
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Salas de conciertos relacionadas con el heavy metal y el rock | www.metalspain.es',
+    ),
+    'description' => array(
+      'value' => 'Encuentra tu sala de concierto heavy y rock más cercana. ¿Quieres registrar tu establecimiento? Regístrate en un minuto como usuario, y publica contenido de tu sala.',
+    ),
+  );
   $handler->display->display_options['path'] = 'guia/salas';
   $translatables['establecimientos_listado'] = array(
     t('Master'),
     t('Guia Metalera'),
     t('more'),
-    t('Apply'),
+    t('Filtrar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -670,6 +690,7 @@ function establecimientos_listado_views_default_views() {
     t('Provincia'),
     t('Activo'),
     t('Listado establecimientos'),
+    t('<span class="guionnoticias"></span>'),
     t('Tipo'),
     t('Feed'),
     t('Listado tiendas'),
@@ -700,6 +721,7 @@ function establecimientos_listado_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Filtrar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['tags']['first'] = '« primera';
@@ -953,7 +975,7 @@ function establecimientos_listado_views_default_views() {
   $translatables['mapa_home'] = array(
     t('Master'),
     t('more'),
-    t('Apply'),
+    t('Filtrar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),

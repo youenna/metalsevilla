@@ -22,7 +22,7 @@ function grupos_default_node_subpages_path() {
   $path->source_type = 'views';
   $path->source_data = array(
     'view' => 'pestanas_de_grupos',
-    'display' => 'block_2',
+    'display' => 'block_7',
   );
   $path->weight = -6;
   $export['agenda'] = $path;

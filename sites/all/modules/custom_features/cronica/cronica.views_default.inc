@@ -131,7 +131,7 @@ function cronica_views_default_views() {
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -227,6 +227,14 @@ function cronica_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Crónicas de conciertos de heavy metal o rock | www.metalsevilla.es',
+    ),
+    'description' => array(
+      'value' => 'Aquí encontrarás las últimas crónicas de conciertos a los que hayamos asistido. ¿Quieres publicar tú una? ¡Regístrate, es muy fácil y rápido! ',
+    ),
+  );
   $handler->display->display_options['path'] = 'actualidad/cronicas';
 
   /* Display: Feed */

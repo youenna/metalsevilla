@@ -219,6 +219,14 @@ function entrevista_views_default_views() {
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['label'] = 'Grupo';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['operator'] = 'field_shared_rel_group_nid_op';
   $handler->display->display_options['filters']['field_shared_rel_group_nid']['expose']['identifier'] = 'field_shared_rel_group_nid';
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Entrevistas en español a grupos de heavy metal y rock | www.metalspain.es',
+    ),
+    'description' => array(
+      'value' => 'Aquí encontrarás las entrevistas que hemos realizado a bandas de heavy metal y rock. ¿Quieres formar parte de nuestro equipo? ¡Ponte en contacto con nosotros, y entrevista a tus ídolos tu también!',
+    ),
+  );
   $handler->display->display_options['path'] = 'actualidad/entrevistas';
 
   /* Display: Feed */

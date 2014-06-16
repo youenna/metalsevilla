@@ -26,6 +26,23 @@ function main_menu_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-47',
   );
+  // Exported menu link: main-menu:actualidad/criticas
+  $menu_links['main-menu:actualidad/criticas'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'actualidad/criticas',
+    'router_path' => 'actualidad/criticas',
+    'link_title' => 'Críticas',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-49',
+    'parent_path' => 'actualidad',
+  );
   // Exported menu link: main-menu:actualidad/cronicas
   $menu_links['main-menu:actualidad/cronicas'] = array(
     'menu_name' => 'main-menu',
@@ -41,23 +58,6 @@ function main_menu_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-49',
-    'parent_path' => 'actualidad',
-  );
-  // Exported menu link: main-menu:actualidad/discos/criticas
-  $menu_links['main-menu:actualidad/discos/criticas'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'actualidad/discos/criticas',
-    'router_path' => 'actualidad',
-    'link_title' => 'Críticas',
-    'options' => array(
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => '1',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
     'parent_path' => 'actualidad',
   );
   // Exported menu link: main-menu:actualidad/entrevistas
@@ -122,9 +122,26 @@ function main_menu_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '0',
+    'has_children' => '1',
     'expanded' => '0',
     'weight' => '-46',
+  );
+  // Exported menu link: main-menu:grupos-artistas/discos
+  $menu_links['main-menu:grupos-artistas/discos'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'grupos-artistas/discos',
+    'router_path' => 'grupos-artistas/discos',
+    'link_title' => 'Discos',
+    'options' => array(
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+    'parent_path' => 'grupos-artistas',
   );
   // Exported menu link: main-menu:guia
   $menu_links['main-menu:guia'] = array(
@@ -138,7 +155,7 @@ function main_menu_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
     'weight' => '-45',
   );
@@ -152,7 +169,7 @@ function main_menu_menu_default_menu_links() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -169,7 +186,7 @@ function main_menu_menu_default_menu_links() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -186,7 +203,7 @@ function main_menu_menu_default_menu_links() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -299,7 +316,7 @@ function main_menu_menu_default_menu_links() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -547,6 +564,7 @@ function main_menu_menu_default_menu_links() {
   t('Crear contenido');
   t('Críticas');
   t('Crónicas');
+  t('Discos');
   t('Entrevistas');
   t('Equipo');
   t('Facebook');

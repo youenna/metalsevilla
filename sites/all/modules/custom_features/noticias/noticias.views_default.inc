@@ -97,7 +97,7 @@ function noticias_views_default_views() {
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Campo: Imagen */
+  /* Campo: Campo: Foto */
   $handler->display->display_options['fields']['field_shared_image']['id'] = 'field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['table'] = 'field_data_field_shared_image';
   $handler->display->display_options['fields']['field_shared_image']['field'] = 'field_shared_image';
@@ -204,6 +204,14 @@ function noticias_views_default_views() {
   $handler->display->display_options['filters']['field_shared_state_tid']['expose']['identifier'] = 'field_shared_state_tid';
   $handler->display->display_options['filters']['field_shared_state_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_shared_state_tid']['vocabulary'] = 'provincia';
+  $handler->display->display_options['metatags'] = array(
+    'title' => array(
+      'value' => 'Noticias sobre música heavy metal y rock. La actualidad más reciente; grupos, crónicas, críticas, conciertos...',
+    ),
+    'description' => array(
+      'value' => 'Todas las noticias del mundo del heavy metal y rock en español las encontrarás aquí. Lee y publica contenido de tu grupo preferido, o del grupo en el qué toques en unos pocos clicks.',
+    ),
+  );
   $handler->display->display_options['path'] = 'actualidad/noticias';
 
   /* Display: Feed */

@@ -111,7 +111,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'lightbox2__lightbox__large__original',
+          'type' => 'lightbox2__lightbox__image_430width__original',
           'weight' => '1',
         ),
       ),
@@ -175,7 +175,7 @@ function cronica_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_fields',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -247,7 +247,7 @@ function cronica_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -324,7 +324,7 @@ function cronica_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -392,7 +392,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'module' => 'lightbox2',
           'settings' => array(),
-          'type' => 'lightbox2__lightbox__medium__original',
+          'type' => 'lightbox2__lightbox__image_430width__original',
           'weight' => '1',
         ),
         'teaser' => array(
@@ -738,7 +738,7 @@ function cronica_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '10',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -814,7 +814,7 @@ function cronica_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -982,67 +982,6 @@ function cronica_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-provincia-location_taxonomize_longname'
-  $fields['taxonomy_term-provincia-location_taxonomize_longname'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'location_taxonomize_longname',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'provincia',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'taxonomy_term',
-      'field_name' => 'location_taxonomize_longname',
-      'label' => 'Long Name',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 31,
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Descripción');
@@ -1058,7 +997,6 @@ function cronica_field_default_fields() {
   t('Foto resumen');
   t('Fotos');
   t('Grupos relacionados');
-  t('Long Name');
   t('Provincia');
   t('Párrafo');
   t('Resumen');

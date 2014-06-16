@@ -124,6 +124,7 @@ function grupos_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'miembro_grupo',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '512 KB',
@@ -322,6 +323,7 @@ function grupos_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
+        'default_image' => 0,
         'file_directory' => 'miembro_grupo',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '512 KB',
@@ -922,6 +924,7 @@ function grupos_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'imagen_grupo',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '512 KB',
@@ -997,6 +1000,7 @@ function grupos_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'logo_grupo',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '512 KB',

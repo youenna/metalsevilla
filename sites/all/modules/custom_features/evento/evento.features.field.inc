@@ -46,7 +46,7 @@ function evento_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_decimal',
-          'weight' => '7',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -113,7 +113,7 @@ function evento_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_decimal',
-          'weight' => '9',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -203,7 +203,7 @@ function evento_field_default_fields() {
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => '8',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -272,7 +272,7 @@ function evento_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '-1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -341,7 +341,7 @@ function evento_field_default_fields() {
           'module' => 'lightbox2',
           'settings' => array(),
           'type' => 'lightbox2__lightbox__large__original',
-          'weight' => '0',
+          'weight' => '-2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -356,6 +356,7 @@ function evento_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'cartel',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '512 KB',
@@ -618,7 +619,7 @@ function evento_field_default_fields() {
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => '10',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -694,7 +695,7 @@ function evento_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '3',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -777,7 +778,7 @@ function evento_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '2',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -849,7 +850,7 @@ function evento_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
